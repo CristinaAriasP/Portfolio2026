@@ -13,25 +13,34 @@
 
 <nav class="nav">
   <a href="#top" class="logo">Cristina<span>.</span></a>
-  <div class="nav-pill">
-    <a href="#work">Trabajo</a>
-    <a href="#sobremi">Sobre mí</a>
-    <a href="#contacto">Contacto</a>
+  <div class="nav-pill" id="navPill">
+    <a href="#work" data-i18n="common.nav.work">Trabajo</a>
+    <a href="#sobremi" data-i18n="common.nav.about">Sobre mí</a>
+    <a href="#contacto" data-i18n="common.nav.contact">Contacto</a>
   </div>
-  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-    <span class="theme-dot"></span>
-    <span id="themeLabel">Oscuro</span>
-  </button>
+  <div class="nav-actions">
+    <div class="lang-switch" role="group" aria-label="Idioma / Language">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+      <span class="theme-dot"></span>
+      <span class="theme-label" id="themeLabel">Oscuro</span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <header id="top" class="hero">
   <img class="avatar" src="assets/avatar.jpg" alt="Retrato ilustrado de Cristina Arias">
-  <div class="eyebrow">Product Designer · Valencia, España</div>
-  <h1>Hola, soy Cristina.</h1>
-  <p class="lead">Product Designer con base en Bellas Artes, especializada en UX/UI, Design Systems y prototipos de alta fidelidad en Figma. Integro IA generativa en mi flujo de trabajo como motor de ejecución, no como atajo.</p>
+  <div class="eyebrow" data-i18n="home.hero.eyebrow">Product Designer · Valencia, España</div>
+  <h1 data-i18n="home.hero.title">Hola, soy Cristina.</h1>
+  <p class="lead" data-i18n="home.hero.lead">Product Designer con base en Bellas Artes, especializada en UX/UI, Design Systems y prototipos de alta fidelidad en Figma. Integro IA generativa en mi flujo de trabajo como motor de ejecución, no como atajo.</p>
   <div class="hero-ctas">
-    <a href="#work" class="btn btn-primary">Ver mi trabajo</a>
-    <a href="#contacto" class="btn btn-secondary">Hablemos</a>
+    <a href="#work" class="btn btn-primary" data-i18n="home.hero.cta1">Ver mi trabajo</a>
+    <a href="#contacto" class="btn btn-secondary" data-i18n="home.hero.cta2">Hablemos</a>
   </div>
   <div class="tools">
     <span class="chip">Figma</span>
@@ -44,30 +53,30 @@
 </header>
 
 <section id="work" class="container section">
-  <h2 class="section-title">Trabajo seleccionado</h2>
+  <h2 class="section-title" data-i18n="home.workTitle">Trabajo seleccionado</h2>
 
   <div class="filters">
-    <button class="filter-btn active" data-filter="all">Todo</button>
-    <button class="filter-btn" data-filter="product">Product</button>
-    <button class="filter-btn" data-filter="code">Código &amp; IA</button>
-    <button class="filter-btn" data-filter="branding">Branding</button>
+    <button class="filter-btn active" data-filter="all" data-i18n="home.filters.all">Todo</button>
+    <button class="filter-btn" data-filter="product" data-i18n="home.filters.product">Product</button>
+    <button class="filter-btn" data-filter="code" data-i18n="home.filters.code">Código &amp; IA</button>
+    <button class="filter-btn" data-filter="branding" data-i18n="home.filters.branding">Branding</button>
   </div>
 
   <div class="cards" id="cardsGrid">
     <article class="card" data-cat="product code">
       <div class="card-top">
         <span class="mark" style="background:#FCE4DA;color:#B0431F;">G</span>
-        <span class="badge">Live</span>
+        <span class="badge" data-i18n="common.statusLive">Live</span>
       </div>
       <div>
-        <div class="eyebrow-small">Proyecto indie · 2026</div>
+        <div class="eyebrow-small" data-i18n="home.cards.geo.eyebrow">Proyecto indie · 2026</div>
         <h3>GeoChallenge</h3>
-        <p class="desc">Daily challenge app de geografía. Lanzada en 48h con Vibe Coding: ideación, UX/UI, desarrollo y decisiones de producto propias, iterando con datos reales de Google Analytics.</p>
+        <p class="desc" data-i18n="home.cards.geo.desc">Daily challenge app de geografía. Lanzada en 48h con Vibe Coding: ideación, UX/UI, desarrollo y decisiones de producto propias, iterando con datos reales de Google Analytics.</p>
       </div>
-      <div class="tags">Product Ownership · UX/UI · Lovable · IA Generativa</div>
+      <div class="tags" data-i18n="home.cards.geo.tags">Product Ownership · UX/UI · Lovable · IA Generativa</div>
       <div class="card-links">
-        <a class="link" href="proyectos/geochallenge.html">Ver caso completo →</a>
-        <a class="link" href="https://geochallengedaily.lovable.app" target="_blank" rel="noopener">Ver producto en vivo →</a>
+        <a class="link" href="proyectos/geochallenge.html" data-i18n="home.cards.geo.link1">Ver caso completo →</a>
+        <a class="link" href="https://geochallengedaily.lovable.app" target="_blank" rel="noopener" data-i18n="home.cards.geo.link2">Ver producto en vivo →</a>
       </div>
     </article>
 
@@ -77,14 +86,14 @@
         <span></span>
       </div>
       <div>
-        <div class="eyebrow-small">Trabajo final de máster · 2024–2025</div>
+        <div class="eyebrow-small" data-i18n="home.cards.roomeet.eyebrow">Trabajo final de máster · 2024–2025</div>
         <h3>Roomeet</h3>
-        <p class="desc">Plataforma SaaS de dos lados para encontrar compañero de piso, con modelo freemium. Onboarding separado para inquilinos y anfitriones, filtros avanzados y Design System completo en Figma.</p>
+        <p class="desc" data-i18n="home.cards.roomeet.desc">Plataforma SaaS de dos lados para encontrar compañero de piso, con modelo freemium. Onboarding separado para inquilinos y anfitriones, filtros avanzados y Design System completo en Figma.</p>
       </div>
-      <div class="tags">UX Research · Design System · Figma · ReactJS</div>
+      <div class="tags" data-i18n="home.cards.roomeet.tags">UX Research · Design System · Figma · ReactJS</div>
       <div class="card-links">
-        <a class="link" href="proyectos/roomeet.html">Ver caso completo →</a>
-        <a class="link" href="https://behance.net/gallery/231345231/Roomeet" target="_blank" rel="noopener">Ver también en Behance →</a>
+        <a class="link" href="proyectos/roomeet.html" data-i18n="home.cards.roomeet.link1">Ver caso completo →</a>
+        <a class="link" href="https://behance.net/gallery/231345231/Roomeet" target="_blank" rel="noopener" data-i18n="home.cards.roomeet.link2">Ver también en Behance →</a>
       </div>
     </article>
 
@@ -94,29 +103,29 @@
         <span></span>
       </div>
       <div>
-        <div class="eyebrow-small">Proyecto fin de grado · Bellas Artes</div>
+        <div class="eyebrow-small" data-i18n="home.cards.liminal.eyebrow">Proyecto fin de grado · Bellas Artes</div>
         <h3>Liminal</h3>
-        <p class="desc">Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y prototipo básico de web.</p>
+        <p class="desc" data-i18n="home.cards.liminal.desc">Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y prototipo básico de web.</p>
       </div>
-      <div class="tags">Branding · Naming · Dirección de arte</div>
+      <div class="tags" data-i18n="home.cards.liminal.tags">Branding · Naming · Dirección de arte</div>
       <div class="card-links">
-        <a class="link" href="proyectos/liminal.html">Ver caso completo →</a>
+        <a class="link" href="proyectos/liminal.html" data-i18n="home.cards.liminal.link1">Ver caso completo →</a>
       </div>
     </article>
 
     <article class="card" data-cat="code">
       <div class="card-top">
         <span class="mark" style="background:#FBF0DE;color:#A66A11;">B</span>
-        <span class="badge">En construcción</span>
+        <span class="badge" data-i18n="common.statusBuilding">En construcción</span>
       </div>
       <div>
-        <div class="eyebrow-small">Proyecto para cliente real</div>
+        <div class="eyebrow-small" data-i18n="home.cards.belen.eyebrow">Proyecto para cliente real</div>
         <h3>Tienda Shopify — Belén</h3>
-        <p class="desc">Tienda online en Shopify para una marca de ropa independiente, actualmente en construcción. Diseño de producto, catálogo y checkout.</p>
+        <p class="desc" data-i18n="home.cards.belen.desc">Tienda online en Shopify para una marca de ropa independiente, actualmente en construcción. Diseño de producto, catálogo y checkout.</p>
       </div>
-      <div class="tags">Shopify · E-commerce · UI</div>
+      <div class="tags" data-i18n="home.cards.belen.tags">Shopify · E-commerce · UI</div>
       <div class="card-links">
-        <a class="link" href="proyectos/belen.html">Ver caso completo →</a>
+        <a class="link" href="proyectos/belen.html" data-i18n="home.cards.belen.link1">Ver caso completo →</a>
       </div>
     </article>
   </div>
@@ -125,77 +134,77 @@
 <section id="sobremi" class="container" style="padding: 64px 20px 40px;">
   <div class="about-box">
     <div style="display:flex; flex-direction:column; gap:18px;">
-      <h2 style="font-size:26px;">Sobre mí</h2>
-      <p>Vengo de Bellas Artes y me formé después en UX/UI y desarrollo front-end. Esa mezcla es mi diferenciador: pienso el producto de forma end-to-end — research, flujos, sistema de diseño — y lo llevo yo misma hasta un prototipo funcional o código real, usando IA generativa como motor de ejecución en cada fase, no como un atajo para saltarme el proceso.</p>
+      <h2 style="font-size:26px;" data-i18n="home.about.title">Sobre mí</h2>
+      <p data-i18n="home.about.p">Vengo de Bellas Artes y me formé después en UX/UI y desarrollo front-end. Esa mezcla es mi diferenciador: pienso el producto de forma end-to-end — research, flujos, sistema de diseño — y lo llevo yo misma hasta un prototipo funcional o código real, usando IA generativa como motor de ejecución en cada fase, no como un atajo para saltarme el proceso.</p>
       <div class="stats">
         <div>
           <div class="stat-num">2</div>
-          <div class="stat-label">días para lanzar GeoChallenge, de idea a producto vivo</div>
+          <div class="stat-label" data-i18n="home.about.stat1Label">días para lanzar GeoChallenge, de idea a producto vivo</div>
         </div>
         <div>
           <div class="stat-num">7+</div>
-          <div class="stat-label">años combinando arte, diseño y atención al usuario real</div>
+          <div class="stat-label" data-i18n="home.about.stat2Label">años combinando arte, diseño y atención al usuario real</div>
         </div>
       </div>
     </div>
 
     <div>
-      <div class="timeline-title">Mi camino hasta aquí</div>
+      <div class="timeline-title" data-i18n="home.about.timelineTitle">Mi camino hasta aquí</div>
       <div class="timeline">
         <div class="tl-item">
           <div class="tl-marker"><span class="tl-dot"></span><span class="tl-line"></span></div>
           <div class="tl-content">
-            <div class="tl-period">2019 – 2023</div>
-            <div class="tl-heading">Grado en Bellas Artes</div>
-            <div class="tl-desc">Universidad Politécnica de Valencia.</div>
+            <div class="tl-period" data-i18n="home.about.timeline.0.period">2019 – 2023</div>
+            <div class="tl-heading" data-i18n="home.about.timeline.0.heading">Grado en Bellas Artes</div>
+            <div class="tl-desc" data-i18n="home.about.timeline.0.desc">Universidad Politécnica de Valencia.</div>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-marker"><span class="tl-dot"></span><span class="tl-line"></span></div>
           <div class="tl-content">
-            <div class="tl-period">2020 – actualidad</div>
-            <div class="tl-heading">Hostelería y retail</div>
-            <div class="tl-desc">Empecé en hostelería en 2020; después varios trabajos de cara al público en retail de estética (Primor, Druni...). Actualmente en The Body Shop, compaginándolo con mi búsqueda como Product Designer.</div>
+            <div class="tl-period" data-i18n="home.about.timeline.1.period">2020 – actualidad</div>
+            <div class="tl-heading" data-i18n="home.about.timeline.1.heading">Hostelería y retail</div>
+            <div class="tl-desc" data-i18n="home.about.timeline.1.desc">Empecé en hostelería en 2020; después varios trabajos de cara al público en retail de estética (Primor, Druni...). Actualmente en The Body Shop, compaginándolo con mi búsqueda como Product Designer.</div>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-marker"><span class="tl-dot"></span><span class="tl-line"></span></div>
           <div class="tl-content">
-            <div class="tl-period">Ene – May 2022</div>
-            <div class="tl-heading">Erasmus · Diseño Gráfico</div>
-            <div class="tl-desc">XAMK, Finlandia — especialización en diseño gráfico.</div>
+            <div class="tl-period" data-i18n="home.about.timeline.2.period">Ene – May 2022</div>
+            <div class="tl-heading" data-i18n="home.about.timeline.2.heading">Erasmus · Diseño Gráfico</div>
+            <div class="tl-desc" data-i18n="home.about.timeline.2.desc">XAMK, Finlandia — especialización en diseño gráfico.</div>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-marker"><span class="tl-dot"></span><span class="tl-line"></span></div>
           <div class="tl-content">
-            <div class="tl-period">Oct 2022 – Jul 2023</div>
-            <div class="tl-heading">Prácticas — Diseñadora Web &amp; Contenido</div>
-            <div class="tl-desc">Instituto Universitario de Restauración del Patrimonio (UPV), Valencia.</div>
+            <div class="tl-period" data-i18n="home.about.timeline.3.period">Oct 2022 – Jul 2023</div>
+            <div class="tl-heading" data-i18n="home.about.timeline.3.heading">Prácticas — Diseñadora Web &amp; Contenido</div>
+            <div class="tl-desc" data-i18n="home.about.timeline.3.desc">Instituto Universitario de Restauración del Patrimonio (UPV), Valencia.</div>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-marker"><span class="tl-dot"></span><span class="tl-line"></span></div>
           <div class="tl-content">
-            <div class="tl-period">Nov 2024 – Jun 2025</div>
-            <div class="tl-heading">Máster en UX/UI y Desarrollo Front-end</div>
-            <div class="tl-desc">ESAT, Valencia.</div>
+            <div class="tl-period" data-i18n="home.about.timeline.4.period">Nov 2024 – Jun 2025</div>
+            <div class="tl-heading" data-i18n="home.about.timeline.4.heading">Máster en UX/UI y Desarrollo Front-end</div>
+            <div class="tl-desc" data-i18n="home.about.timeline.4.desc">ESAT, Valencia.</div>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-marker"><span class="tl-dot"></span><span class="tl-line"></span></div>
           <div class="tl-content">
-            <div class="tl-period">Oct 2025 – actualidad</div>
-            <div class="tl-heading">Prácticas — Diseñadora Web &amp; Branding</div>
-            <div class="tl-desc">Momma Agency, remoto.</div>
+            <div class="tl-period" data-i18n="home.about.timeline.5.period">Oct 2025 – actualidad</div>
+            <div class="tl-heading" data-i18n="home.about.timeline.5.heading">Prácticas — Diseñadora Web &amp; Branding</div>
+            <div class="tl-desc" data-i18n="home.about.timeline.5.desc">Momma Agency, remoto.</div>
           </div>
         </div>
         <div class="tl-item">
           <div class="tl-marker"><span class="tl-dot"></span><span class="tl-line"></span></div>
           <div class="tl-content">
-            <div class="tl-period">Ahora</div>
-            <div class="tl-heading">Buscando mi próxima oportunidad</div>
-            <div class="tl-desc">Como Junior Product Designer, abierta también a roles de Frontend o Diseño Gráfico dentro de un equipo de producto.</div>
+            <div class="tl-period" data-i18n="home.about.timeline.6.period">Ahora</div>
+            <div class="tl-heading" data-i18n="home.about.timeline.6.heading">Buscando mi próxima oportunidad</div>
+            <div class="tl-desc" data-i18n="home.about.timeline.6.desc">Como Junior Product Designer, abierta también a roles de Frontend o Diseño Gráfico dentro de un equipo de producto.</div>
           </div>
         </div>
       </div>
@@ -207,27 +216,27 @@
   <h2 class="section-title" style="font-size:26px;">Skills</h2>
   <div class="skills">
     <div class="skill-group">
-      <div class="skill-title">Diseño &amp; UX</div>
-      <div class="skill-items">Figma · Design Systems · Prototyping · UX Research · Design Thinking · User Flows · Responsive Design · Accesibilidad</div>
+      <div class="skill-title" data-i18n="home.skills.groups.design.title">Diseño &amp; UX</div>
+      <div class="skill-items" data-i18n="home.skills.groups.design.items">Figma · Design Systems · Prototyping · UX Research · Design Thinking · User Flows · Responsive Design · Accesibilidad</div>
     </div>
     <div class="skill-group">
-      <div class="skill-title">IA &amp; Código</div>
-      <div class="skill-items">Lovable · Claude Code · Stitch · Cursor · HTML5 / CSS3 / JavaScript / TypeScript · React · Node.js · Git / GitHub</div>
+      <div class="skill-title" data-i18n="home.skills.groups.code.title">IA &amp; Código</div>
+      <div class="skill-items" data-i18n="home.skills.groups.code.items">Lovable · Claude Code · Stitch · Cursor · HTML5 / CSS3 / JavaScript / TypeScript · React · Node.js · Git / GitHub</div>
     </div>
     <div class="skill-group">
-      <div class="skill-title">Herramientas</div>
-      <div class="skill-items">WordPress + Elementor + Gutenberg · Shopify · Illustrator / Photoshop / InDesign · Canva Pro · Miro · Notion · Lottie</div>
+      <div class="skill-title" data-i18n="home.skills.groups.tools.title">Herramientas</div>
+      <div class="skill-items" data-i18n="home.skills.groups.tools.items">WordPress + Elementor + Gutenberg · Shopify · Illustrator / Photoshop / InDesign · Canva Pro · Miro · Notion · Lottie</div>
     </div>
     <div class="skill-group">
-      <div class="skill-title">Idiomas</div>
-      <div class="skill-items">Español (nativo) · Valenciano (nativo) · Inglés B2–C1 · Francés A2</div>
+      <div class="skill-title" data-i18n="home.skills.groups.langs.title">Idiomas</div>
+      <div class="skill-items" data-i18n="home.skills.groups.langs.items">Español (nativo) · Valenciano (nativo) · Inglés B2–C1 · Francés A2</div>
     </div>
   </div>
 </section>
 
 <section id="contacto" class="container" style="padding: 40px 20px 0;">
   <div class="contact-box">
-    <h2>¿Hablamos de tu próximo producto?</h2>
+    <h2 data-i18n="home.contact.title">¿Hablamos de tu próximo producto?</h2>
     <div class="contact-links">
       <a href="mailto:cristinaariasparrilla@gmail.com">cristinaariasparrilla@gmail.com</a>
       <a href="tel:+34633590662">+34 633 590 662</a>
@@ -238,9 +247,10 @@
       <a href="https://linkedin.com/in/cristina-arias-parrilla" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
-  <div class="footer-note">Cristina Arias Parrilla — Valencia, España</div>
+  <div class="footer-note" data-i18n="home.contact.footer">Cristina Arias Parrilla — Valencia, España</div>
 </section>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 
 </body>

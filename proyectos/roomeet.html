@@ -20,43 +20,52 @@
 
 <nav class="nav">
   <a href="../index.html" class="logo">Cristina<span>.</span></a>
-  <div class="nav-pill">
-    <a href="../index.html#work">Trabajo</a>
-    <a href="../index.html#sobremi">Sobre mí</a>
-    <a href="../index.html#contacto">Contacto</a>
+  <div class="nav-pill" id="navPill">
+    <a href="../index.html#work" data-i18n="common.nav.work">Trabajo</a>
+    <a href="../index.html#sobremi" data-i18n="common.nav.about">Sobre mí</a>
+    <a href="../index.html#contacto" data-i18n="common.nav.contact">Contacto</a>
   </div>
-  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-    <span class="theme-dot"></span>
-    <span id="themeLabel">Oscuro</span>
-  </button>
+  <div class="nav-actions">
+    <div class="lang-switch" role="group" aria-label="Idioma / Language">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+      <span class="theme-dot"></span>
+      <span class="theme-label" id="themeLabel">Oscuro</span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<a class="breadcrumb container" href="../index.html">← Volver al portfolio</a>
+<a class="breadcrumb container" href="../index.html" data-i18n="common.backToPortfolio">← Volver al portfolio</a>
 
 <header class="cs-hero">
-  <div class="eyebrow">Trabajo final de máster · 2024–2025</div>
+  <div class="eyebrow" data-i18n="home.cards.roomeet.eyebrow">Trabajo final de máster · 2024–2025</div>
   <h1>Roomeet</h1>
-  <p class="lead">Plataforma SaaS de dos lados para encontrar compañero de piso, con onboarding separado para inquilinos y anfitriones, modelo freemium y Design System completo en Figma.</p>
+  <p class="lead" data-i18n="roomeet.lead">Plataforma SaaS de dos lados para encontrar compañero de piso, con onboarding separado para inquilinos y anfitriones, modelo freemium y Design System completo en Figma.</p>
   <div class="hero-ctas">
-    <a href="https://behance.net/gallery/231345231/Roomeet" target="_blank" rel="noopener" class="btn btn-primary">Ver en Behance</a>
+    <a href="https://behance.net/gallery/231345231/Roomeet" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="roomeet.ctaLive">Ver en Behance</a>
   </div>
 
   <div class="cs-meta-grid">
     <div>
-      <div class="cs-meta-label">Rol</div>
-      <div class="cs-meta-value">UX Researcher &amp; Product Designer</div>
+      <div class="cs-meta-label" data-i18n="common.meta.role">Rol</div>
+      <div class="cs-meta-value" data-i18n="roomeet.meta.role">UX Researcher &amp; Product Designer</div>
     </div>
     <div>
-      <div class="cs-meta-label">Duración</div>
-      <div class="cs-meta-value">Curso 2024–2025 (TFM)</div>
+      <div class="cs-meta-label" data-i18n="common.meta.duration">Duración</div>
+      <div class="cs-meta-value" data-i18n="roomeet.meta.duration">Curso 2024–2025 (TFM)</div>
     </div>
     <div>
-      <div class="cs-meta-label">Herramientas</div>
-      <div class="cs-meta-value">Figma · ReactJS</div>
+      <div class="cs-meta-label" data-i18n="common.meta.tools">Herramientas</div>
+      <div class="cs-meta-value" data-i18n="roomeet.meta.tools">Figma · ReactJS</div>
     </div>
     <div>
-      <div class="cs-meta-label">Estado</div>
-      <div class="cs-meta-value">Prototipo / Case study</div>
+      <div class="cs-meta-label" data-i18n="common.meta.status">Estado</div>
+      <div class="cs-meta-value" data-i18n="roomeet.meta.status">Prototipo / Case study</div>
     </div>
   </div>
 </header>
@@ -70,36 +79,36 @@
 </div>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Resumen rápido</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.summary">Resumen rápido</h2>
   <ul class="cs-summary-list">
-    <li><b>Problema</b> Encontrar compañero de piso es un proceso lento y poco fiable, repartido entre grupos de Facebook y anuncios sin filtrar.</li>
-    <li><b>Solución</b> Un marketplace de dos lados (inquilinos y anfitriones) con perfiles verificados, filtros avanzados y un modelo freemium.</li>
-    <li><b>Mi rol</b> Research, arquitectura de información, Design System y UI, de principio a fin como TFM.</li>
-    <li><b>Resultado</b> Prototipo de alta fidelidad completo, documentado como case study.</li>
+    <li><b data-i18n="common.summaryLabels.problem">Problema</b> <span data-i18n="roomeet.summary.problem">Encontrar compañero de piso es un proceso lento y poco fiable, repartido entre grupos de Facebook y anuncios sin filtrar.</span></li>
+    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span data-i18n="roomeet.summary.solution">Un marketplace de dos lados (inquilinos y anfitriones) con perfiles verificados, filtros avanzados y un modelo freemium.</span></li>
+    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span data-i18n="roomeet.summary.role">Research, arquitectura de información, Design System y UI, de principio a fin como TFM.</span></li>
+    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span data-i18n="roomeet.summary.result">Prototipo de alta fidelidad completo, documentado como case study.</span></li>
   </ul>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">El contexto y el problema</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.context">El contexto y el problema</h2>
   <div class="cs-todo">
     <b>COMPLETAR:</b> ¿qué research hiciste al principio? ¿Entrevistas, encuestas a estudiantes/jóvenes que buscan piso? ¿Qué dato o insight disparó el proyecto?
   </div>
-  <p>Roomeet plantea un producto de dos lados: quien busca piso y quien lo ofrece necesitan flujos de onboarding y necesidades distintas, lo que obliga a diseñar dos experiencias coherentes bajo un mismo sistema.</p>
+  <p data-i18n="roomeet.context">Roomeet plantea un producto de dos lados: quien busca piso y quien lo ofrece necesitan flujos de onboarding y necesidades distintas, lo que obliga a diseñar dos experiencias coherentes bajo un mismo sistema.</p>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">El proceso</h2>
-  <h3 style="font-size:15.5px; margin-bottom:6px;">1. Research y definición</h3>
+  <h2 class="cs-section-title" data-i18n="common.sections.process">El proceso</h2>
+  <h3 style="font-size:15.5px; margin-bottom:6px;" data-i18n="roomeet.process.step1">1. Research y definición</h3>
   <div class="cs-todo">
     <b>COMPLETAR:</b> métodos usados (entrevistas, encuestas, benchmark de competencia como Idealista/Badi), número de personas, principales insights.
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;">2. Arquitectura y flujos</h3>
+  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="roomeet.process.step2">2. Arquitectura y flujos</h3>
   <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
     User flow u organigrama de navegación
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;">3. Design System</h3>
-  <p>Se construyó un Design System completo en Figma (componentes, tokens, estados) para dar consistencia a los dos flujos de onboarding y escalar el resto del producto.</p>
+  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="roomeet.process.step3">3. Design System</h3>
+  <p data-i18n="roomeet.process.step3desc">Se construyó un Design System completo en Figma (componentes, tokens, estados) para dar consistencia a los dos flujos de onboarding y escalar el resto del producto.</p>
   <div class="cs-placeholder" style="margin-top:14px;">
     <span class="cs-placeholder-icon">📷</span>
     Vista del Design System / librería de componentes
@@ -115,15 +124,15 @@
     <div class="cs-decision-card">
       <h3>Ejemplo: onboarding separado por perfil</h3>
       <div class="cs-decision-row">
-        <span class="cs-decision-label">Decisión</span>
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
         <p>[Completa con la decisión real]</p>
       </div>
       <div class="cs-decision-row">
-        <span class="cs-decision-label">Por qué</span>
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
         <p>[Completa: qué necesidad distinta tenía cada perfil]</p>
       </div>
       <div class="cs-decision-row">
-        <span class="cs-decision-label">Alternativa descartada</span>
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
         <p>[Completa, si aplica]</p>
       </div>
     </div>
@@ -131,7 +140,7 @@
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Resultado final</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.result">Resultado final</h2>
   <div class="cs-gallery">
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
@@ -145,16 +154,16 @@
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Aprendizajes</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.learnings">Aprendizajes</h2>
   <div class="cs-learnings">
     <div class="cs-learnings-col">
-      <h3>Qué funcionó</h3>
+      <h3 data-i18n="common.learnings.worked">Qué funcionó</h3>
       <ul>
         <li>[Completa]</li>
       </ul>
     </div>
     <div class="cs-learnings-col">
-      <h3>Qué cambiaría</h3>
+      <h3 data-i18n="common.learnings.change">Qué cambiaría</h3>
       <ul>
         <li>[Completa]</li>
       </ul>
@@ -164,9 +173,10 @@
 
 <div class="cs-next">
   <a href="geochallenge.html" class="btn btn-secondary">← GeoChallenge</a>
-  <a href="liminal.html" class="btn btn-primary">Siguiente proyecto: Liminal →</a>
+  <a href="liminal.html" class="btn btn-primary"><span data-i18n="common.nextProject">Siguiente proyecto</span>: Liminal →</a>
 </div>
 
+<script src="../js/i18n.js"></script>
 <script src="../js/main.js"></script>
 
 </body>

@@ -21,43 +21,52 @@
 
 <nav class="nav">
   <a href="../index.html" class="logo">Cristina<span>.</span></a>
-  <div class="nav-pill">
-    <a href="../index.html#work">Trabajo</a>
-    <a href="../index.html#sobremi">Sobre mí</a>
-    <a href="../index.html#contacto">Contacto</a>
+  <div class="nav-pill" id="navPill">
+    <a href="../index.html#work" data-i18n="common.nav.work">Trabajo</a>
+    <a href="../index.html#sobremi" data-i18n="common.nav.about">Sobre mí</a>
+    <a href="../index.html#contacto" data-i18n="common.nav.contact">Contacto</a>
   </div>
-  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-    <span class="theme-dot"></span>
-    <span id="themeLabel">Oscuro</span>
-  </button>
+  <div class="nav-actions">
+    <div class="lang-switch" role="group" aria-label="Idioma / Language">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+      <span class="theme-dot"></span>
+      <span class="theme-label" id="themeLabel">Oscuro</span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<a class="breadcrumb container" href="../index.html">← Volver al portfolio</a>
+<a class="breadcrumb container" href="../index.html" data-i18n="common.backToPortfolio">← Volver al portfolio</a>
 
 <header class="cs-hero">
-  <div class="eyebrow">Proyecto indie · 2026</div>
+  <div class="eyebrow" data-i18n="home.cards.geo.eyebrow">Proyecto indie · 2026</div>
   <h1>GeoChallenge</h1>
-  <p class="lead">Daily challenge app de geografía, ideada, diseñada y desarrollada en 48 horas usando Vibe Coding, con decisiones de producto propias basadas en datos reales de uso.</p>
+  <p class="lead" data-i18n="geochallenge.lead">Daily challenge app de geografía, ideada, diseñada y desarrollada en 48 horas usando Vibe Coding, con decisiones de producto propias basadas en datos reales de uso.</p>
   <div class="hero-ctas">
-    <a href="https://geochallengedaily.lovable.app" target="_blank" rel="noopener" class="btn btn-primary">Ver producto en vivo</a>
+    <a href="https://geochallengedaily.lovable.app" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="geochallenge.ctaLive">Ver producto en vivo</a>
   </div>
 
   <div class="cs-meta-grid">
     <div>
-      <div class="cs-meta-label">Rol</div>
-      <div class="cs-meta-value">Product Owner &amp; Diseñadora</div>
+      <div class="cs-meta-label" data-i18n="common.meta.role">Rol</div>
+      <div class="cs-meta-value" data-i18n="geochallenge.meta.role">Product Owner &amp; Diseñadora</div>
     </div>
     <div>
-      <div class="cs-meta-label">Duración</div>
-      <div class="cs-meta-value">48 horas (v1) + iteración continua</div>
+      <div class="cs-meta-label" data-i18n="common.meta.duration">Duración</div>
+      <div class="cs-meta-value" data-i18n="geochallenge.meta.duration">48 horas (v1) + iteración continua</div>
     </div>
     <div>
-      <div class="cs-meta-label">Herramientas</div>
-      <div class="cs-meta-value">Lovable · Google Analytics</div>
+      <div class="cs-meta-label" data-i18n="common.meta.tools">Herramientas</div>
+      <div class="cs-meta-value" data-i18n="geochallenge.meta.tools">Lovable · Google Analytics</div>
     </div>
     <div>
-      <div class="cs-meta-label">Estado</div>
-      <div class="cs-meta-value">Live</div>
+      <div class="cs-meta-label" data-i18n="common.meta.status">Estado</div>
+      <div class="cs-meta-value" data-i18n="common.statusLive">Live</div>
     </div>
   </div>
 </header>
@@ -71,30 +80,30 @@
 </div>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Resumen rápido</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.summary">Resumen rápido</h2>
   <ul class="cs-summary-list">
-    <li><b>Problema</b> Quería validar si podía llevar un producto de idea a usuarios reales en un fin de semana, sin depender de un equipo de desarrollo.</li>
-    <li><b>Solución</b> Una app de reto diario de geografía: adivina un lugar a partir de pistas, compite contigo mismo cada día.</li>
-    <li><b>Mi rol</b> Producto, UX/UI y desarrollo end-to-end, usando IA generativa (Lovable) como motor de ejecución.</li>
-    <li><b>Resultado</b> Lanzada y en producción; iterando el roadmap con datos reales de comportamiento de usuarios.</li>
+    <li><b data-i18n="common.summaryLabels.problem">Problema</b> <span data-i18n="geochallenge.summary.problem">Quería validar si podía llevar un producto de idea a usuarios reales en un fin de semana, sin depender de un equipo de desarrollo.</span></li>
+    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span data-i18n="geochallenge.summary.solution">Una app de reto diario de geografía: adivina un lugar a partir de pistas, compite contigo mismo cada día.</span></li>
+    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span data-i18n="geochallenge.summary.role">Producto, UX/UI y desarrollo end-to-end, usando IA generativa (Lovable) como motor de ejecución.</span></li>
+    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span data-i18n="geochallenge.summary.result">Lanzada y en producción; iterando el roadmap con datos reales de comportamiento de usuarios.</span></li>
   </ul>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">El contexto y el problema</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.context">El contexto y el problema</h2>
   <div class="cs-todo">
     <b>COMPLETAR:</b> ¿por qué geografía y no otra categoría de daily challenge (como Wordle)? ¿Qué hueco viste en el mercado? ¿Para quién es este producto (perfil de usuario)? 2-3 frases bastan.
   </div>
-  <p>GeoChallenge nace como un experimento personal de Vibe Coding: usar IA generativa no como atajo, sino como motor de ejecución para llevar una idea de producto de cero a producción en el menor tiempo posible, tomando yo todas las decisiones de diseño, producto y contenido.</p>
+  <p data-i18n="geochallenge.context">GeoChallenge nace como un experimento personal de Vibe Coding: usar IA generativa no como atajo, sino como motor de ejecución para llevar una idea de producto de cero a producción en el menor tiempo posible, tomando yo todas las decisiones de diseño, producto y contenido.</p>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">El proceso</h2>
-  <h3 style="font-size:15.5px; margin-bottom:6px;">1. Ideación y alcance</h3>
+  <h2 class="cs-section-title" data-i18n="common.sections.process">El proceso</h2>
+  <h3 style="font-size:15.5px; margin-bottom:6px;" data-i18n="geochallenge.process.step1">1. Ideación y alcance</h3>
   <div class="cs-todo">
     <b>COMPLETAR:</b> ¿cómo decidiste el alcance de la v1? ¿Qué dejaste fuera a propósito para poder lanzar en 48h?
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;">2. Diseño UX/UI</h3>
+  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="geochallenge.process.step2">2. Diseño UX/UI</h3>
   <div class="cs-todo">
     <b>COMPLETAR:</b> ¿cómo fue el proceso de diseño de la interfaz? ¿Bocetaste antes en Figma o fuiste directa a Lovable? ¿Qué patrones de "daily game" tomaste como referencia?
   </div>
@@ -102,8 +111,8 @@
     <span class="cs-placeholder-icon">📷</span>
     Wireframes o pantallas del proceso de diseño
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;">3. Desarrollo con IA generativa</h3>
-  <p>Todo el frontend y la lógica del reto diario se construyeron con Lovable, iterando en tiempo real sobre el producto en vez de sobre mockups estáticos.</p>
+  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="geochallenge.process.step3">3. Desarrollo con IA generativa</h3>
+  <p data-i18n="geochallenge.process.step3desc">Todo el frontend y la lógica del reto diario se construyeron con Lovable, iterando en tiempo real sobre el producto en vez de sobre mockups estáticos.</p>
 </section>
 
 <section class="cs-section">
@@ -115,15 +124,15 @@
     <div class="cs-decision-card">
       <h3>Ejemplo: sistema de pistas progresivas</h3>
       <div class="cs-decision-row">
-        <span class="cs-decision-label">Decisión</span>
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
         <p>[Completa con la decisión real]</p>
       </div>
       <div class="cs-decision-row">
-        <span class="cs-decision-label">Por qué</span>
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
         <p>[Completa con el razonamiento: qué problema de usuario resolvía]</p>
       </div>
       <div class="cs-decision-row">
-        <span class="cs-decision-label">Alternativa descartada</span>
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
         <p>[Completa, si aplica]</p>
       </div>
     </div>
@@ -131,7 +140,7 @@
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Resultado final</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.result">Resultado final</h2>
   <div class="cs-gallery">
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
@@ -145,19 +154,19 @@
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Métricas y aprendizajes</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.metricsLearnings">Métricas y aprendizajes</h2>
   <div class="cs-todo">
     <b>COMPLETAR:</b> aquí es donde entra Google Analytics. Aunque no tengas cifras grandes, cifras pequeñas y honestas ("X usuarios en la primera semana", "el Y% vuelve al día siguiente") demuestran que sabes medir e iterar, que es justo lo que "end-to-end" significa para un reclutador.
   </div>
   <div class="cs-learnings">
     <div class="cs-learnings-col">
-      <h3>Qué funcionó</h3>
+      <h3 data-i18n="common.learnings.worked">Qué funcionó</h3>
       <ul>
         <li>[Completa]</li>
       </ul>
     </div>
     <div class="cs-learnings-col">
-      <h3>Qué cambiaría</h3>
+      <h3 data-i18n="common.learnings.change">Qué cambiaría</h3>
       <ul>
         <li>[Completa]</li>
       </ul>
@@ -166,10 +175,11 @@
 </section>
 
 <div class="cs-next">
-  <a href="../index.html" class="btn btn-secondary">← Volver al portfolio</a>
-  <a href="roomeet.html" class="btn btn-primary">Siguiente proyecto: Roomeet →</a>
+  <a href="../index.html" class="btn btn-secondary" data-i18n="common.backToPortfolio">← Volver al portfolio</a>
+  <a href="roomeet.html" class="btn btn-primary"><span data-i18n="common.nextProject">Siguiente proyecto</span>: Roomeet →</a>
 </div>
 
+<script src="../js/i18n.js"></script>
 <script src="../js/main.js"></script>
 
 </body>

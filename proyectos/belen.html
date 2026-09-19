@@ -22,40 +22,49 @@
 
 <nav class="nav">
   <a href="../index.html" class="logo">Cristina<span>.</span></a>
-  <div class="nav-pill">
-    <a href="../index.html#work">Trabajo</a>
-    <a href="../index.html#sobremi">Sobre mí</a>
-    <a href="../index.html#contacto">Contacto</a>
+  <div class="nav-pill" id="navPill">
+    <a href="../index.html#work" data-i18n="common.nav.work">Trabajo</a>
+    <a href="../index.html#sobremi" data-i18n="common.nav.about">Sobre mí</a>
+    <a href="../index.html#contacto" data-i18n="common.nav.contact">Contacto</a>
   </div>
-  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-    <span class="theme-dot"></span>
-    <span id="themeLabel">Oscuro</span>
-  </button>
+  <div class="nav-actions">
+    <div class="lang-switch" role="group" aria-label="Idioma / Language">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+      <span class="theme-dot"></span>
+      <span class="theme-label" id="themeLabel">Oscuro</span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<a class="breadcrumb container" href="../index.html">← Volver al portfolio</a>
+<a class="breadcrumb container" href="../index.html" data-i18n="common.backToPortfolio">← Volver al portfolio</a>
 
 <header class="cs-hero">
-  <div class="eyebrow">Proyecto para cliente real</div>
+  <div class="eyebrow" data-i18n="home.cards.belen.eyebrow">Proyecto para cliente real</div>
   <h1>Tienda Shopify — Belén</h1>
-  <p class="lead">Tienda online en Shopify para una marca de ropa independiente: diseño de producto, catálogo y checkout. Actualmente en construcción.</p>
+  <p class="lead" data-i18n="belen.lead">Tienda online en Shopify para una marca de ropa independiente: diseño de producto, catálogo y checkout. Actualmente en construcción.</p>
 
   <div class="cs-meta-grid">
     <div>
-      <div class="cs-meta-label">Rol</div>
-      <div class="cs-meta-value">Diseñadora de producto &amp; UI</div>
+      <div class="cs-meta-label" data-i18n="common.meta.role">Rol</div>
+      <div class="cs-meta-value" data-i18n="belen.meta.role">Diseñadora de producto &amp; UI</div>
     </div>
     <div>
-      <div class="cs-meta-label">Cliente</div>
-      <div class="cs-meta-value">Marca de ropa independiente</div>
+      <div class="cs-meta-label" data-i18n="common.meta.client">Cliente</div>
+      <div class="cs-meta-value" data-i18n="belen.meta.client">Marca de ropa independiente</div>
     </div>
     <div>
-      <div class="cs-meta-label">Herramientas</div>
-      <div class="cs-meta-value">Shopify</div>
+      <div class="cs-meta-label" data-i18n="common.meta.tools">Herramientas</div>
+      <div class="cs-meta-value" data-i18n="belen.meta.tools">Shopify</div>
     </div>
     <div>
-      <div class="cs-meta-label">Estado</div>
-      <div class="cs-meta-value">En construcción</div>
+      <div class="cs-meta-label" data-i18n="common.meta.status">Estado</div>
+      <div class="cs-meta-value" data-i18n="common.statusBuilding">En construcción</div>
     </div>
   </div>
 </header>
@@ -71,24 +80,24 @@
   <div class="cs-todo">
     <b>COMPLETAR cuando el proyecto avance:</b> quién es el cliente (puedes mantenerlo anónimo si hay acuerdo de confidencialidad), qué necesitaba, y por qué eligió Shopify. Puedes publicar esta página ya con lo que sabes hasta ahora e ir ampliándola conforme avanza la tienda — mostrar un proyecto "en progreso" con contexto real también es válido en un portfolio.
   </div>
-  <h2 class="cs-section-title">El contexto y el problema</h2>
-  <p>Diseño de una tienda online para una marca de ropa independiente que necesitaba presencia digital propia para vender directamente a sus clientes.</p>
+  <h2 class="cs-section-title" data-i18n="common.sections.context">El contexto y el problema</h2>
+  <p data-i18n="belen.context">Diseño de una tienda online para una marca de ropa independiente que necesitaba presencia digital propia para vender directamente a sus clientes.</p>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">El proceso</h2>
-  <h3 style="font-size:15.5px; margin-bottom:6px;">1. Diseño de catálogo y navegación</h3>
+  <h2 class="cs-section-title" data-i18n="common.sections.process">El proceso</h2>
+  <h3 style="font-size:15.5px; margin-bottom:6px;" data-i18n="belen.process.step1">1. Diseño de catálogo y navegación</h3>
   <div class="cs-todo">
     <b>COMPLETAR:</b> cómo organizaste las categorías de producto, qué decisiones de UI tomaste para el catálogo.
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;">2. Checkout</h3>
+  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="belen.process.step2">2. Checkout</h3>
   <div class="cs-todo">
     <b>COMPLETAR:</b> qué ajustaste del checkout de Shopify (pasos, métodos de pago, gastos de envío) y por qué.
   </div>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Resultado (en progreso)</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.resultProgress">Resultado (en progreso)</h2>
   <div class="cs-gallery">
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
@@ -103,9 +112,10 @@
 
 <div class="cs-next">
   <a href="liminal.html" class="btn btn-secondary">← Liminal</a>
-  <a href="geochallenge.html" class="btn btn-primary">Siguiente proyecto: GeoChallenge →</a>
+  <a href="geochallenge.html" class="btn btn-primary"><span data-i18n="common.nextProject">Siguiente proyecto</span>: GeoChallenge →</a>
 </div>
 
+<script src="../js/i18n.js"></script>
 <script src="../js/main.js"></script>
 
 </body>

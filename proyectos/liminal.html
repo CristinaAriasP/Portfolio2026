@@ -20,40 +20,49 @@
 
 <nav class="nav">
   <a href="../index.html" class="logo">Cristina<span>.</span></a>
-  <div class="nav-pill">
-    <a href="../index.html#work">Trabajo</a>
-    <a href="../index.html#sobremi">Sobre mí</a>
-    <a href="../index.html#contacto">Contacto</a>
+  <div class="nav-pill" id="navPill">
+    <a href="../index.html#work" data-i18n="common.nav.work">Trabajo</a>
+    <a href="../index.html#sobremi" data-i18n="common.nav.about">Sobre mí</a>
+    <a href="../index.html#contacto" data-i18n="common.nav.contact">Contacto</a>
   </div>
-  <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
-    <span class="theme-dot"></span>
-    <span id="themeLabel">Oscuro</span>
-  </button>
+  <div class="nav-actions">
+    <div class="lang-switch" role="group" aria-label="Idioma / Language">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+      <span class="theme-dot"></span>
+      <span class="theme-label" id="themeLabel">Oscuro</span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<a class="breadcrumb container" href="../index.html">← Volver al portfolio</a>
+<a class="breadcrumb container" href="../index.html" data-i18n="common.backToPortfolio">← Volver al portfolio</a>
 
 <header class="cs-hero">
-  <div class="eyebrow">Proyecto fin de grado · Bellas Artes</div>
+  <div class="eyebrow" data-i18n="home.cards.liminal.eyebrow">Proyecto fin de grado · Bellas Artes</div>
   <h1>Liminal</h1>
-  <p class="lead">Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y un prototipo básico de web.</p>
+  <p class="lead" data-i18n="liminal.lead">Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y un prototipo básico de web.</p>
 
   <div class="cs-meta-grid">
     <div>
-      <div class="cs-meta-label">Rol</div>
-      <div class="cs-meta-value">Dirección de arte &amp; Branding</div>
+      <div class="cs-meta-label" data-i18n="common.meta.role">Rol</div>
+      <div class="cs-meta-value" data-i18n="liminal.meta.role">Dirección de arte &amp; Branding</div>
     </div>
     <div>
-      <div class="cs-meta-label">Duración</div>
-      <div class="cs-meta-value">Curso final de grado</div>
+      <div class="cs-meta-label" data-i18n="common.meta.duration">Duración</div>
+      <div class="cs-meta-value" data-i18n="liminal.meta.duration">Curso final de grado</div>
     </div>
     <div>
-      <div class="cs-meta-label">Herramientas</div>
-      <div class="cs-meta-value">Illustrator · Photoshop · InDesign</div>
+      <div class="cs-meta-label" data-i18n="common.meta.tools">Herramientas</div>
+      <div class="cs-meta-value" data-i18n="liminal.meta.tools">Illustrator · Photoshop · InDesign</div>
     </div>
     <div>
-      <div class="cs-meta-label">Estado</div>
-      <div class="cs-meta-value">Proyecto académico</div>
+      <div class="cs-meta-label" data-i18n="common.meta.status">Estado</div>
+      <div class="cs-meta-value" data-i18n="liminal.meta.status">Proyecto académico</div>
     </div>
   </div>
 </header>
@@ -66,34 +75,34 @@
 </div>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Resumen rápido</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.summary">Resumen rápido</h2>
   <ul class="cs-summary-list">
-    <li><b>Problema</b> [Completa: qué hueco de mercado o mensaje querías cubrir con una marca de moda sostenible]</li>
-    <li><b>Solución</b> Liminal, una marca de ropa sostenible con identidad visual propia y una colección de prendas.</li>
-    <li><b>Mi rol</b> Naming, identidad visual, dirección de arte y prototipo de web, de principio a fin.</li>
-    <li><b>Resultado</b> Sistema de marca completo: logo, colección y prototipo básico de web.</li>
+    <li><b data-i18n="common.summaryLabels.problem">Problema</b> [Completa: qué hueco de mercado o mensaje querías cubrir con una marca de moda sostenible]</li>
+    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span data-i18n="liminal.summary.solution">Liminal, una marca de ropa sostenible con identidad visual propia y una colección de prendas.</span></li>
+    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span data-i18n="liminal.summary.role">Naming, identidad visual, dirección de arte y prototipo de web, de principio a fin.</span></li>
+    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span data-i18n="liminal.summary.result">Sistema de marca completo: logo, colección y prototipo básico de web.</span></li>
   </ul>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">El contexto y el problema</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.context">El contexto y el problema</h2>
   <div class="cs-todo">
     <b>COMPLETAR:</b> ¿por qué "sostenible" como concepto? ¿A qué público te dirigías? ¿Qué referencias de marca (moodboard) usaste para definir el territorio visual?
   </div>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">El proceso</h2>
-  <h3 style="font-size:15.5px; margin-bottom:6px;">1. Naming y concepto</h3>
+  <h2 class="cs-section-title" data-i18n="common.sections.process">El proceso</h2>
+  <h3 style="font-size:15.5px; margin-bottom:6px;" data-i18n="liminal.process.step1">1. Naming y concepto</h3>
   <div class="cs-todo">
     <b>COMPLETAR:</b> por qué "Liminal" — qué significa el concepto para la marca, qué otros nombres barajaste.
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;">2. Identidad visual</h3>
+  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="liminal.process.step2">2. Identidad visual</h3>
   <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
     Moodboard / paleta de color / tipografía
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;">3. Colección y aplicaciones</h3>
+  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="liminal.process.step3">3. Colección y aplicaciones</h3>
   <div class="cs-placeholder" style="margin-top:14px;">
     <span class="cs-placeholder-icon">📷</span>
     Prendas de la colección / mockups de packaging
@@ -106,11 +115,11 @@
     <div class="cs-decision-card">
       <h3>Ejemplo: elección de la paleta y tipografía</h3>
       <div class="cs-decision-row">
-        <span class="cs-decision-label">Decisión</span>
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
         <p>[Completa con la decisión real]</p>
       </div>
       <div class="cs-decision-row">
-        <span class="cs-decision-label">Por qué</span>
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
         <p>[Completa: qué valores de marca comunica]</p>
       </div>
     </div>
@@ -118,7 +127,7 @@
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Resultado final</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.result">Resultado final</h2>
   <div class="cs-gallery">
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
@@ -132,16 +141,16 @@
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Aprendizajes</h2>
+  <h2 class="cs-section-title" data-i18n="common.sections.learnings">Aprendizajes</h2>
   <div class="cs-learnings">
     <div class="cs-learnings-col">
-      <h3>Qué funcionó</h3>
+      <h3 data-i18n="common.learnings.worked">Qué funcionó</h3>
       <ul>
         <li>[Completa]</li>
       </ul>
     </div>
     <div class="cs-learnings-col">
-      <h3>Qué cambiaría</h3>
+      <h3 data-i18n="common.learnings.change">Qué cambiaría</h3>
       <ul>
         <li>[Completa]</li>
       </ul>
@@ -151,9 +160,10 @@
 
 <div class="cs-next">
   <a href="roomeet.html" class="btn btn-secondary">← Roomeet</a>
-  <a href="belen.html" class="btn btn-primary">Siguiente proyecto: Tienda Belén →</a>
+  <a href="belen.html" class="btn btn-primary"><span data-i18n="common.nextProject">Siguiente proyecto</span>: Tienda Belén →</a>
 </div>
 
+<script src="../js/i18n.js"></script>
 <script src="../js/main.js"></script>
 
 </body>
