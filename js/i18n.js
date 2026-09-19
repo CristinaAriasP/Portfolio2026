@@ -85,7 +85,7 @@ window.I18N = {
         }
       },
       contact: {
-        title: "¿Hablamos de tu próximo producto?",
+        title: "¿Buscas a tu próxima Product Designer?",
         footer: "Cristina Arias Parrilla — Valencia, España"
       }
     },
@@ -236,7 +236,7 @@ window.I18N = {
         }
       },
       contact: {
-        title: "Let's talk about your next product?",
+        title: "Looking for your next Product Designer?",
         footer: "Cristina Arias Parrilla — Valencia, Spain"
       }
     },
