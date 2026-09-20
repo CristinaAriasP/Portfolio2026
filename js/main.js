@@ -153,4 +153,38 @@
       });
     });
   }
+
+  var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var avatarWrap = document.getElementById('avatarWrap');
+  var avatarImg = avatarWrap ? avatarWrap.querySelector('.avatar') : null;
+  if (avatarWrap && avatarImg && !prefersReducedMotion) {
+    var maxTilt = 16;
+    avatarWrap.addEventListener('mousemove', function (e) {
+      var rect = avatarWrap.getBoundingClientRect();
+      var px = (e.clientX - rect.left) / rect.width - 0.5;
+      var py = (e.clientY - rect.top) / rect.height - 0.5;
+      var rotateY = px * maxTilt * 2;
+      var rotateX = -py * maxTilt * 2;
+      avatarImg.style.transitionDuration = '60ms';
+      avatarImg.style.transform = 'perspective(700px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale(1.06)';
+    });
+    avatarWrap.addEventListener('mouseleave', function () {
+      avatarImg.style.transitionDuration = '500ms';
+      avatarImg.style.transform = 'perspective(700px) rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  }
+
+  var heroTitle = document.getElementById('heroTitle');
+  if (heroTitle && !prefersReducedMotion) {
+    heroTitle.addEventListener('mousemove', function (e) {
+      var rect = heroTitle.getBoundingClientRect();
+      heroTitle.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+      heroTitle.style.setProperty('--my', (e.clientY - rect.top) + 'px');
+    });
+    heroTitle.addEventListener('mouseleave', function () {
+      heroTitle.style.setProperty('--mx', '-9999px');
+      heroTitle.style.setProperty('--my', '-9999px');
+    });
+  }
 })();
