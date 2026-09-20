@@ -109,13 +109,20 @@
       lightboxImg.src = img.currentSrc || img.src;
       lightboxImg.alt = img.alt || '';
       lightboxCaption.textContent = caption ? caption.textContent : '';
+      overlay.classList.remove('zoomed');
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden';
     }
     function closeLightbox() {
       overlay.classList.remove('open');
+      overlay.classList.remove('zoomed');
       document.body.style.overflow = '';
     }
+
+    lightboxImg.addEventListener('click', function (e) {
+      e.stopPropagation();
+      overlay.classList.toggle('zoomed');
+    });
 
     shots.forEach(function (img) {
       img.addEventListener('click', function () { openLightbox(img); });
