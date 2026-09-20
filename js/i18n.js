@@ -89,24 +89,6 @@ window.I18N = {
         footer: "Cristina Arias Parrilla — Valencia, España"
       }
     },
-    geochallenge: {
-      lead: "Daily challenge app de geografía, ideada, diseñada y desarrollada en 48 horas usando Vibe Coding, con decisiones de producto propias basadas en datos reales de uso.",
-      ctaLive: "Ver producto en vivo",
-      meta: { role: "Product Owner & Diseñadora", duration: "48 horas (v1) + iteración continua", tools: "Lovable · Google Analytics" },
-      summary: {
-        problem: "Quería validar si podía llevar un producto de idea a usuarios reales en un fin de semana, sin depender de un equipo de desarrollo.",
-        solution: "Una app de reto diario de geografía: adivina un lugar a partir de pistas, compite contigo mismo cada día.",
-        role: "Producto, UX/UI y desarrollo end-to-end, usando IA generativa (Lovable) como motor de ejecución.",
-        result: "Lanzada y en producción; iterando el roadmap con datos reales de comportamiento de usuarios."
-      },
-      context: "GeoChallenge nace como un experimento personal de Vibe Coding: usar IA generativa no como atajo, sino como motor de ejecución para llevar una idea de producto de cero a producción en el menor tiempo posible, tomando yo todas las decisiones de diseño, producto y contenido.",
-      process: {
-        step1: "1. Ideación y alcance",
-        step2: "2. Diseño UX/UI",
-        step3: "3. Desarrollo con IA generativa",
-        step3desc: "Todo el frontend y la lógica del reto diario se construyeron con Lovable, iterando en tiempo real sobre el producto en vez de sobre mockups estáticos."
-      }
-    },
     roomeet: {
       lead: "Plataforma SaaS de dos lados para encontrar compañero de piso, con onboarding separado para inquilinos y anfitriones, modelo freemium y Design System completo en Figma.",
       ctaLive: "Ver en Behance",
@@ -238,24 +220,6 @@ window.I18N = {
       contact: {
         title: "Looking for your next Product Designer?",
         footer: "Cristina Arias Parrilla — Valencia, Spain"
-      }
-    },
-    geochallenge: {
-      lead: "Daily geography challenge app, conceived, designed and built in 48 hours using Vibe Coding, with my own product decisions based on real usage data.",
-      ctaLive: "See live product",
-      meta: { role: "Product Owner & Designer", duration: "48 hours (v1) + ongoing iteration", tools: "Lovable · Google Analytics" },
-      summary: {
-        problem: "I wanted to test whether I could take a product from idea to real users in a single weekend, without relying on a dev team.",
-        solution: "A daily geography challenge app: guess a place from clues, competing against yourself every day.",
-        role: "Product, UX/UI and end-to-end development, using generative AI (Lovable) as the execution engine.",
-        result: "Launched and live; iterating the roadmap using real user behavior data."
-      },
-      context: "GeoChallenge started as a personal Vibe Coding experiment: using generative AI not as a shortcut, but as an execution engine to take a product idea from zero to production as fast as possible, while I made every design, product and content decision myself.",
-      process: {
-        step1: "1. Ideation and scope",
-        step2: "2. UX/UI design",
-        step3: "3. Development with generative AI",
-        step3desc: "The entire frontend and daily-challenge logic were built with Lovable, iterating in real time on the live product instead of static mockups."
       }
     },
     roomeet: {

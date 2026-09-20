@@ -1,9 +1,8 @@
 <!--
-  CÓMO RELLENAR ESTE CASO DE ESTUDIO
-  1. Sustituye cada bloque con clase "cs-placeholder" por una imagen real:
-     <img src="../assets/projects/geochallenge/nombre.jpg" alt="Descripción de la captura">
-  2. Sustituye cada bloque con clase "cs-todo" por texto real y borra el bloque cs-todo.
-  3. Los bloques cs-todo son solo una guía para ti, no se ven bien para un reclutador: no los dejes en la versión final.
+  CÓMO AÑADIR LAS FOTOS
+  Sustituye cada bloque con clase "cs-placeholder" por una imagen real:
+  <img src="../assets/projects/geochallenge/nombre.jpg" alt="Descripción de la captura">
+  Los textos de este caso de estudio son reales (vienen de tu brief), no hace falta tocarlos salvo que quieras afinar algo.
 -->
 <!doctype html>
 <html lang="es" data-theme="light">
@@ -11,7 +10,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GeoChallenge — Caso de estudio · Cristina Arias</title>
-<meta name="description" content="Caso de estudio de GeoChallenge, daily challenge app de geografía lanzada en 48h por Cristina Arias.">
+<meta name="description" content="Caso de estudio de GeoChallenge, juego diario de geografía creado por Cristina Arias con metodología Double Diamond y IA generativa.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
@@ -44,25 +43,30 @@
 <a class="breadcrumb container" href="../index.html" data-i18n="common.backToPortfolio">← Volver al portfolio</a>
 
 <header class="cs-hero">
-  <div class="eyebrow" data-i18n="home.cards.geo.eyebrow">Proyecto indie · 2026</div>
+  <div class="eyebrow">Proyecto indie · Julio 2026</div>
   <h1>GeoChallenge</h1>
-  <p class="lead" data-i18n="geochallenge.lead">Daily challenge app de geografía, ideada, diseñada y desarrollada en 48 horas usando Vibe Coding, con decisiones de producto propias basadas en datos reales de uso.</p>
+  <p class="lead">Un juego diario de geografía tipo Wordle: adivina un país a partir de 4 pistas progresivas basadas en datos curiosos, no en mapas. Bilingüe (ES/EN), con una aurora de color que cambia según la hora del día.</p>
   <div class="hero-ctas">
-    <a href="https://geochallengedaily.lovable.app" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="geochallenge.ctaLive">Ver producto en vivo</a>
+    <a href="https://geochallengedaily.lovable.app" target="_blank" rel="noopener" class="btn btn-primary">Jugar ahora</a>
+    <a href="https://github.com/CristinaAriasP/geochallenge" target="_blank" rel="noopener" class="btn btn-secondary">Ver código en GitHub</a>
+  </div>
+  <div style="margin-top:16px; display:flex; gap:18px; flex-wrap:wrap; justify-content:center;">
+    <a class="link" href="https://geochallengedaily.lovable.app/analytics" target="_blank" rel="noopener">Ver dashboard de analíticas →</a>
+    <a class="link" href="https://www.producthunt.com/products/geochallenge" target="_blank" rel="noopener">Ver en Product Hunt →</a>
   </div>
 
   <div class="cs-meta-grid">
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.role">Rol</div>
-      <div class="cs-meta-value" data-i18n="geochallenge.meta.role">Product Owner &amp; Diseñadora</div>
+      <div class="cs-meta-value">Product Design &amp; desarrollo (solo)</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.duration">Duración</div>
-      <div class="cs-meta-value" data-i18n="geochallenge.meta.duration">48 horas (v1) + iteración continua</div>
+      <div class="cs-meta-value">2-3 semanas · lanzado en julio de 2026</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.tools">Herramientas</div>
-      <div class="cs-meta-value" data-i18n="geochallenge.meta.tools">Lovable · Google Analytics</div>
+      <div class="cs-meta-value">React 19 · Vite · TypeScript · Lovable · Vercel</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.status">Estado</div>
@@ -74,104 +78,292 @@
 <div class="cs-cover">
   <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
-    Captura principal de GeoChallenge
-    <small>Añade aquí una screenshot grande del reto diario o del onboarding.</small>
+    Imagen de portada
+    <small>La imagen que aparece al compartir el enlace (og:image) — funciona bien aquí porque es la primera impresión visual del proyecto.</small>
   </div>
 </div>
 
 <section class="cs-section">
   <h2 class="cs-section-title" data-i18n="common.sections.summary">Resumen rápido</h2>
   <ul class="cs-summary-list">
-    <li><b data-i18n="common.summaryLabels.problem">Problema</b> <span data-i18n="geochallenge.summary.problem">Quería validar si podía llevar un producto de idea a usuarios reales en un fin de semana, sin depender de un equipo de desarrollo.</span></li>
-    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span data-i18n="geochallenge.summary.solution">Una app de reto diario de geografía: adivina un lugar a partir de pistas, compite contigo mismo cada día.</span></li>
-    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span data-i18n="geochallenge.summary.role">Producto, UX/UI y desarrollo end-to-end, usando IA generativa (Lovable) como motor de ejecución.</span></li>
-    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span data-i18n="geochallenge.summary.result">Lanzada y en producción; iterando el roadmap con datos reales de comportamiento de usuarios.</span></li>
+    <li><b data-i18n="common.summaryLabels.problem">Problema</b> <span>Analicé más de 50 juegos de geografía: el 95% se basa en reconocer mapas o siluetas. Es un formato saturado y poco educativo — no encontré ninguno construido sobre datos curiosos.</span></li>
+    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span>Un "Wordle de geografía": el mismo país para todo el mundo cada día, con 4 pistas progresivas (de Experto a Fácil) que enseñan un dato curioso en cada nivel en vez de exigir reconocer una forma.</span></li>
+    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span>Producto de principio a fin con metodología Double Diamond: research de mercado, definición, prototipado con IA generativa (Lovable) y desarrollo del frontend en React, más lanzamiento y medición.</span></li>
+    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span>Lanzado en Product Hunt: 1.000 usuarios activos y 11.000 eventos en las primeras 4 semanas, con 0% de rebote y un 24,2% de conversión de visitante a jugador.</span></li>
   </ul>
 </section>
 
 <section class="cs-section">
   <h2 class="cs-section-title" data-i18n="common.sections.context">El contexto y el problema</h2>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> ¿por qué geografía y no otra categoría de daily challenge (como Wordle)? ¿Qué hueco viste en el mercado? ¿Para quién es este producto (perfil de usuario)? 2-3 frases bastan.
-  </div>
-  <p data-i18n="geochallenge.context">GeoChallenge nace como un experimento personal de Vibe Coding: usar IA generativa no como atajo, sino como motor de ejecución para llevar una idea de producto de cero a producción en el menor tiempo posible, tomando yo todas las decisiones de diseño, producto y contenido.</p>
-</section>
-
-<section class="cs-section">
-  <h2 class="cs-section-title" data-i18n="common.sections.process">El proceso</h2>
-  <h3 style="font-size:15.5px; margin-bottom:6px;" data-i18n="geochallenge.process.step1">1. Ideación y alcance</h3>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> ¿cómo decidiste el alcance de la v1? ¿Qué dejaste fuera a propósito para poder lanzar en 48h?
-  </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="geochallenge.process.step2">2. Diseño UX/UI</h3>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> ¿cómo fue el proceso de diseño de la interfaz? ¿Bocetaste antes en Figma o fuiste directa a Lovable? ¿Qué patrones de "daily game" tomaste como referencia?
-  </div>
-  <div class="cs-placeholder" style="margin-top:14px;">
+  <p>Antes de diseñar nada, investigué más de 50 juegos de geografía existentes (GeoGuessr, Sporcle y varios clones de Wordle). El patrón era claro: el 95% se basa en mapas y reconocimiento de formas — un formato mecánico, poco educativo y ya saturado. Ahí vi el hueco: no había ningún juego diario construido sobre datos curiosos de geografía en vez de sobre geografía visual.</p>
+  <p>La propuesta: el mismo país para todo el mundo cada día (crea comunidad, como Wordle), con pistas progresivas de Experto a Fácil que premian saber cosas poco conocidas y enseñan algo nuevo aunque falles. Target: viajeros, amantes de la geografía y fans de este tipo de retos diarios.</p>
+  <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
-    Wireframes o pantallas del proceso de diseño
+    Comparativa GeoGuessr (mapa) vs. GeoChallenge (pistas)
+    <small>Una imagen lado a lado ayuda a visualizar el gap de mercado que identificaste.</small>
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="geochallenge.process.step3">3. Desarrollo con IA generativa</h3>
-  <p data-i18n="geochallenge.process.step3desc">Todo el frontend y la lógica del reto diario se construyeron con Lovable, iterando en tiempo real sobre el producto en vez de sobre mockups estáticos.</p>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Decisiones clave de diseño</h2>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> sustituye estas 2-3 tarjetas por decisiones reales que tomaste (por ejemplo: sistema de pistas, formato de racha/streak, cómo mostrar el resultado para incentivar compartir). Esta sección es la que más valoran los reclutadores: no basta con "qué hiciste", sino "por qué" y "qué alternativa descartaste".
-  </div>
-  <div class="cs-decision-grid">
-    <div class="cs-decision-card">
-      <h3>Ejemplo: sistema de pistas progresivas</h3>
-      <div class="cs-decision-row">
-        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
-        <p>[Completa con la decisión real]</p>
-      </div>
-      <div class="cs-decision-row">
-        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
-        <p>[Completa con el razonamiento: qué problema de usuario resolvía]</p>
-      </div>
-      <div class="cs-decision-row">
-        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
-        <p>[Completa, si aplica]</p>
-      </div>
+  <h2 class="cs-section-title" data-i18n="common.sections.process">El proceso — Double Diamond</h2>
+
+  <span class="cs-phase-label">Discover</span>
+  <ul>
+    <li>Analicé la competencia directa: GeoGuessr, Sporcle y juegos de geografía estándar.</li>
+    <li>Encontré el gap: mercado saturado de mapas, ninguno con pistas educativas.</li>
+    <li>Hice entrevistas informales: varios amigos pidieron espontáneamente "un Wordle de geografía".</li>
+    <li>Insight clave: la gente quiere retos diarios <em>y</em> aprender algo nuevo, no solo acertar.</li>
+  </ul>
+
+  <span class="cs-phase-label">Define</span>
+  <ul>
+    <li>Oportunidad: una alternativa diferenciada, guiada por la curiosidad y no por la memoria visual.</li>
+    <li>Target: viajeros, amantes de la geografía, fans de Wordle y juegos diarios.</li>
+    <li>Propuesta única: pistas curiosas + aurora dinámica + bilingüe (ES/EN).</li>
+  </ul>
+
+  <span class="cs-phase-label">Develop</span>
+  <p>Exploré varias direcciones y descarté las que no aportaban diferenciación o metían scope creep:</p>
+  <ul>
+    <li>❌ Pistas básicas — descartadas, no diferenciaban del resto del mercado.</li>
+    <li>✅ Pistas progresivas (Experto → Fácil) — elegida como mecánica central.</li>
+    <li>❌ Múltiples modos de juego — descartado por scope creep en un MVP de 2-3 semanas.</li>
+    <li>✅ Aurora dinámica que cambia con la hora del día — elegida como diferenciador visual.</li>
+    <li>✅ localStorage en vez de backend — elegida para poder lanzar rápido y validar sin infraestructura.</li>
+  </ul>
+
+  <span class="cs-phase-label">Deliver</span>
+  <ul>
+    <li>MVP lanzado con 20 países.</li>
+    <li>Lanzamiento público en Product Hunt.</li>
+    <li>Validación real con usuarios y comentarios espontáneos.</li>
+    <li>Los propios usuarios compartieron el juego de forma orgánica, sin pedirlo.</li>
+  </ul>
+  <blockquote class="cs-quote">
+    "Perfecto para mi café de la mañana ☕"
+    <cite>— comentario real de una usuaria</cite>
+  </blockquote>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Funcionalidades principales</h2>
+  <div class="cs-feature-grid">
+    <div class="cs-feature">
+      <h3>1. Daily Country System</h3>
+      <p>Mismo país para todo el mundo, calculado de forma determinista a partir de la fecha UTC. Cambia cada 24h.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>2. Pistas progresivas (4 niveles)</h3>
+      <p>Experto (dato que solo un 5% sabría) → Difícil → Medio → Fácil (capital, símbolo obvio).</p>
+    </div>
+    <div class="cs-feature">
+      <h3>3. Aurora dinámica</h3>
+      <p>La paleta de color cambia según la hora del día: cálidos por la mañana, amarillos al mediodía, rosas/naranjas al atardecer, púrpuras y azules por la noche.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>4. Bilingüe (ES/EN)</h3>
+      <p>Interfaz y pistas completas en ambos idiomas, con un toggle que no hace perder el progreso de la partida.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>5. Validación inteligente</h3>
+      <p>Normalización de texto (acentos, mayúsculas), 195 países validados y autocompletado con sugerencias.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>6. Racha diaria (streak)</h3>
+      <p>Racha guardada en localStorage, con notificación del navegador a las 9am para mantener el hábito.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>7. Compartir resultado</h3>
+      <p>Comparte tu resultado sin revelar el país (estilo Wordle), mostrando cuántas pistas necesitaste. Enlaces directos a Twitter, WhatsApp y LinkedIn.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>8. Dashboard de analíticas</h3>
+      <p>Google Analytics visualizado dentro del propio producto: KPIs interactivos y gráficos de tráfico y usuarios.</p>
     </div>
   </div>
-</section>
 
-<section class="cs-section">
-  <h2 class="cs-section-title" data-i18n="common.sections.result">Resultado final</h2>
   <div class="cs-gallery">
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
-      Pantalla de reto diario
+      Partida en curso mostrando las pistas
     </div>
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
-      Pantalla de resultado / racha
+      Pantalla de victoria con los colores de la aurora
+    </div>
+  </div>
+
+  <p style="margin-top:20px;">La aurora dinámica cambia a lo largo del día — esta secuencia muestra la misma pantalla en 4 momentos distintos:</p>
+  <div class="cs-gallery" style="grid-template-columns: repeat(2, minmax(0,1fr));">
+    <div class="cs-placeholder" style="min-height:140px;">
+      <span class="cs-placeholder-icon">📷</span>
+      9am — cálidos
+    </div>
+    <div class="cs-placeholder" style="min-height:140px;">
+      <span class="cs-placeholder-icon">📷</span>
+      3pm — amarillo
+    </div>
+    <div class="cs-placeholder" style="min-height:140px;">
+      <span class="cs-placeholder-icon">📷</span>
+      6pm — naranja
+    </div>
+    <div class="cs-placeholder" style="min-height:140px;">
+      <span class="cs-placeholder-icon">📷</span>
+      11pm — púrpura
     </div>
   </div>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title" data-i18n="common.sections.metricsLearnings">Métricas y aprendizajes</h2>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> aquí es donde entra Google Analytics. Aunque no tengas cifras grandes, cifras pequeñas y honestas ("X usuarios en la primera semana", "el Y% vuelve al día siguiente") demuestran que sabes medir e iterar, que es justo lo que "end-to-end" significa para un reclutador.
+  <h2 class="cs-section-title" data-i18n="common.sections.decisions">Decisiones clave de diseño</h2>
+  <div class="cs-decision-grid">
+    <div class="cs-decision-card">
+      <h3>Pistas progresivas en vez de pistas básicas</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>Estructurar cada partida en 4 niveles de pista (Experto → Fácil), cada uno con un dato curioso distinto sobre el país.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>Maximiza el engagement (quieres seguir jugando para desbloquear la siguiente pista) y convierte cada partida en una mini lección de geografía, que es justo el hueco que detecté en la competencia.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Pistas básicas de un solo nivel: se descartaron porque no aportaban ninguna diferenciación frente al resto del mercado.</p>
+      </div>
+    </div>
+
+    <div class="cs-decision-card">
+      <h3>Aurora dinámica como identidad visual</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>La paleta de color de fondo cambia automáticamente según la hora del día de quien juega.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>Da al producto una identidad visual reconocible sin depender de ilustración o branding pesado, y hace que volver cada día se sienta distinto.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Una interfaz con tema estático: más simple de construir, pero sin ningún diferenciador visual frente a otros daily games.</p>
+      </div>
+    </div>
+
+    <div class="cs-decision-card">
+      <h3>localStorage en vez de backend para el MVP</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>Guardar racha y progreso en el navegador (localStorage) en lugar de montar una base de datos con backend propio.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>Permitía lanzar en 2-3 semanas y validar la idea con usuarios reales antes de invertir tiempo en infraestructura que quizá no hiciera falta.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Backend con base de datos: se descartó para el MVP por tiempo y porque no era necesario para validar la hipótesis del producto.</p>
+      </div>
+    </div>
   </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Stack técnico</h2>
+  <p><b>React 19</b> · <b>Vite</b> · <b>TypeScript</b> · <b>Lovable</b> · <b>Vercel</b> · <b>localStorage</b> (sin backend en el MVP).</p>
+  <p>¿Por qué Lovable?</p>
+  <ul>
+    <li>✅ Feedback visual en tiempo real sobre el producto real, no sobre mockups.</li>
+    <li>✅ Créditos diarios gratuitos, útil para iterar sin fricción.</li>
+    <li>✅ Integración automática con GitHub.</li>
+    <li>✅ Mejor UI de partida (out-of-the-box) que otras herramientas de vibe coding.</li>
+    <li>✅ Velocidad: clave para validar un MVP en 2-3 semanas.</li>
+  </ul>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Resultados e impacto</h2>
+  <p>Métricas de las primeras 4 semanas tras el lanzamiento:</p>
+  <div class="stats" style="flex-wrap:wrap; gap:24px 32px;">
+    <div>
+      <div class="stat-num">1.000</div>
+      <div class="stat-label">usuarios activos</div>
+    </div>
+    <div>
+      <div class="stat-num">11.000</div>
+      <div class="stat-label">eventos registrados</div>
+    </div>
+    <div>
+      <div class="stat-num">1:16</div>
+      <div class="stat-label">min de engagement medio</div>
+    </div>
+    <div>
+      <div class="stat-num">0%</div>
+      <div class="stat-label">tasa de rebote</div>
+    </div>
+    <div>
+      <div class="stat-num">24,2%</div>
+      <div class="stat-label">conversión visitante → jugador</div>
+    </div>
+  </div>
+
+  <p style="margin-top:28px;">Origen del tráfico:</p>
+  <ul>
+    <li><b>76%</b> desde Twitter — la distribución orgánica en redes funcionó mejor que ningún canal pagado.</li>
+    <li><b>11%</b> acceso directo.</li>
+    <li><b>2%</b> Google orgánico.</li>
+  </ul>
+
+  <div class="cs-placeholder" style="margin-top:8px;">
+    <span class="cs-placeholder-icon">📷</span>
+    Dashboard de Google Analytics
+    <small>Captura del dashboard completo y de los gráficos principales de tráfico y usuarios.</small>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Skills demostrados</h2>
+  <div class="skills">
+    <div class="skill-group">
+      <div class="skill-title">Product Design</div>
+      <div class="skill-items">Market research &amp; gap analysis · Double Diamond · Validación con usuarios · Priorización de features (mindset MVP)</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">Frontend Development</div>
+      <div class="skill-items">React Hooks (useState, useEffect, useMemo) · Diseño responsive (mobile-first) · Normalización y validación de strings · Persistencia con localStorage</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">IA &amp; herramientas</div>
+      <div class="skill-items">Lovable (vibe coding) · Prompt engineering · Prototipado rápido</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">Despliegue</div>
+      <div class="skill-items">Git + GitHub · CI/CD en Vercel · Lanzamiento en Product Hunt · Difusión orgánica · Medición con Analytics</div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title" data-i18n="common.sections.learnings">Aprendizajes</h2>
   <div class="cs-learnings">
     <div class="cs-learnings-col">
       <h3 data-i18n="common.learnings.worked">Qué funcionó</h3>
       <ul>
-        <li>[Completa]</li>
+        <li>La aurora dinámica como diferenciador visual único.</li>
+        <li>Compartir en Twitter generó el 76% del tráfico sin invertir en ads.</li>
+        <li>Validar con usuarios reales desde el primer día, no al final.</li>
       </ul>
     </div>
     <div class="cs-learnings-col">
-      <h3 data-i18n="common.learnings.change">Qué cambiaría</h3>
+      <h3>Bugs y cosas que aprendí</h3>
       <ul>
-        <li>[Completa]</li>
+        <li>Un bug de z-index en el autocompletado, causado por contextos de apilamiento en CSS.</li>
+        <li>La caché de og:image de LinkedIn tarda 24-48h en refrescarse tras un cambio.</li>
+        <li>Diferencia entre UTC y hora local al calcular el país del día.</li>
+        <li>Tuve que usar un Service Worker para las notificaciones del navegador.</li>
       </ul>
     </div>
   </div>
+  <p style="margin-top:8px;">Los propios usuarios pidieron más países — la siguiente iteración natural del roadmap.</p>
 </section>
 
 <div class="cs-next">
