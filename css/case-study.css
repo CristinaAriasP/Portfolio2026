@@ -34,7 +34,9 @@
 .cs-cover img, .cs-shot {
   display: block; width: 100%; border-radius: 20px; border: 1px solid var(--border);
 }
-.cs-shot { object-fit: cover; }
+.cs-shot { object-fit: cover; cursor: zoom-in; transition: opacity 150ms ease; }
+.cs-shot:hover { opacity: 0.88; }
+.cs-gallery-3 .cs-shot { aspect-ratio: 4 / 3; object-position: top center; height: 100%; }
 figure.cs-figure { margin: 0; }
 figure.cs-figure figcaption {
   margin-top: 10px; font-size: 13px; color: var(--text-muted); text-align: center;
@@ -98,3 +100,21 @@ figure.cs-figure figcaption {
   display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center;
   border-top: 1px solid var(--border); padding-top: 28px;
 }
+
+/* LIGHTBOX (click to enlarge cs-shot images) */
+.lightbox-overlay {
+  position: fixed; inset: 0; background: rgba(10,9,8,0.92); z-index: 100;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
+  padding: 56px 20px 40px;
+  opacity: 0; visibility: hidden; transition: opacity 180ms ease;
+}
+.lightbox-overlay.open { opacity: 1; visibility: visible; }
+.lightbox-overlay img { max-width: min(100%, 980px); max-height: 74vh; width: auto; border-radius: 14px; object-fit: contain; cursor: default; }
+.lightbox-caption { color: #F4F1EA; font-size: 14.5px; line-height: 1.5; text-align: center; max-width: 640px; margin: 0; }
+.lightbox-caption:empty { display: none; }
+.lightbox-close {
+  position: absolute; top: 16px; right: 16px; width: 42px; height: 42px; border-radius: 50%;
+  background: rgba(244,241,234,0.12); border: none; color: #F4F1EA; font-size: 22px; line-height: 1;
+  cursor: pointer; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif;
+}
+.lightbox-close:hover { background: rgba(244,241,234,0.22); }

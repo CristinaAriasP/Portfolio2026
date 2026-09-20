@@ -88,6 +88,47 @@
     });
   }
 
+  var shots = document.querySelectorAll('.cs-shot');
+  if (shots.length) {
+    var overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.innerHTML =
+      '<button class="lightbox-close" aria-label="Cerrar">&times;</button>' +
+      '<img class="lightbox-img" alt="">' +
+      '<p class="lightbox-caption"></p>';
+    document.body.appendChild(overlay);
+
+    var lightboxImg = overlay.querySelector('.lightbox-img');
+    var lightboxCaption = overlay.querySelector('.lightbox-caption');
+
+    function openLightbox(img) {
+      var figure = img.closest('figure');
+      var caption = figure ? figure.querySelector('figcaption') : null;
+      lightboxImg.src = img.currentSrc || img.src;
+      lightboxImg.alt = img.alt || '';
+      lightboxCaption.textContent = caption ? caption.textContent : '';
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    shots.forEach(function (img) {
+      img.addEventListener('click', function () { openLightbox(img); });
+    });
+    overlay.addEventListener('click', function (e) {
+      if (e.target === overlay) closeLightbox();
+    });
+    overlay.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  }
+
   var filterButtons = document.querySelectorAll('.filter-btn');
   var cards = document.querySelectorAll('.card');
 
