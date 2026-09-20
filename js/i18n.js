@@ -89,24 +89,6 @@ window.I18N = {
         footer: "Cristina Arias Parrilla — Valencia, España"
       }
     },
-    roomeet: {
-      lead: "Plataforma SaaS de dos lados para encontrar compañero de piso, con onboarding separado para inquilinos y anfitriones, modelo freemium y Design System completo en Figma.",
-      ctaLive: "Ver en Behance",
-      meta: { role: "UX Researcher & Product Designer", duration: "Curso 2024–2025 (TFM)", tools: "Figma · ReactJS", status: "Prototipo / Case study" },
-      summary: {
-        problem: "Encontrar compañero de piso es un proceso lento y poco fiable, repartido entre grupos de Facebook y anuncios sin filtrar.",
-        solution: "Un marketplace de dos lados (inquilinos y anfitriones) con perfiles verificados, filtros avanzados y un modelo freemium.",
-        role: "Research, arquitectura de información, Design System y UI, de principio a fin como TFM.",
-        result: "Prototipo de alta fidelidad completo, documentado como case study."
-      },
-      context: "Roomeet plantea un producto de dos lados: quien busca piso y quien lo ofrece necesitan flujos de onboarding y necesidades distintas, lo que obliga a diseñar dos experiencias coherentes bajo un mismo sistema.",
-      process: {
-        step1: "1. Research y definición",
-        step2: "2. Arquitectura y flujos",
-        step3: "3. Design System",
-        step3desc: "Se construyó un Design System completo en Figma (componentes, tokens, estados) para dar consistencia a los dos flujos de onboarding y escalar el resto del producto."
-      }
-    },
     liminal: {
       lead: "Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y un prototipo básico de web.",
       meta: { role: "Dirección de arte & Branding", duration: "Curso final de grado", tools: "Illustrator · Photoshop · InDesign", status: "Proyecto académico" },
@@ -220,24 +202,6 @@ window.I18N = {
       contact: {
         title: "Looking for your next Product Designer?",
         footer: "Cristina Arias Parrilla — Valencia, Spain"
-      }
-    },
-    roomeet: {
-      lead: "Two-sided SaaS platform to find a flatmate, with separate onboarding for tenants and hosts, a freemium model and a complete Design System in Figma.",
-      ctaLive: "See on Behance",
-      meta: { role: "UX Researcher & Product Designer", duration: "2024–2025 academic year (Master's thesis)", tools: "Figma · ReactJS", status: "Prototype / Case study" },
-      summary: {
-        problem: "Finding a flatmate is a slow, unreliable process, scattered across Facebook groups and unfiltered listings.",
-        solution: "A two-sided marketplace (tenants and hosts) with verified profiles, advanced filters and a freemium model.",
-        role: "Research, information architecture, Design System and UI, end-to-end as my Master's thesis.",
-        result: "A complete high-fidelity prototype, documented as a case study."
-      },
-      context: "Roomeet is a two-sided product: people looking for a room and people offering one need different onboarding flows, which means designing two coherent experiences under one system.",
-      process: {
-        step1: "1. Research and definition",
-        step2: "2. Architecture and flows",
-        step3: "3. Design System",
-        step3desc: "A complete Design System was built in Figma (components, tokens, states) to keep both onboarding flows consistent and scale the rest of the product."
       }
     },
     liminal: {

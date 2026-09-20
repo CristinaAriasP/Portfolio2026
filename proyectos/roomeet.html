@@ -1,8 +1,8 @@
 <!--
-  CÓMO RELLENAR ESTE CASO DE ESTUDIO
-  1. Sustituye cada bloque "cs-placeholder" por una imagen real de Figma/Behance:
-     <img src="../assets/projects/roomeet/nombre.jpg" alt="Descripción de la captura">
-  2. Sustituye cada bloque "cs-todo" por texto real y bórralo después.
+  CÓMO AÑADIR LAS FOTOS
+  Sustituye cada bloque con clase "cs-placeholder" por una imagen real:
+  <img class="cs-shot" src="../assets/projects/roomeet/nombre.jpg" alt="Descripción de la captura">
+  (usa class="cs-shot" para que la imagen se pueda ampliar al clicar, igual que en GeoChallenge)
 -->
 <!doctype html>
 <html lang="es" data-theme="light">
@@ -10,11 +10,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Roomeet — Caso de estudio · Cristina Arias</title>
-<meta name="description" content="Caso de estudio de Roomeet, plataforma SaaS para encontrar compañero de piso, TFM de Cristina Arias.">
+<meta name="description" content="Caso de estudio de Roomeet, plataforma de dos lados para encontrar compañero de piso, diseñada por Cristina Arias como TFM.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/case-study.css">
+<style>
+  /* Toque de identidad de Roomeet: CTA principal en su amarillo de marca */
+  .cs-hero .btn-primary { background: #FBAD37; color: #171512; }
+  .cs-hero .btn-primary:hover { opacity: 0.88; }
+</style>
 </head>
 <body>
 
@@ -43,29 +48,30 @@
 <a class="breadcrumb container" href="../index.html" data-i18n="common.backToPortfolio">← Volver al portfolio</a>
 
 <header class="cs-hero">
-  <div class="eyebrow" data-i18n="home.cards.roomeet.eyebrow">Trabajo final de máster · 2024–2025</div>
+  <div class="eyebrow">Trabajo final de máster · Nov 2024 – Jun 2025</div>
   <h1>Roomeet</h1>
-  <p class="lead" data-i18n="roomeet.lead">Plataforma SaaS de dos lados para encontrar compañero de piso, con onboarding separado para inquilinos y anfitriones, modelo freemium y Design System completo en Figma.</p>
+  <p class="lead">"Your next roomie, just a swipe away" — una plataforma de dos lados que conecta inquilinos y anfitriones por compatibilidad personal, no solo por metros cuadrados.</p>
   <div class="hero-ctas">
-    <a href="https://behance.net/gallery/231345231/Roomeet" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="roomeet.ctaLive">Ver en Behance</a>
+    <a href="https://www.behance.net/gallery/231345231/Roomeet" target="_blank" rel="noopener" class="btn btn-primary">Ver case study en Behance</a>
+    <a href="https://www.figma.com/design/LXzunRluXxB3RugOLD9Q4V/" target="_blank" rel="noopener" class="btn btn-secondary">Ver Design System en Figma</a>
   </div>
 
   <div class="cs-meta-grid">
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.role">Rol</div>
-      <div class="cs-meta-value" data-i18n="roomeet.meta.role">UX Researcher &amp; Product Designer</div>
+      <div class="cs-meta-value">Diseño de producto (100%) — equipo de 3</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.duration">Duración</div>
-      <div class="cs-meta-value" data-i18n="roomeet.meta.duration">Curso 2024–2025 (TFM)</div>
+      <div class="cs-meta-value">4 meses · TFM ESAT</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.tools">Herramientas</div>
-      <div class="cs-meta-value" data-i18n="roomeet.meta.tools">Figma · ReactJS</div>
+      <div class="cs-meta-value">Figma · Illustrator · Procreate · React</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.status">Estado</div>
-      <div class="cs-meta-value" data-i18n="roomeet.meta.status">Prototipo / Case study</div>
+      <div class="cs-meta-value">Prototipo / Case study</div>
     </div>
   </div>
 </header>
@@ -73,82 +79,323 @@
 <div class="cs-cover">
   <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
-    Captura principal de Roomeet
-    <small>Pantalla clave del producto, por ejemplo el listado de pisos o el matching.</small>
+    Mockup hero de Roomeet
+    <small>Los dos teléfonos inclinados mostrando la app — la pieza visual principal del proyecto.</small>
   </div>
 </div>
 
 <section class="cs-section">
   <h2 class="cs-section-title" data-i18n="common.sections.summary">Resumen rápido</h2>
   <ul class="cs-summary-list">
-    <li><b data-i18n="common.summaryLabels.problem">Problema</b> <span data-i18n="roomeet.summary.problem">Encontrar compañero de piso es un proceso lento y poco fiable, repartido entre grupos de Facebook y anuncios sin filtrar.</span></li>
-    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span data-i18n="roomeet.summary.solution">Un marketplace de dos lados (inquilinos y anfitriones) con perfiles verificados, filtros avanzados y un modelo freemium.</span></li>
-    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span data-i18n="roomeet.summary.role">Research, arquitectura de información, Design System y UI, de principio a fin como TFM.</span></li>
-    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span data-i18n="roomeet.summary.result">Prototipo de alta fidelidad completo, documentado como case study.</span></li>
+    <li><b data-i18n="common.summaryLabels.problem">Problema</b> <span>Encontrar compañero de piso es un proceso informal y caótico: la gente joven acaba buscando por Instagram o Twitter porque plataformas como Badi o Idealista se centran en el piso, no en si vas a encajar con quien vas a vivir.</span></li>
+    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span>Una plataforma de dos lados con mecánica de swipe (como las apps de citas, pero para encontrar con quién vivir) que conecta a inquilinos y anfitriones por compatibilidad personal, hábitos y estilo de vida, con modelo freemium.</span></li>
+    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span>Diseño end-to-end al 100%: research, personas, arquitectura, flujos, wireframes, diseño final y el Design System completo, en un equipo de 3 personas.</span></li>
+    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span>Case study completo publicado en Behance, Design System documentado en Figma y un prototipo funcional en React que cubre el flujo principal.</span></li>
   </ul>
 </section>
 
 <section class="cs-section">
   <h2 class="cs-section-title" data-i18n="common.sections.context">El contexto y el problema</h2>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> ¿qué research hiciste al principio? ¿Entrevistas, encuestas a estudiantes/jóvenes que buscan piso? ¿Qué dato o insight disparó el proyecto?
-  </div>
-  <p data-i18n="roomeet.context">Roomeet plantea un producto de dos lados: quien busca piso y quien lo ofrece necesitan flujos de onboarding y necesidades distintas, lo que obliga a diseñar dos experiencias coherentes bajo un mismo sistema.</p>
-</section>
-
-<section class="cs-section">
-  <h2 class="cs-section-title" data-i18n="common.sections.process">El proceso</h2>
-  <h3 style="font-size:15.5px; margin-bottom:6px;" data-i18n="roomeet.process.step1">1. Research y definición</h3>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> métodos usados (entrevistas, encuestas, benchmark de competencia como Idealista/Badi), número de personas, principales insights.
-  </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="roomeet.process.step2">2. Arquitectura y flujos</h3>
+  <p>Compartir piso es cada vez más habitual entre la gente joven, pero encontrar a alguien compatible es frustrante y caótico. Plataformas como Badi o Idealista se centran en el piso, no en las personas — así que la mayoría acaba recurriendo a Instagram Stories o Twitter para buscar compañero de piso: un proceso informal, ineficiente y sin ningún filtro real de compatibilidad.</p>
+  <p>Al investigar, vi que en realidad había dos problemas distintos escondidos en uno: el inquilino busca una habitación <em>y</em> una persona con la que encajar; el anfitrión busca a alguien que encaje con la dinámica de su piso. Ninguna plataforma resolvía los dos lados con la misma experiencia — ahí estaba el hueco: nadie había aplicado la mecánica de swipe, tan familiar por las apps de citas, al co-living con filtros reales de estilo de vida.</p>
+  <p>También decidí construir Roomeet sobre unos valores de producto claros: inclusión e interseccionalidad, rechazo explícito a la especulación inmobiliaria, registro solo para particulares (inmobiliarias y especuladores bloqueados) y un sistema de denuncia comunitaria.</p>
   <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
-    User flow u organigrama de navegación
-  </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="roomeet.process.step3">3. Design System</h3>
-  <p data-i18n="roomeet.process.step3desc">Se construyó un Design System completo en Figma (componentes, tokens, estados) para dar consistencia a los dos flujos de onboarding y escalar el resto del producto.</p>
-  <div class="cs-placeholder" style="margin-top:14px;">
-    <span class="cs-placeholder-icon">📷</span>
-    Vista del Design System / librería de componentes
+    Capturas de búsquedas reales en Twitter/Instagram
+    <small>Ejemplos de gente buscando compañero de piso de forma informal — evidencia visual del problema.</small>
   </div>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Decisiones clave de diseño</h2>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> ejemplos de decisiones a documentar: por qué separar el onboarding de inquilino y anfitrión, cómo diseñaste los filtros avanzados, cómo planteaste el modelo freemium en la UI (qué es gratis vs. de pago).
-  </div>
-  <div class="cs-decision-grid">
-    <div class="cs-decision-card">
-      <h3>Ejemplo: onboarding separado por perfil</h3>
-      <div class="cs-decision-row">
-        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
-        <p>[Completa con la decisión real]</p>
-      </div>
-      <div class="cs-decision-row">
-        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
-        <p>[Completa: qué necesidad distinta tenía cada perfil]</p>
-      </div>
-      <div class="cs-decision-row">
-        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
-        <p>[Completa, si aplica]</p>
-      </div>
+  <h2 class="cs-section-title">Mi rol y equipo</h2>
+  <p>Fui responsable del diseño end-to-end del proyecto: research, personas, arquitectura, flujos, wireframes de baja y alta fidelidad, diseño final y el Design System completo, incluyendo las ilustraciones propias de los personajes geométricos. Trabajé en equipo con Javi, que se encargó del desarrollo en React, y Noah, que dio apoyo al equipo — y colaboré de cerca con Javi para que el Design System fuera directamente traducible a código.</p>
+  <div class="stats" style="flex-wrap:wrap; gap:24px 32px;">
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">del diseño, de mi responsabilidad</div>
+    </div>
+    <div>
+      <div class="stat-num">4</div>
+      <div class="stat-label">meses de proyecto</div>
+    </div>
+    <div>
+      <div class="stat-num">3</div>
+      <div class="stat-label">personas en el equipo</div>
     </div>
   </div>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title" data-i18n="common.sections.result">Resultado final</h2>
+  <h2 class="cs-section-title">Research y personas</h2>
+  <span class="cs-phase-label">Research</span>
+  <ul>
+    <li>Analicé la competencia directa: Badi, Idealista, y también Tinder como referencia de mecánica.</li>
+    <li>Investigué cómo busca piso la gente joven hoy en día.</li>
+    <li>Insight clave: el mercado informal (redes sociales) domina porque las plataformas formales no priorizan la compatibilidad personal.</li>
+  </ul>
+  <p>A partir de ese research construí tres personas para guiar el diseño:</p>
+  <div class="cs-feature-grid">
+    <div class="cs-feature">
+      <h3>Pablo — 27, Barcelona</h3>
+      <p>Anfitrión con una habitación libre. No solo quiere cubrir el alquiler: busca a alguien que encaje con la dinámica de su piso.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>Claudia — 26, Valencia</h3>
+      <p>Inquilina recién llegada a la ciudad. Necesita encontrar piso y compañía de confianza a la vez, sin conocer todavía a nadie.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>Ana — 21, Madrid</h3>
+      <p>Estudiante buscando su primer piso compartido. Le preocupa la seguridad y no sabe qué preguntar para saber si encajará con sus futuros compañeros.</p>
+    </div>
+  </div>
+  <div class="cs-placeholder">
+    <span class="cs-placeholder-icon">📷</span>
+    Fichas completas de las 3 personas
+    <small>Las fichas de research diseñadas en Figma, con más detalle de objetivos y frustraciones de cada una.</small>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Arquitectura</h2>
+  <span class="cs-phase-label">Definición</span>
+  <p>El objetivo quedó claro tras el research: conectar personas compatibles, no solo pisos. La decisión de diseño más importante del proyecto salió de aquí: separar los flujos de <b>inquilino</b> y <b>anfitrión</b> desde el propio onboarding, porque buscan cosas distintas — mezclarlos habría generado confusión, aunque hubiera simplificado el desarrollo.</p>
+  <p>Mapeé el sitemap completo del producto: Landing, flujo de registro y "Modo App" (una vez dentro), que incluye Swipe, Chats, Perfil, Galería y Premium.</p>
+  <div class="cs-placeholder">
+    <span class="cs-placeholder-icon">📷</span>
+    Sitemap completo
+    <small>Árbol de navegación con Landing, Register flow y Modo App.</small>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">User Flow</h2>
+  <span class="cs-phase-label">User Flow</span>
+  <p>Mapeé el flujo completo en Figma, desde el primer acceso hasta el match y la conversación. Esto permitió detectar puntos de fricción antes de construir nada: un onboarding demasiado largo, el momento de decidir el plan premium, y la gestión de varios matches a la vez.</p>
+  <div class="cs-placeholder">
+    <span class="cs-placeholder-icon">📷</span>
+    Diagrama de user flow completo
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Wireframes</h2>
+  <span class="cs-phase-label">Wireframes</span>
+  <p>Los wireframes de baja fidelidad los construimos entre los tres, aportando ideas conjuntas; la alta fidelidad fue responsabilidad mía. Las pantallas de swipe pasaron por varios rediseños para adaptarlas a desktop — la app se pensó mobile-first, pero tenía que funcionar bien también en pantalla grande, y ese fue el mayor reto de adaptación: apenas hay referentes de swipe fuera de mobile.</p>
+  <div class="cs-placeholder">
+    <span class="cs-placeholder-icon">📷</span>
+    Grid de wireframes mobile
+    <small>Evolución de baja a alta fidelidad.</small>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Diseño final</h2>
+  <span class="cs-phase-label">Diseño final</span>
+  <p>El color principal es un amarillo (#FBAD37) amigable, enérgico y joven. Diseñé ilustraciones propias — personajes geométricos donde cada forma representa una personalidad distinta — para dar un tono cercano y nada corporativo. La app es mobile-first con una versión desktop adaptada, y el modelo de monetización combina plan freemium con publicidad dentro de la app.</p>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Design System</h2>
+  <p>Construí el Design System con la filosofía de <b>Atomic Design</b>, pensando los componentes para que fueran directamente aplicables a código React — facilitar el trabajo de Javi como desarrollador fue una decisión de diseño consciente, no un añadido posterior.</p>
+
+  <div class="cs-brand-chip" style="background:#FBAD37; color:#171512;">#FBAD37 — Yellow 500, color principal</div>
+
+  <div class="cs-palette-grid">
+    <div>
+      <div class="cs-color-scale" style="background:linear-gradient(to right,#FFFFFF,#000000);"></div>
+      <div class="cs-palette-name">Base</div>
+      <div class="cs-palette-hex">#FFFFFF · #000000</div>
+    </div>
+    <div>
+      <div class="cs-color-scale" style="background:linear-gradient(to right,#F5F5F5,#A6A6A6);"></div>
+      <div class="cs-palette-name">White-Grey</div>
+      <div class="cs-palette-hex">#F5F5F5 → #A6A6A6</div>
+    </div>
+    <div>
+      <div class="cs-color-scale" style="background:linear-gradient(to right,#404040,#0D0D0D);"></div>
+      <div class="cs-palette-name">Black</div>
+      <div class="cs-palette-hex">#404040 → #0D0D0D</div>
+    </div>
+    <div>
+      <div class="cs-color-scale" style="background:linear-gradient(to right,#FDE5A7,#92581F);"></div>
+      <div class="cs-palette-name">Yellow</div>
+      <div class="cs-palette-hex">#FDE5A7 → #92581F</div>
+    </div>
+    <div>
+      <div class="cs-color-scale" style="background:linear-gradient(to right,#FFADAD,#8F1F1F);"></div>
+      <div class="cs-palette-name">Red</div>
+      <div class="cs-palette-hex">#FFADAD → #8F1F1F</div>
+    </div>
+    <div>
+      <div class="cs-color-scale" style="background:linear-gradient(to right,#C6B5F5,#3A2F6A);"></div>
+      <div class="cs-palette-name">Purple</div>
+      <div class="cs-palette-hex">#C6B5F5 → #3A2F6A</div>
+    </div>
+    <div>
+      <div class="cs-color-scale" style="background:linear-gradient(to right,#C7EEFF,#1D6388);"></div>
+      <div class="cs-palette-name">Blue</div>
+      <div class="cs-palette-hex">#C7EEFF → #1D6388</div>
+    </div>
+  </div>
+
+  <div style="font-family:'DM Sans', sans-serif; display:flex; align-items:baseline; gap:16px; margin-bottom:20px;">
+    <div style="font-size:44px; font-weight:700;">Aa</div>
+    <div>
+      <div style="font-weight:700; font-size:15px;">DM Sans</div>
+      <div style="font-size:13px; color:var(--text-muted);">Única fuente del sistema — Bold para títulos, Regular para texto. Escala de LargeDisplayTitle a Body.</div>
+    </div>
+  </div>
+
+  <p>Componentes principales (Atomic Design): botones (primary, secondary, ghost, disabled), inputs con estados de error, tags de estilo de vida seleccionables, swipe cards, botones de acción de swipe (like, dislike, superlike, favorito), lista de chat y burbujas, barra de navegación mobile, tarjetas de perfil (inquilino y anfitrión), tarjetas de plan (Free vs. Premium), modales, alerts y elementos de formulario. No hay dark mode: el producto es 100% light.</p>
+
+  <div class="cs-placeholder">
+    <span class="cs-placeholder-icon">📷</span>
+    Vista general del Design System en Figma
+    <small>Paleta, tipografía y librería de componentes completa.</small>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Funcionalidades principales</h2>
+  <div class="cs-feature-grid">
+    <div class="cs-feature">
+      <h3>1. Onboarding bifurcado</h3>
+      <p>¿Tienes piso? → flujo anfitrión (perfil de piso + habitación). ¿No tienes piso? → flujo inquilino (preferencias y estilo de vida). Preguntas adaptadas a cada rol.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>2. Swipe experience</h3>
+      <p>Card con foto, nombre, edad y etiquetas de personalidad. Al hacer click se abre el perfil completo con descripción y fotos del piso. Like / Dislike / Superlike / Favorito. Match → acceso al chat.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>3. Sistema de chat</h3>
+      <p>Lista de matches y conversación. Solo puedes chatear con tus matches. Diseño limpio, legible tanto en mobile como en desktop.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>4. Modelo freemium</h3>
+      <p>Free: funcionalidad básica. Premium: más likes, ver quién te ha dado like y filtros avanzados. Monetización adicional con publicidad dentro de la app.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>5. Perfiles dobles</h3>
+      <p>Perfil personal (quién eres) y, si eres anfitrión, perfil de piso (fotos, normas, habitación), con toggle de edición y vista previa.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>6. Sistema anti-especulación</h3>
+      <p>Registro solo para particulares, con preguntas que filtran inmobiliarias, y un sistema de denuncia comunitaria.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Diseño final: pantallas</h2>
+  <p>Grid de todas las pantallas mobile del producto terminado:</p>
+  <div class="cs-placeholder">
+    <span class="cs-placeholder-icon">📷</span>
+    Grid de pantallas mobile
+  </div>
+
+  <p style="margin-top:20px;">Versión desktop adaptada:</p>
   <div class="cs-gallery">
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
-      Onboarding inquilino
+      Desktop — vista 1
     </div>
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
-      Onboarding anfitrión
+      Desktop — vista 2
+    </div>
+  </div>
+
+  <p style="margin-top:20px;">Detalle de las dos interacciones clave del producto:</p>
+  <div class="cs-gallery">
+    <div class="cs-placeholder">
+      <span class="cs-placeholder-icon">📷</span>
+      Detalle: swipe card en acción
+    </div>
+    <div class="cs-placeholder">
+      <span class="cs-placeholder-icon">📷</span>
+      Detalle: lista de chat y conversación
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title" data-i18n="common.sections.decisions">Decisiones clave de diseño</h2>
+  <div class="cs-decision-grid">
+    <div class="cs-decision-card">
+      <h3>Dos flujos de onboarding separados</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>Separar por completo el onboarding de inquilino y anfitrión desde el primer paso, con preguntas distintas para cada rol.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>Inquilino y anfitrión buscan cosas distintas — mezclar los flujos habría generado confusión en el momento más crítico del producto: el primer contacto con la app.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Un único flujo genérico: más simple de desarrollar, pero descartado porque diluía la propuesta de valor para ambos lados.</p>
+      </div>
+    </div>
+
+    <div class="cs-decision-card">
+      <h3>Adaptar el swipe a desktop</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>Rediseñar la mecánica de swipe específicamente para pantallas grandes, en lugar de escalar directamente el layout mobile.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>La app es mobile-first, pero necesitaba funcionar en desktop. Apenas existen referencias de swipe fuera de mobile, así que hubo que replantear la interacción, no solo el tamaño.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Escalar el mismo layout mobile a una pantalla más grande: descartada tras varias pruebas por no resultar natural con ratón y teclado.</p>
+      </div>
+    </div>
+
+    <div class="cs-decision-card">
+      <h3>Design System pensado para React desde el diseño</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>Construir los componentes de Figma con Atomic Design, estructurados para que fueran directamente traducibles a componentes de código.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>Reduce la fricción en el handoff con Javi y acelera el desarrollo, al no tener que reinterpretar la estructura del diseño en código.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Diseñar sin pensar en la implementación y dejar la traducción a código enteramente en manos del desarrollador: habría generado más idas y vueltas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Stack técnico</h2>
+  <p><b>Diseño:</b> Figma · Adobe Illustrator · Procreate.</p>
+  <p><b>Desarrollo:</b> React.js · HTML · SASS · CSS.</p>
+  <p>El prototipo en React cubre el flujo principal de usuario y demuestra la viabilidad técnica del producto. No llegó a producción por el tiempo limitado del TFM (4 meses en equipo de 3), pero el Design System construido con Atomic Design dejó el terreno preparado para escalarlo.</p>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Skills demostrados</h2>
+  <div class="skills">
+    <div class="skill-group">
+      <div class="skill-title">Product Design</div>
+      <div class="skill-items">UX Research · User Personas · Arquitectura de información · User Flows · Priorización de requisitos funcionales y éticos</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">UI &amp; Design System</div>
+      <div class="skill-items">Atomic Design · Design tokens · Wireframing (baja y alta fidelidad) · Diseño responsive mobile-first</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">Ilustración</div>
+      <div class="skill-items">Illustrator · Procreate · Personajes geométricos propios</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">Colaboración</div>
+      <div class="skill-items">Handoff diseño → código · Trabajo en equipo de producto · Figma como fuente de verdad para desarrollo</div>
     </div>
   </div>
 </section>
@@ -157,15 +404,19 @@
   <h2 class="cs-section-title" data-i18n="common.sections.learnings">Aprendizajes</h2>
   <div class="cs-learnings">
     <div class="cs-learnings-col">
-      <h3 data-i18n="common.learnings.worked">Qué funcionó</h3>
+      <h3>Qué aprendí</h3>
       <ul>
-        <li>[Completa]</li>
+        <li>Diseñar para dos tipos de usuario desde el día 1 multiplica la complejidad — pero hacerlo bien es lo que diferencia el producto.</li>
+        <li>Adaptar una mecánica mobile-first a desktop exige replantear la interacción, no solo escalar el layout.</li>
+        <li>Un Design System pensado como puente entre diseño y código acelera el desarrollo y reduce malentendidos con el equipo.</li>
       </ul>
     </div>
     <div class="cs-learnings-col">
-      <h3 data-i18n="common.learnings.change">Qué cambiaría</h3>
+      <h3>Qué quedó pendiente</h3>
       <ul>
-        <li>[Completa]</li>
+        <li>Test real de compatibilidad entre usuarios.</li>
+        <li>Funcionalidades premium más avanzadas.</li>
+        <li>Versión nativa móvil.</li>
       </ul>
     </div>
   </div>
