@@ -183,35 +183,19 @@
     </div>
   </div>
 
-  <div class="cs-gallery">
-    <div class="cs-placeholder">
-      <span class="cs-placeholder-icon">📷</span>
-      Partida en curso mostrando las pistas
-    </div>
-    <div class="cs-placeholder">
-      <span class="cs-placeholder-icon">📷</span>
-      Pantalla de victoria con los colores de la aurora
-    </div>
-  </div>
-
-  <p style="margin-top:20px;">La aurora dinámica cambia a lo largo del día — esta secuencia muestra la misma pantalla en 4 momentos distintos:</p>
-  <div class="cs-gallery" style="grid-template-columns: repeat(2, minmax(0,1fr));">
-    <div class="cs-placeholder" style="min-height:140px;">
-      <span class="cs-placeholder-icon">📷</span>
-      9am — cálidos
-    </div>
-    <div class="cs-placeholder" style="min-height:140px;">
-      <span class="cs-placeholder-icon">📷</span>
-      3pm — amarillo
-    </div>
-    <div class="cs-placeholder" style="min-height:140px;">
-      <span class="cs-placeholder-icon">📷</span>
-      6pm — naranja
-    </div>
-    <div class="cs-placeholder" style="min-height:140px;">
-      <span class="cs-placeholder-icon">📷</span>
-      11pm — púrpura
-    </div>
+  <div class="cs-gallery-3">
+    <figure class="cs-figure">
+      <img class="cs-shot" src="../assets/projects/geochallenge/hint-initial.png" alt="Primera pista (nivel Experto) al entrar en el juego, antes de cualquier intento">
+      <figcaption>La primera pista aparece nada más entras, sin esperar a que falles.</figcaption>
+    </figure>
+    <figure class="cs-figure">
+      <img class="cs-shot" src="../assets/projects/geochallenge/hints-collapsible.png" alt="Pista de nivel Experto colapsada y pista de nivel Difícil desplegada, tras un intento fallido">
+      <figcaption>Pistas desplegables: la anterior se colapsa pero sigue accesible al abrirla de nuevo.</figcaption>
+    </figure>
+    <figure class="cs-figure">
+      <img class="cs-shot" src="../assets/projects/geochallenge/victory-streak.png" alt="Pantalla de acierto mostrando el país correcto, la racha diaria, opciones para compartir y el historial completo de pistas">
+      <figcaption>Pantalla de acierto, con la racha diaria y el historial de todas las pistas.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -348,6 +332,8 @@
     <div class="cs-learnings-col">
       <h3 data-i18n="common.learnings.worked">Qué funcionó</h3>
       <ul>
+        <li>La racha diaria (streak), que anima a volver a jugar cada día.</li>
+        <li>Las pistas desplegables: poder revisar el contexto anterior sin perder información mejoró la experiencia de juego.</li>
         <li>La aurora dinámica como diferenciador visual único.</li>
         <li>Compartir en Twitter generó el 76% del tráfico sin invertir en ads.</li>
         <li>Validar con usuarios reales desde el primer día, no al final.</li>
