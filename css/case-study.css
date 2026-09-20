@@ -35,6 +35,7 @@
   display: block; width: 100%; border-radius: 20px; border: 1px solid var(--border);
 }
 .cs-shot { object-fit: cover; cursor: zoom-in; transition: opacity 150ms ease; }
+.cs-plain-img { display: block; width: 100%; }
 .cs-shot:hover { opacity: 0.88; }
 .cs-gallery-3 .cs-shot { aspect-ratio: 4 / 3; object-position: top center; height: 100%; }
 figure.cs-figure { margin: 0; }
