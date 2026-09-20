@@ -50,7 +50,7 @@
 <header class="cs-hero">
   <div class="eyebrow">Trabajo final de máster · Nov 2024 – Jun 2025</div>
   <h1>Roomeet</h1>
-  <p class="lead">"Your next roomie, just a swipe away" — una plataforma de dos lados que conecta inquilinos y anfitriones por compatibilidad personal, no solo por metros cuadrados.</p>
+  <p class="lead">Una plataforma de dos lados que conecta inquilinos y anfitriones por compatibilidad personal —hábitos, estilo de vida y valores— en vez de limitarse a anunciar habitaciones libres, aplicando al co-living la mecánica de swipe de las apps de citas.</p>
   <div class="hero-ctas">
     <a href="https://www.behance.net/gallery/231345231/Roomeet" target="_blank" rel="noopener" class="btn btn-primary">Ver case study en Behance</a>
     <a href="https://www.figma.com/design/LXzunRluXxB3RugOLD9Q4V/" target="_blank" rel="noopener" class="btn btn-secondary">Ver Design System en Figma</a>
@@ -77,11 +77,7 @@
 </header>
 
 <div class="cs-cover">
-  <div class="cs-placeholder">
-    <span class="cs-placeholder-icon">📷</span>
-    Mockup hero de Roomeet
-    <small>Los dos teléfonos inclinados mostrando la app — la pieza visual principal del proyecto.</small>
-  </div>
+  <img src="../assets/projects/roomeet/hero-mockup.webp" alt="Mockup hero de Roomeet con varias pantallas de la app y la mascota ilustrada de la marca">
 </div>
 
 <section class="cs-section">
@@ -99,16 +95,12 @@
   <p>Compartir piso es cada vez más habitual entre la gente joven, pero encontrar a alguien compatible es frustrante y caótico. Plataformas como Badi o Idealista se centran en el piso, no en las personas — así que la mayoría acaba recurriendo a Instagram Stories o Twitter para buscar compañero de piso: un proceso informal, ineficiente y sin ningún filtro real de compatibilidad.</p>
   <p>Al investigar, vi que en realidad había dos problemas distintos escondidos en uno: el inquilino busca una habitación <em>y</em> una persona con la que encajar; el anfitrión busca a alguien que encaje con la dinámica de su piso. Ninguna plataforma resolvía los dos lados con la misma experiencia — ahí estaba el hueco: nadie había aplicado la mecánica de swipe, tan familiar por las apps de citas, al co-living con filtros reales de estilo de vida.</p>
   <p>También decidí construir Roomeet sobre unos valores de producto claros: inclusión e interseccionalidad, rechazo explícito a la especulación inmobiliaria, registro solo para particulares (inmobiliarias y especuladores bloqueados) y un sistema de denuncia comunitaria.</p>
-  <div class="cs-placeholder">
-    <span class="cs-placeholder-icon">📷</span>
-    Capturas de búsquedas reales en Twitter/Instagram
-    <small>Ejemplos de gente buscando compañero de piso de forma informal — evidencia visual del problema.</small>
-  </div>
+  <img class="cs-shot" src="../assets/projects/roomeet/problem-social.gif" alt="Capturas de búsquedas reales de compañero de piso en Twitter e Instagram">
 </section>
 
 <section class="cs-section">
   <h2 class="cs-section-title">Mi rol y equipo</h2>
-  <p>Fui responsable del diseño end-to-end del proyecto: research, personas, arquitectura, flujos, wireframes de baja y alta fidelidad, diseño final y el Design System completo, incluyendo las ilustraciones propias de los personajes geométricos. Trabajé en equipo con Javi, que se encargó del desarrollo en React, y Noah, que dio apoyo al equipo — y colaboré de cerca con Javi para que el Design System fuera directamente traducible a código.</p>
+  <p>Fui responsable del diseño end-to-end del proyecto: research, personas, arquitectura, flujos, wireframes de baja y alta fidelidad, diseño final y el Design System completo. Trabajé en equipo con Javi, que se encargó del desarrollo en React y de las ilustraciones de los personajes geométricos, y Noah, que dio apoyo al equipo — y colaboré de cerca con Javi para que el Design System fuera directamente traducible a código.</p>
   <div class="stats" style="flex-wrap:wrap; gap:24px 32px;">
     <div>
       <div class="stat-num">100%</div>
@@ -129,29 +121,21 @@
   <h2 class="cs-section-title">Research y personas</h2>
   <span class="cs-phase-label">Research</span>
   <ul>
-    <li>Analicé la competencia directa: Badi, Idealista, y también Tinder como referencia de mecánica.</li>
-    <li>Investigué cómo busca piso la gente joven hoy en día.</li>
+    <li>Analizamos la competencia directa: Badi, Idealista, y también Tinder como referencia de mecánica.</li>
+    <li>Investigamos cómo busca piso la gente joven hoy en día.</li>
     <li>Insight clave: el mercado informal (redes sociales) domina porque las plataformas formales no priorizan la compatibilidad personal.</li>
   </ul>
-  <p>A partir de ese research construí tres personas para guiar el diseño:</p>
-  <div class="cs-feature-grid">
-    <div class="cs-feature">
-      <h3>Pablo — 27, Barcelona</h3>
-      <p>Anfitrión con una habitación libre. No solo quiere cubrir el alquiler: busca a alguien que encaje con la dinámica de su piso.</p>
-    </div>
-    <div class="cs-feature">
-      <h3>Claudia — 26, Valencia</h3>
-      <p>Inquilina recién llegada a la ciudad. Necesita encontrar piso y compañía de confianza a la vez, sin conocer todavía a nadie.</p>
-    </div>
-    <div class="cs-feature">
-      <h3>Ana — 21, Madrid</h3>
-      <p>Estudiante buscando su primer piso compartido. Le preocupa la seguridad y no sabe qué preguntar para saber si encajará con sus futuros compañeros.</p>
-    </div>
-  </div>
-  <div class="cs-placeholder">
-    <span class="cs-placeholder-icon">📷</span>
-    Fichas completas de las 3 personas
-    <small>Las fichas de research diseñadas en Figma, con más detalle de objetivos y frustraciones de cada una.</small>
+  <p>A partir de ese research construimos tres personas para guiar el diseño:</p>
+  <div class="cs-gallery-3">
+    <figure class="cs-figure">
+      <img class="cs-shot" src="../assets/projects/roomeet/persona-pablo.png" alt="Ficha de research de Pablo, 27 años, Barcelona, anfitrión con habitación libre">
+    </figure>
+    <figure class="cs-figure">
+      <img class="cs-shot" src="../assets/projects/roomeet/persona-ana.png" alt="Ficha de research de Ana, 21 años, Madrid, estudiante buscando su primer piso compartido">
+    </figure>
+    <figure class="cs-figure">
+      <img class="cs-shot" src="../assets/projects/roomeet/persona-claudia.png" alt="Ficha de research de Claudia, 26 años, Valencia, inquilina recién llegada a la ciudad">
+    </figure>
   </div>
 </section>
 
@@ -191,7 +175,7 @@
 <section class="cs-section">
   <h2 class="cs-section-title">Diseño final</h2>
   <span class="cs-phase-label">Diseño final</span>
-  <p>El color principal es un amarillo (#FBAD37) amigable, enérgico y joven. Diseñé ilustraciones propias — personajes geométricos donde cada forma representa una personalidad distinta — para dar un tono cercano y nada corporativo. La app es mobile-first con una versión desktop adaptada, y el modelo de monetización combina plan freemium con publicidad dentro de la app.</p>
+  <p>El color principal es un amarillo (#FBAD37) amigable, enérgico y joven. Javi ilustró los personajes geométricos de la marca, donde cada forma representa una personalidad distinta, para dar un tono cercano y nada corporativo. La app es mobile-first con una versión desktop adaptada, y el modelo de monetización combina plan freemium con publicidad dentro de la app.</p>
 </section>
 
 <section class="cs-section">
@@ -388,10 +372,6 @@
     <div class="skill-group">
       <div class="skill-title">UI &amp; Design System</div>
       <div class="skill-items">Atomic Design · Design tokens · Wireframing (baja y alta fidelidad) · Diseño responsive mobile-first</div>
-    </div>
-    <div class="skill-group">
-      <div class="skill-title">Ilustración</div>
-      <div class="skill-items">Illustrator · Procreate · Personajes geométricos propios</div>
     </div>
     <div class="skill-group">
       <div class="skill-title">Colaboración</div>
