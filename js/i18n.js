@@ -99,7 +99,7 @@ window.I18N = {
       ctaProductHunt: "Ver en Product Hunt →",
       meta: { role: "Product Design & desarrollo (solo)", duration: "2-3 semanas · lanzado en julio de 2026" },
       summary: {
-        problem: "Analicé más de 50 juegos de geografía: el 95% se basa en reconocer mapas o siluetas. Es un formato saturado y poco educativo — no encontré ninguno construido sobre datos curiosos.",
+        problem: "Investigué varios juegos de geografía populares. Todos compartían lo mismo: mapas o reconocimiento visual. Eso me hizo pensar: ¿por qué no uno basado en información curiosa?",
         solution: 'Un "Wordle de geografía": el mismo país para todo el mundo cada día, con 4 pistas progresivas (de Experto a Fácil) que enseñan un dato curioso en cada nivel en vez de exigir reconocer una forma.',
         role: "Producto de principio a fin con metodología Double Diamond: research de mercado, definición, prototipado con IA generativa (Lovable) y desarrollo del frontend en React, más lanzamiento y medición.",
         result: "Lanzado en Product Hunt: 1.000 usuarios activos y 11.000 eventos en las primeras 4 semanas, con un 24,2% de conversión de visitante a jugador."
@@ -476,7 +476,7 @@ window.I18N = {
       ctaProductHunt: "View on Product Hunt →",
       meta: { role: "Product Design & development (solo)", duration: "2-3 weeks · launched in July 2026" },
       summary: {
-        problem: "I analyzed over 50 geography games: 95% are based on recognizing maps or silhouettes. It's a saturated, not very educational format — I couldn't find a single one built around fun facts.",
+        problem: "I researched several popular geography games. They all shared the same thing: maps or visual recognition. That got me thinking: why not one based on fun facts instead?",
         solution: 'A "geography Wordle": the same country for everyone each day, with 4 progressive clues (from Expert to Easy) that teach a fun fact at every level instead of requiring you to recognize a shape.',
         role: "End-to-end product work with the Double Diamond methodology: market research, definition, prototyping with generative AI (Lovable) and React frontend development, plus launch and measurement.",
         result: "Launched on Product Hunt: 1,000 active users and 11,000 events in the first 4 weeks, with a 24.2% visitor-to-player conversion rate."
