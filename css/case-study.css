@@ -91,10 +91,11 @@ figure.cs-figure figcaption {
 .cs-gallery { display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 640px) { .cs-gallery { grid-template-columns: repeat(2, minmax(0,1fr)); } }
 
-.cs-row-2 { display: grid; grid-template-columns: 1fr; gap: 16px; align-items: center; margin: 4px 0 14px; }
-@media (min-width: 640px) { .cs-row-2 { grid-template-columns: 1.15fr 1fr; } }
-.cs-row-2 p { margin: 0; }
-.cs-row-2 img { margin: 0; }
+.cs-row-2 { display: grid; grid-template-columns: 1fr; gap: 20px; align-items: start; margin: 4px 0 14px; }
+@media (min-width: 640px) { .cs-row-2 { grid-template-columns: 1fr 240px; } }
+.cs-row-2 p { margin: 0 0 12px; }
+.cs-row-2 p:last-child { margin-bottom: 0; }
+.cs-row-2 img { max-width: 240px; width: 100%; margin: 0 auto; }
 
 .cs-gallery-3 { display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 640px) { .cs-gallery-3 { grid-template-columns: repeat(3, minmax(0,1fr)); } }
