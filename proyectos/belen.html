@@ -92,6 +92,7 @@
 
   <span class="cs-phase-label">3. Implementación en Shopify</span>
   <p>Aquí es donde el proyecto se volvió más interesante: ni Belén ni yo habíamos usado Shopify antes de este proyecto, así que aprendimos la plataforma sobre la marcha. Elegimos un tema base y lo personalizamos tanto como el propio tema permitía, pero no todo lo diseñado en Figma se pudo trasladar tal cual —Shopify da mucha menos libertad de personalización que un diseño libre en Figma— así que varias decisiones se rehicieron ya directamente sobre la plataforma real, a medida que llegaban las fotos y el contenido definitivo de Belén.</p>
+  <p>Dicho esto, para las partes que sí eran clave para la marca, opté por programar la sección directamente en código en vez de ceder ante las limitaciones del editor visual. El banner de "Artesanal pieces" es el mejor ejemplo: Shopify no permitía superponer una imagen (un png de una pieza de encaje) sobre una foto de fondo, y colocar encima de todo eso un título, un subtítulo y un botón. Escribí esa sección entera a código para poder apilar las tres capas —foto de fondo, png de la pieza y texto con botón— y conseguir el diseño exacto que tenía en Figma.</p>
 </section>
 
 <section class="cs-section">
@@ -144,6 +145,22 @@
         <p>Forzar una réplica exacta del diseño en Figma con desarrollo a medida sobre el tema, lo que habría alargado mucho el plazo de un proyecto pensado para durar ~1 mes.</p>
       </div>
     </div>
+
+    <div class="cs-decision-card">
+      <h3>Código a medida para el banner de piezas artesanales</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>Programar directamente en código la sección del banner de "Artesanal pieces", en vez de usar el editor visual del tema.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>El editor nativo no permitía apilar una foto de fondo, un png de una pieza de encaje encima y, encima de todo eso, un título, un subtítulo y un botón. Era la única forma de conseguir el diseño exacto del Figma para una sección tan importante para la marca.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Usar la sección de imagen con texto del propio tema: más rápido, pero habría obligado a aplanar las tres capas en una sola imagen y perder esa composición.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -170,7 +187,7 @@
     </div>
     <div class="skill-group">
       <div class="skill-title">E-commerce &amp; Shopify</div>
-      <div class="skill-items">Personalización de temas · Organización de catálogo · Fichas de producto · Checkout</div>
+      <div class="skill-items">Personalización de temas · Secciones de código a medida (HTML/CSS) · Organización de catálogo · Fichas de producto · Checkout</div>
     </div>
     <div class="skill-group">
       <div class="skill-title">Gestión de cliente</div>
