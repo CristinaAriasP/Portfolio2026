@@ -89,20 +89,6 @@ window.I18N = {
         footer: "Cristina Arias Parrilla — Valencia, España"
       }
     },
-    liminal: {
-      lead: "Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y un prototipo básico de web.",
-      meta: { role: "Dirección de arte & Branding", duration: "Curso final de grado", tools: "Illustrator · Photoshop · InDesign", status: "Proyecto académico" },
-      summary: {
-        solution: "Liminal, una marca de ropa sostenible con identidad visual propia y una colección de prendas.",
-        role: "Naming, identidad visual, dirección de arte y prototipo de web, de principio a fin.",
-        result: "Sistema de marca completo: logo, colección y prototipo básico de web."
-      },
-      process: {
-        step1: "1. Naming y concepto",
-        step2: "2. Identidad visual",
-        step3: "3. Colección y aplicaciones"
-      }
-    },
     belen: {
       lead: "Tienda online en Shopify para una marca de ropa independiente: diseño de producto, catálogo y checkout. Actualmente en construcción.",
       meta: { role: "Diseñadora de producto & UI", client: "Marca de ropa independiente", tools: "Shopify" },
@@ -202,20 +188,6 @@ window.I18N = {
       contact: {
         title: "Looking for your next Product Designer?",
         footer: "Cristina Arias Parrilla — Valencia, Spain"
-      }
-    },
-    liminal: {
-      lead: "Sustainable clothing brand: naming, visual identity, logo, garment collection and a basic web prototype.",
-      meta: { role: "Art direction & Branding", duration: "Final year of degree", tools: "Illustrator · Photoshop · InDesign", status: "Academic project" },
-      summary: {
-        solution: "Liminal, a sustainable clothing brand with its own visual identity and a garment collection.",
-        role: "Naming, visual identity, art direction and web prototype, end-to-end.",
-        result: "A complete brand system: logo, collection and a basic web prototype."
-      },
-      process: {
-        step1: "1. Naming and concept",
-        step2: "2. Visual identity",
-        step3: "3. Collection and applications"
       }
     },
     belen: {

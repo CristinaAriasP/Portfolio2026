@@ -1,8 +1,8 @@
 <!--
-  CÓMO RELLENAR ESTE CASO DE ESTUDIO
-  1. Sustituye cada bloque "cs-placeholder" por una imagen real (logo, moodboard, prendas):
-     <img src="../assets/projects/liminal/nombre.jpg" alt="Descripción de la imagen">
-  2. Sustituye cada bloque "cs-todo" por texto real y bórralo después.
+  CÓMO AÑADIR LAS FOTOS
+  Sustituye cada bloque con clase "cs-placeholder" por una imagen real:
+  <img class="cs-shot" src="../assets/projects/liminal/nombre.jpg" alt="Descripción de la captura">
+  (usa class="cs-shot" para que la imagen se pueda ampliar al clicar)
 -->
 <!doctype html>
 <html lang="es" data-theme="light">
@@ -10,9 +10,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Liminal — Caso de estudio · Cristina Arias</title>
-<meta name="description" content="Caso de estudio de Liminal, marca de ropa sostenible, proyecto fin de grado de Cristina Arias.">
+<meta name="description" content="Caso de estudio de Liminal, marca ficticia de streetwear sostenible diseñada por Cristina Arias como Trabajo Fin de Grado en Bellas Artes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/case-study.css">
 </head>
@@ -43,26 +43,26 @@
 <a class="breadcrumb container" href="../index.html" data-i18n="common.backToPortfolio">← Volver al portfolio</a>
 
 <header class="cs-hero">
-  <div class="eyebrow" data-i18n="home.cards.liminal.eyebrow">Proyecto fin de grado · Bellas Artes</div>
+  <div class="eyebrow">Trabajo Fin de Grado · Bellas Artes, UPV · Curso 2022/2023</div>
   <h1>Liminal</h1>
-  <p class="lead" data-i18n="liminal.lead">Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y un prototipo básico de web.</p>
+  <p class="lead">Diseño de identidad visual para Liminal, una marca ficticia de ropa streetwear sostenible: naming, logotipo, tipografía, paleta de color, primera colección y prototipo de web, pensados como alternativa consciente al fast fashion.</p>
 
   <div class="cs-meta-grid">
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.role">Rol</div>
-      <div class="cs-meta-value" data-i18n="liminal.meta.role">Dirección de arte &amp; Branding</div>
+      <div class="cs-meta-value">Diseño de identidad de marca (100%, TFG individual)</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.duration">Duración</div>
-      <div class="cs-meta-value" data-i18n="liminal.meta.duration">Curso final de grado</div>
+      <div class="cs-meta-value">Curso 2022/2023 · Trabajo Fin de Grado</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.tools">Herramientas</div>
-      <div class="cs-meta-value" data-i18n="liminal.meta.tools">Illustrator · Photoshop · InDesign</div>
+      <div class="cs-meta-value">Illustrator · Photoshop</div>
     </div>
     <div>
       <div class="cs-meta-label" data-i18n="common.meta.status">Estado</div>
-      <div class="cs-meta-value" data-i18n="liminal.meta.status">Proyecto académico</div>
+      <div class="cs-meta-value">Proyecto académico</div>
     </div>
   </div>
 </header>
@@ -70,57 +70,189 @@
 <div class="cs-cover">
   <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
-    Logo o pieza clave de identidad de Liminal
+    Imagen de portada de Liminal
+    <small>El logo completo o una pieza clave de la identidad visual funciona bien aquí.</small>
   </div>
 </div>
 
 <section class="cs-section">
   <h2 class="cs-section-title" data-i18n="common.sections.summary">Resumen rápido</h2>
   <ul class="cs-summary-list">
-    <li><b data-i18n="common.summaryLabels.problem">Problema</b> [Completa: qué hueco de mercado o mensaje querías cubrir con una marca de moda sostenible]</li>
-    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span data-i18n="liminal.summary.solution">Liminal, una marca de ropa sostenible con identidad visual propia y una colección de prendas.</span></li>
-    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span data-i18n="liminal.summary.role">Naming, identidad visual, dirección de arte y prototipo de web, de principio a fin.</span></li>
-    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span data-i18n="liminal.summary.result">Sistema de marca completo: logo, colección y prototipo básico de web.</span></li>
+    <li><b data-i18n="common.summaryLabels.problem">Problema</b> <span>El streetwear nació como una subcultura DIY, pero ha sido absorbido por la lógica del fast fashion: producción masiva, materiales baratos y condiciones laborales precarias. No encontré marcas urbanas que pusieran la sostenibilidad real en el centro de su identidad, más allá del greenwashing puntual.</span></li>
+    <li><b data-i18n="common.summaryLabels.solution">Solución</b> <span>Liminal, una marca ficticia de streetwear que construye toda su identidad —naming, logotipo, tipografía, color y primera colección— alrededor de la sostenibilidad: materiales reciclados y de proximidad, tiradas limitadas y producción artesanal.</span></li>
+    <li><b data-i18n="common.summaryLabels.role">Mi rol</b> <span>Proyecto individual de principio a fin: investigación de contexto y referentes, briefing, análisis DAFO, naming, logotipo, identidad visual completa, manual de identidad, diseño de prendas y prototipo de web.</span></li>
+    <li><b data-i18n="common.summaryLabels.result">Resultado</b> <span>Un sistema de marca completo y coherente, evaluado como Trabajo Fin de Grado, que cumple además con varios Objetivos de Desarrollo Sostenible de la Agenda 2030.</span></li>
   </ul>
 </section>
 
 <section class="cs-section">
   <h2 class="cs-section-title" data-i18n="common.sections.context">El contexto y el problema</h2>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> ¿por qué "sostenible" como concepto? ¿A qué público te dirigías? ¿Qué referencias de marca (moodboard) usaste para definir el territorio visual?
-  </div>
+  <p>El streetwear se ha convertido en una de las corrientes más influyentes de la moda, pero detrás de esta tendencia está el fast fashion: producción masiva, materiales de baja calidad y condiciones laborales precarias en la industria textil. Lo que nació como una actitud "hazlo tú mismo" en el Nueva York de los 80 —influenciada por el skate, el punk y el grafiti— ha sido en buena parte absorbido por las dinámicas del consumismo a gran escala.</p>
+  <p>Frente a esto, planteé el proyecto como una alternativa: una marca urbana que demuestre que la moda puede ser algo más que expresión estética, y convertirse en herramienta de cambio y conciencia. El briefing partía de un target claro —jóvenes menores de 25 años interesados en la moda urbana y el medioambiente— y de unos entregables concretos: naming, identidad visual, diseños de prenda y un prototipo de sitio web.</p>
+  <p>Un análisis DAFO confirmó que el mayor reto era competir en precio frente al fast fashion y educar al público sobre por qué pagar más por prendas sostenibles, pero también que había una oportunidad real: la conciencia ecológica y el mercado de moda sostenible están en crecimiento.</p>
 </section>
 
 <section class="cs-section">
   <h2 class="cs-section-title" data-i18n="common.sections.process">El proceso</h2>
-  <h3 style="font-size:15.5px; margin-bottom:6px;" data-i18n="liminal.process.step1">1. Naming y concepto</h3>
-  <div class="cs-todo">
-    <b>COMPLETAR:</b> por qué "Liminal" — qué significa el concepto para la marca, qué otros nombres barajaste.
-  </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="liminal.process.step2">2. Identidad visual</h3>
+
+  <span class="cs-phase-label">1. Investigación previa</span>
+  <p>Investigué los orígenes del streetwear, el modelo de fast fashion y su impacto ambiental y laboral, y analicé cuatro marcas de referencia: OBEY, Human Made, HUF y Off-White (ver más abajo). Esta investigación fue la que reveló el hueco que ocuparía Liminal.</p>
+
+  <span class="cs-phase-label">2. Briefing y análisis DAFO</span>
+  <ul>
+    <li>Objetivo: crear una identidad de marca sólida para una firma de streetwear coherente con sus valores y productos.</li>
+    <li>Qué ofrece: prendas con materiales reciclados/ecológicos y de proximidad, trato cercano, calidad y diseño propio, colecciones de stock limitado.</li>
+    <li>Target: jóvenes menores de 25 años interesados en moda urbana y medioambiente.</li>
+    <li>DAFO: la mayor debilidad era competir en precio con el fast fashion siendo una marca nueva; la mayor fortaleza, el enfoque sostenible y el diseño propio y exclusivo.</li>
+  </ul>
+
+  <span class="cs-phase-label">3. Creación de conceptos y naming</span>
+  <p>Ver la sección de Naming más abajo.</p>
+
+  <span class="cs-phase-label">4. Diseño de logotipo e identidad visual</span>
+  <p>Ver la sección de Identidad visual más abajo.</p>
+
+  <span class="cs-phase-label">5. Diseño de las prendas</span>
   <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
-    Moodboard / paleta de color / tipografía
+    Diseños de la primera colección de Liminal
   </div>
-  <h3 style="font-size:15.5px; margin:18px 0 6px;" data-i18n="liminal.process.step3">3. Colección y aplicaciones</h3>
-  <div class="cs-placeholder" style="margin-top:14px;">
+
+  <span class="cs-phase-label">6. Diseño de la página web</span>
+  <div class="cs-placeholder">
     <span class="cs-placeholder-icon">📷</span>
-    Prendas de la colección / mockups de packaging
+    Prototipo del sitio web de Liminal
   </div>
 </section>
 
 <section class="cs-section">
-  <h2 class="cs-section-title">Decisiones clave de diseño</h2>
+  <h2 class="cs-section-title">Referentes analizados</h2>
+  <p>Antes de definir la identidad de Liminal, analicé cuatro marcas de streetwear de referencia, fijándome especialmente en su logotipo y en su relación real (no solo declarada) con la sostenibilidad.</p>
+  <div class="cs-feature-grid">
+    <div class="cs-feature">
+      <h3>OBEY</h3>
+      <p>Fundada por el grafitero Shepard Fairey desde el "hazlo tú mismo" y el punk. Logotipo icónico (la cara de André the Giant) en Futura Extra Bold Condensed Italic. Usa algo de algodón orgánico, pero sin medidas significativas de sostenibilidad más allá de eso.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>Human Made</h3>
+      <p>Marca japonesa de Nigo, inspirada en "el futuro está en el pasado". Logotipo de corazón rojo sólido con tipografía simple. Apuesta por artesanía local y materiales orgánicos/reciclados: el referente más alineado con la sostenibilidad.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>HUF</h3>
+      <p>Fundada por el skater Keith Hufnagel en San Francisco. Logotipo simple ("HUF" sobre fondo negro, o dentro de un triángulo). No se promociona como marca sostenible ni hay información pública sobre políticas al respecto.</p>
+    </div>
+    <div class="cs-feature">
+      <h3>Off-White</h3>
+      <p>Virgil Abloh fusionando alta moda con estética urbana. Logotipo en mayúsculas, tipografía industrial. Ha introducido alguna iniciativa ambiental, pero sin certificarse como marca sostenible ni dar evidencias claras de reducción de impacto.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Naming</h2>
+  <p>Hice una lluvia de ideas explorando distintas opciones, descartando aquellas que resultaban poco originales o no encajaban conceptualmente con la marca: <i>Made by one, Muuttaa, One of One, Urban made, Top 1</i>, entre otras.</p>
+  <p>Finalmente elegí <b>"Liminal"</b> por dos razones: se pronuncia y se recuerda fácilmente tanto en español como en inglés (clave en un sector donde el inglés es el idioma dominante), y su significado —estar en un umbral, en un espacio de transición entre lo que se ha ido y lo que está por llegar— capturaba exactamente la visión del proyecto: la transición de un modelo de fast fashion hacia una moda más consciente y sostenible.</p>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Identidad visual</h2>
+
+  <h3 style="font-size:15.5px; margin-bottom:6px;">Logotipo</h3>
+  <p>Empecé con dibujos y lluvia de ideas en Illustrator y Photoshop, explorando composiciones más icónicas antes de descartarlas por no transmitir la sencillez y transparencia que buscaba para la marca.</p>
+  <div class="cs-placeholder">
+    <span class="cs-placeholder-icon">📷</span>
+    Logotipos descartados durante el proceso
+  </div>
+  <p>El logotipo final es una composición basada en texto: el nombre "Liminal" junto al lema <i>"Think about the future"</i>, acompañado de un pequeño icono verde que evoca una hoja de forma simplificada — un guiño directo a los valores de sostenibilidad y ecología de la marca. También diseñé una versión reducida del logotipo para tamaños pequeños o espacios limitados, y elementos gráficos que evocan al agua, en línea con el simbolismo de fluidez, cambio y adaptabilidad de la marca.</p>
+  <div class="cs-gallery">
+    <div class="cs-placeholder">
+      <span class="cs-placeholder-icon">📷</span>
+      Logo completo de Liminal
+    </div>
+    <div class="cs-placeholder">
+      <span class="cs-placeholder-icon">📷</span>
+      Logo reducido y moodboard
+    </div>
+  </div>
+
+  <h3 style="font-size:15.5px; margin:24px 0 6px;">Tipografía</h3>
+  <p>Busqué una combinación de dos tipografías de palo seco, por su aspecto limpio y contemporáneo. Como tipografía principal elegí <b>Mori</b> (Caio Kondo, variable semibold en el logotipo), una sans serif gótica inspirada en el diseño japonés contemporáneo, coherente con las referencias de moda japonesa que inspiraron la marca. Se usa en el logotipo y en titulares que necesitan máximo impacto visual.</p>
+  <p>Como tipografía secundaria, para cuerpos de texto y la web, elegí <b>Archivo</b> (Héctor Gatti), por su legibilidad y su amplia variedad de pesos:</p>
+  <div style="font-family:'Archivo', sans-serif; padding: 18px 20px; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; margin-bottom: 20px;">
+    <div style="font-weight:600; font-size:20px; margin-bottom:6px;">Archivo — Aa Bb Cc</div>
+    <div style="font-size:14px; color:var(--text-muted);">Regular · <span style="font-weight:600;">Semibold</span> · <i>Italic</i> — usada en cuerpos de texto y en la web de Liminal.</div>
+  </div>
+
+  <h3 style="font-size:15.5px; margin-bottom:6px;">Paleta de color</h3>
+  <p>Para elegir la paleta me apoyé en <i>Psicología del color</i> de Eva Heller (2004), buscando que cada tono respondiera a un significado concreto y no solo a la intuición. El resultado son tres tonos Pantone: negro, verde y blanco.</p>
+  <div class="cs-palette-grid">
+    <div>
+      <div class="cs-color-scale" style="background:#101820;"></div>
+      <div class="cs-palette-name">Pantone Black 6C</div>
+      <div class="cs-palette-hex">Elegancia, sofisticación, simplicidad atemporal</div>
+    </div>
+    <div>
+      <div class="cs-color-scale" style="background:#215732;"></div>
+      <div class="cs-palette-name">Pantone 357 C</div>
+      <div class="cs-palette-hex">Naturaleza, sostenibilidad, compromiso ambiental</div>
+    </div>
+    <div>
+      <div class="cs-color-scale" style="background:#FDF1FE; border-color:var(--border);"></div>
+      <div class="cs-palette-name">Pantone 11-4001 TCX</div>
+      <div class="cs-palette-hex">Pureza, claridad, estética minimalista</div>
+    </div>
+  </div>
+  <p style="margin-top:-6px;">Para preservar la coherencia de la marca en cualquier aplicación, documenté todo esto —construcción del logotipo, área de seguridad, variantes cromáticas y usos incorrectos— en un manual de identidad.</p>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title" data-i18n="common.sections.decisions">Decisiones clave de diseño</h2>
   <div class="cs-decision-grid">
     <div class="cs-decision-card">
-      <h3>Ejemplo: elección de la paleta y tipografía</h3>
+      <h3>El nombre "Liminal"</h3>
       <div class="cs-decision-row">
         <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
-        <p>[Completa con la decisión real]</p>
+        <p>Nombrar la marca "Liminal", en referencia a estar en un umbral o espacio de transición.</p>
       </div>
       <div class="cs-decision-row">
         <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
-        <p>[Completa: qué valores de marca comunica]</p>
+        <p>Funciona igual de bien en español e inglés (clave en moda urbana) y su significado encaja exactamente con la transición del fast fashion hacia una moda más consciente que plantea el proyecto.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Nombres como "Urban made" o "One of One": más descriptivos pero genéricos, sin un concepto propio detrás.</p>
+      </div>
+    </div>
+
+    <div class="cs-decision-card">
+      <h3>Logotipo basado en texto, no en icono</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>Construir el logotipo alrededor del nombre y el lema "Think about the future", con un único icono pequeño de apoyo.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>Con pocos elementos se logra la transparencia y sencillez que buscaba para la marca, evitando la saturación visual de los logotipos más icónicos que exploré al principio.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Varias composiciones más icónicas (ver logotipos descartados): aportaban personalidad pero no la coherencia y legibilidad que sí da un logotipo tipográfico.</p>
+      </div>
+    </div>
+
+    <div class="cs-decision-card">
+      <h3>Paleta fundamentada en psicología del color</h3>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.decision">Decisión</span>
+        <p>Elegir negro, verde y blanco apoyándome en la teoría de Eva Heller sobre el significado psicológico de cada color.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.why">Por qué</span>
+        <p>Cada color tiene una razón de ser: negro (elegancia/atemporalidad), verde (sostenibilidad) y blanco (pureza/minimalismo), en vez de una elección basada solo en gusto estético.</p>
+      </div>
+      <div class="cs-decision-row">
+        <span class="cs-decision-label" data-i18n="common.decision.alt">Alternativa descartada</span>
+        <p>Elegir la paleta de forma puramente intuitiva: más rápido, pero sin el respaldo teórico que da coherencia y justificación a la decisión.</p>
       </div>
     </div>
   </div>
@@ -131,11 +263,33 @@
   <div class="cs-gallery">
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
-      Prototipo de web
+      Manual de identidad
     </div>
     <div class="cs-placeholder">
       <span class="cs-placeholder-icon">📷</span>
-      Aplicaciones de marca (etiquetas, redes, etc.)
+      Aplicaciones de marca (prendas, etiquetas, mockups)
+    </div>
+  </div>
+</section>
+
+<section class="cs-section">
+  <h2 class="cs-section-title">Skills demostrados</h2>
+  <div class="skills">
+    <div class="skill-group">
+      <div class="skill-title">Branding &amp; Naming</div>
+      <div class="skill-items">Naming · Briefing · Análisis DAFO · Análisis de referentes y competencia</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">Identidad visual</div>
+      <div class="skill-items">Diseño de logotipo · Sistemas tipográficos · Paletas de color fundamentadas · Manual de identidad</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">Dirección de arte</div>
+      <div class="skill-items">Illustrator · Photoshop · Moodboards · Diseño de prenda</div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-title">Investigación</div>
+      <div class="skill-items">Metodología del diseño · Sostenibilidad en moda · Objetivos de Desarrollo Sostenible (ODS)</div>
     </div>
   </div>
 </section>
@@ -146,13 +300,17 @@
     <div class="cs-learnings-col">
       <h3 data-i18n="common.learnings.worked">Qué funcionó</h3>
       <ul>
-        <li>[Completa]</li>
+        <li>Basar la paleta de color en una teoría (Heller) en vez de en el gusto personal le dio a la marca una justificación sólida y defendible.</li>
+        <li>Analizar referentes reales por su sostenibilidad, no solo por su estética, afinó mucho el posicionamiento de Liminal.</li>
+        <li>Un logotipo sencillo basado en texto resultó más versátil de lo esperado para aplicarlo a distintos soportes.</li>
       </ul>
     </div>
     <div class="cs-learnings-col">
-      <h3 data-i18n="common.learnings.change">Qué cambiaría</h3>
+      <h3>Qué me llevo</h3>
       <ul>
-        <li>[Completa]</li>
+        <li>Entendí que la moda no es solo seguir tendencias, sino una herramienta para transmitir valores e identidad.</li>
+        <li>Aprendí a llevar un proyecto de branding de forma profesional, de la investigación al manual de identidad final.</li>
+        <li>Fue mi primer proyecto end-to-end de creación de marca desde cero, sin cliente real de por medio.</li>
       </ul>
     </div>
   </div>
