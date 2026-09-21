@@ -160,6 +160,88 @@ window.I18N = {
         bugsList: '<li>Era mi primer proyecto de vibe coding y mi primera vez usando Lovable.</li><li>Un bug de z-index en el autocompletado, causado por contextos de apilamiento en CSS, que resolví tocando el código a mano en VSCode — igual que hice con varias de las pistas, ya que usé en todo momento la versión gratuita de Lovable.</li><li>Diferencia entre UTC y hora local al calcular el país del día.</li><li>Quité el badge de "Made with Lovable" de la versión gratuita tocando el CSS directamente.</li>',
         footer: "Los propios usuarios pidieron más países — la siguiente iteración natural del roadmap."
       }
+    },
+    roomeet: {
+      eyebrow: "Trabajo final de máster · Nov 2024 – Jun 2025",
+      lead: "Una plataforma de dos lados que conecta inquilinos y anfitriones por compatibilidad personal —hábitos, estilo de vida y valores— en vez de limitarse a anunciar habitaciones libres, aplicando al co-living la mecánica de swipe de las apps de citas.",
+      ctaBehance: "Ver case study en Behance",
+      ctaFigma: "Ver Design System en Figma",
+      meta: { role: "Diseño de producto (100%) — equipo de 3", duration: "4 meses · TFM ESAT", status: "Prototipo / Case study" },
+      summary: {
+        problem: "Encontrar compañero de piso es un proceso informal y caótico: la gente joven acaba buscando por Instagram o Twitter porque plataformas como Badi o Idealista se centran en el piso, no en si vas a encajar con quien vas a vivir.",
+        solution: "Una plataforma de dos lados con mecánica de swipe (como las apps de citas, pero para encontrar con quién vivir) que conecta a inquilinos y anfitriones por compatibilidad personal, hábitos y estilo de vida, con modelo freemium.",
+        role: "Diseño end-to-end al 100%: research, personas, arquitectura, flujos, wireframes, diseño final y el Design System completo, en un equipo de 3 personas.",
+        result: "Case study completo publicado en Behance, Design System documentado en Figma y un prototipo funcional en React que cubre el flujo principal."
+      },
+      context: {
+        p1: "Compartir piso es cada vez más habitual entre la gente joven, pero encontrar a alguien compatible es frustrante y caótico. Plataformas como Badi o Idealista se centran en el piso, no en las personas — así que la mayoría acaba recurriendo a Instagram Stories o Twitter para buscar compañero de piso: un proceso informal, ineficiente y sin ningún filtro real de compatibilidad.",
+        p2: "Al investigar, vi que en realidad había dos problemas distintos escondidos en uno: el inquilino busca una habitación <em>y</em> una persona con la que encajar; el anfitrión busca a alguien que encaje con la dinámica de su piso. Ninguna plataforma resolvía los dos lados con la misma experiencia — ahí estaba el hueco: nadie había aplicado la mecánica de swipe, tan familiar por las apps de citas, al co-living con filtros reales de estilo de vida.",
+        p3: "También decidí construir Roomeet sobre unos valores de producto claros: inclusión e interseccionalidad, rechazo explícito a la especulación inmobiliaria, registro solo para particulares (inmobiliarias y especuladores bloqueados) y un sistema de denuncia comunitaria."
+      },
+      teamTitle: "Mi rol y equipo",
+      teamP: "El research, las personas, la arquitectura, los flujos y las decisiones de producto los trabajamos en equipo entre los tres. Ya en la fase de diseño —wireframes, diseño final y el Design System completo— me encargué yo sola. Javi se encargó del desarrollo en React y de las ilustraciones de los personajes geométricos, y Noah dio apoyo al equipo; colaboré de cerca con Javi para que el Design System fuera directamente traducible a código.",
+      stats: { s1: "del diseño, de mi responsabilidad", s2: "meses de proyecto", s3: "personas en el equipo" },
+      researchTitle: "Research y personas",
+      researchList: "<li>Analizamos la competencia directa: Badi, Idealista, y también Tinder como referencia de mecánica.</li><li>Investigamos cómo busca piso la gente joven hoy en día.</li><li>Insight clave: el mercado informal (redes sociales) domina porque las plataformas formales no priorizan la compatibilidad personal.</li>",
+      personasIntro: "A partir de ese research construimos tres personas para guiar el diseño:",
+      phaseDefinition: "Definición",
+      archTitle: "Arquitectura",
+      arch: {
+        p1: "El objetivo quedó claro tras el research: conectar personas compatibles, no solo pisos. La decisión de diseño más importante del proyecto salió de aquí: separar los flujos de <b>inquilino</b> y <b>anfitrión</b> desde el propio onboarding, porque buscan cosas distintas — mezclarlos habría generado confusión, aunque hubiera simplificado el desarrollo.",
+        p2: 'Mapeamos el sitemap completo del producto: Landing, flujo de registro y "Modo App" (una vez dentro), que incluye Swipe, Chats, Perfil, Galería y Premium.'
+      },
+      userFlow: {
+        p1: "Mapeamos el flujo completo en Figma, desde el primer acceso hasta el match y la conversación. Esto permitió detectar puntos de fricción antes de construir nada: un onboarding demasiado largo, el momento de decidir el plan premium, y la gestión de varios matches a la vez.",
+        hint: "Clic sobre el diagrama para verlo a tamaño completo."
+      },
+      wireframesP: "Los wireframes de baja fidelidad los hice yo, aunque las ideas y las decisiones sobre qué mantener y qué descartar fueron conjuntas entre los tres; la alta fidelidad también fue responsabilidad mía en solitario. Las pantallas de swipe pasaron por varios rediseños para adaptarlas a desktop — la app se pensó mobile-first, pero tenía que funcionar bien también en pantalla grande, y ese fue el mayor reto de adaptación: apenas hay referentes de swipe fuera de mobile.",
+      finalDesignTitle: "Diseño final",
+      finalDesignP: "El color principal es un amarillo (#FBAD37) amigable, enérgico y joven. Javi ilustró los personajes geométricos de la marca, donde cada forma representa una personalidad distinta, para dar un tono cercano y nada corporativo. La app es mobile-first con una versión desktop adaptada, y el modelo de monetización combina plan freemium con publicidad dentro de la app.",
+      dsIntro: "Construí el Design System con la filosofía de <b>Atomic Design</b>, pensando los componentes para que fueran directamente aplicables a código React — facilitar el trabajo de Javi como desarrollador fue una decisión de diseño consciente, no un añadido posterior.",
+      brandChip: "#FBAD37 — Yellow 500, color principal",
+      typography: "Única fuente del sistema — Bold para títulos, Regular para texto. Escala de LargeDisplayTitle a Body.",
+      componentsP: "Componentes principales (Atomic Design): botones (primary, secondary, ghost, disabled), inputs con estados de error, tags de estilo de vida seleccionables, swipe cards, botones de acción de swipe (like, dislike, superlike, favorito), lista de chat y burbujas, barra de navegación mobile, tarjetas de perfil (inquilino y anfitrión), tarjetas de plan (Free vs. Premium), modales, alerts y elementos de formulario. No hay dark mode: el producto es 100% light.",
+      componentsCaption: 'Una selección de los componentes — no caben todos aquí. Para ver la librería completa, el <a class="link" href="https://www.figma.com/design/LXzunRluXxB3RugOLD9Q4V/" target="_blank" rel="noopener">Figma</a> tiene el detalle entero.',
+      featuresTitle: "Funcionalidades principales",
+      features: {
+        f1: "<h3>1. Onboarding bifurcado</h3><p>¿Tienes piso? → flujo anfitrión (perfil de piso + habitación). ¿No tienes piso? → flujo inquilino (preferencias y estilo de vida). Preguntas adaptadas a cada rol.</p>",
+        f2: "<h3>2. Swipe experience</h3><p>Card con foto, nombre, edad y etiquetas de personalidad. Al hacer click se abre el perfil completo con descripción y fotos del piso. Like / Dislike / Superlike / Favorito. Match → acceso al chat.</p>",
+        f3: "<h3>3. Sistema de chat</h3><p>Lista de matches y conversación. Solo puedes chatear con tus matches. Diseño limpio, legible tanto en mobile como en desktop.</p>",
+        f4: "<h3>4. Modelo freemium</h3><p>Free: funcionalidad básica. Premium: más likes, ver quién te ha dado like y filtros avanzados. Monetización adicional con publicidad dentro de la app.</p>",
+        f5: "<h3>5. Perfiles dobles</h3><p>Perfil personal (quién eres) y, si eres anfitrión, perfil de piso (fotos, normas, habitación), con toggle de edición y vista previa.</p>",
+        f6: "<h3>6. Sistema anti-especulación</h3><p>Registro solo para particulares, con preguntas que filtran inmobiliarias, y un sistema de denuncia comunitaria.</p>"
+      },
+      finalScreensTitle: "Diseño final: pantallas",
+      finalScreens: {
+        p1: "Grid de las pantallas mobile del producto terminado:",
+        p2: "Versión desktop adaptada:",
+        p3: "Detalle de la interacción de swipe, el gesto central del producto:"
+      },
+      decisions: {
+        d1: { title: "Dos flujos de onboarding separados", decision: "Separar por completo el onboarding de inquilino y anfitrión desde el primer paso, con preguntas distintas para cada rol.", why: "Inquilino y anfitrión buscan cosas distintas — mezclar los flujos habría generado confusión en el momento más crítico del producto: el primer contacto con la app.", alt: "Un único flujo genérico: más simple de desarrollar, pero descartado porque diluía la propuesta de valor para ambos lados." },
+        d2: { title: "Adaptar el swipe a desktop", decision: "Rediseñar la mecánica de swipe específicamente para pantallas grandes, en lugar de escalar directamente el layout mobile.", why: "La app es mobile-first, pero necesitaba funcionar en desktop. Apenas existen referencias de swipe fuera de mobile, así que hubo que replantear la interacción, no solo el tamaño.", alt: "Escalar el mismo layout mobile a una pantalla más grande: descartada tras varias pruebas por no resultar natural con ratón y teclado." },
+        d3: { title: "Design System pensado para React desde el diseño", decision: "Construir los componentes de Figma con Atomic Design, estructurados para que fueran directamente traducibles a componentes de código.", why: "Reduce la fricción en el handoff con Javi y acelera el desarrollo, al no tener que reinterpretar la estructura del diseño en código.", alt: "Diseñar sin pensar en la implementación y dejar la traducción a código enteramente en manos del desarrollador: habría generado más idas y vueltas." }
+      },
+      stackTitle: "Stack técnico",
+      stack: {
+        designLabel: "Diseño:",
+        devLabel: "Desarrollo:",
+        p: "El prototipo en React cubre el flujo principal de usuario y demuestra la viabilidad técnica del producto. No llegó a producción por el tiempo limitado del TFM (4 meses en equipo de 3), pero el Design System construido con Atomic Design dejó el terreno preparado para escalarlo."
+      },
+      skillsTitle: "Skills demostrados",
+      skills: {
+        g1: "UX Research · User Personas · Arquitectura de información · User Flows · Priorización de requisitos funcionales y éticos",
+        g2title: "UI & Design System",
+        g2: "Atomic Design · Design tokens · Wireframing (baja y alta fidelidad) · Diseño responsive mobile-first",
+        g3title: "Colaboración",
+        g3: "Handoff diseño → código · Trabajo en equipo de producto · Figma como fuente de verdad para desarrollo"
+      },
+      learnings: {
+        title1: "Qué aprendí",
+        list1: "<li>Diseñar para dos tipos de usuario desde el día 1 multiplica la complejidad — pero hacerlo bien es lo que diferencia el producto.</li><li>Adaptar una mecánica mobile-first a desktop exige replantear la interacción, no solo escalar el layout.</li><li>Un Design System pensado como puente entre diseño y código acelera el desarrollo y reduce malentendidos con el equipo.</li>",
+        title2: "Qué quedó pendiente",
+        list2: "<li>Test real de compatibilidad entre usuarios.</li><li>Funcionalidades premium más avanzadas.</li><li>Versión nativa móvil.</li>"
+      }
     }
   },
 
@@ -323,6 +405,88 @@ window.I18N = {
         bugsTitle: "Bugs and things I learned",
         bugsList: '<li>This was my first vibe-coding project and my first time using Lovable.</li><li>A z-index bug in the autocomplete, caused by CSS stacking contexts, which I fixed by hand in VSCode — same as I did with several of the clues, since I used Lovable\'s free tier the whole time.</li><li>The difference between UTC and local time when calculating the day\'s country.</li><li>Removed the "Made with Lovable" badge from the free tier by editing the CSS directly.</li>',
         footer: "Users themselves asked for more countries — the natural next step on the roadmap."
+      }
+    },
+    roomeet: {
+      eyebrow: "Master's final project · Nov 2024 – Jun 2025",
+      lead: "A two-sided platform that connects tenants and hosts by personal compatibility —habits, lifestyle and values— instead of just listing free rooms, applying the swipe mechanic of dating apps to co-living.",
+      ctaBehance: "View case study on Behance",
+      ctaFigma: "View Design System on Figma",
+      meta: { role: "Product design (100%) — team of 3", duration: "4 months · ESAT final project", status: "Prototype / Case study" },
+      summary: {
+        problem: "Finding a flatmate is an informal, chaotic process: young people end up searching on Instagram or Twitter because platforms like Badi or Idealista focus on the room, not on whether you'll actually get along with who you'll live with.",
+        solution: "A two-sided platform with a swipe mechanic (like dating apps, but for finding who to live with) that connects tenants and hosts by personal compatibility, habits and lifestyle, with a freemium model.",
+        role: "100% end-to-end design: research, personas, architecture, flows, wireframes, final design and the complete Design System, in a team of 3.",
+        result: "A complete case study published on Behance, a Design System documented in Figma, and a working React prototype covering the main flow."
+      },
+      context: {
+        p1: "Sharing a flat is increasingly common among young people, but finding someone compatible is frustrating and chaotic. Platforms like Badi or Idealista focus on the flat, not the people — so most people end up turning to Instagram Stories or Twitter to find a flatmate: an informal, inefficient process with no real compatibility filter.",
+        p2: "Researching this, I realized there were actually two different problems hidden inside one: the tenant is looking for a room <em>and</em> a person to get along with; the host is looking for someone who fits their flat's dynamic. No platform solved both sides with the same experience — that was the gap: nobody had applied the swipe mechanic, so familiar from dating apps, to co-living with real lifestyle filters.",
+        p3: "I also decided to build Roomeet around clear product values: inclusion and intersectionality, an explicit rejection of real-estate speculation, sign-up limited to individuals (real-estate agencies and speculators blocked), and a community reporting system."
+      },
+      teamTitle: "My role and team",
+      teamP: "Research, personas, architecture, flows and product decisions were team work between the three of us. Once we got to the design phase —wireframes, final design and the complete Design System— that was on me alone. Javi handled the React development and the geometric character illustrations, and Noah supported the team; I worked closely with Javi so the Design System would translate directly into code.",
+      stats: { s1: "of the design, my responsibility", s2: "months on the project", s3: "people on the team" },
+      researchTitle: "Research and personas",
+      researchList: "<li>We analyzed the direct competition: Badi, Idealista, and also Tinder as a mechanic reference.</li><li>We researched how young people look for a flat today.</li><li>Key insight: the informal market (social media) dominates because formal platforms don't prioritize personal compatibility.</li>",
+      personasIntro: "From that research we built three personas to guide the design:",
+      phaseDefinition: "Definition",
+      archTitle: "Architecture",
+      arch: {
+        p1: "The goal became clear after the research: connect compatible people, not just flats. The project's most important design decision came from here: separating the <b>tenant</b> and <b>host</b> flows from onboarding itself, because they're looking for different things — mixing them would have caused confusion, even though it would have simplified development.",
+        p2: 'We mapped the product\'s full sitemap: Landing, sign-up flow and "App Mode" (once inside), which includes Swipe, Chats, Profile, Gallery and Premium.'
+      },
+      userFlow: {
+        p1: "We mapped the full flow in Figma, from first access to match and conversation. This surfaced friction points before building anything: an onboarding that was too long, the moment of deciding on the premium plan, and managing several matches at once.",
+        hint: "Click on the diagram to view it at full size."
+      },
+      wireframesP: "I made the low-fidelity wireframes myself, although the ideas and decisions about what to keep and what to drop were made jointly between the three of us; the high-fidelity design was also my responsibility alone. The swipe screens went through several redesigns to adapt them to desktop — the app was designed mobile-first, but it had to work well on a large screen too, and that was the biggest adaptation challenge: there are barely any swipe references outside mobile.",
+      finalDesignTitle: "Final design",
+      finalDesignP: "The main color is a friendly, energetic, youthful yellow (#FBAD37). Javi illustrated the brand's geometric characters, where each shape represents a different personality, to give it an approachable, non-corporate tone. The app is mobile-first with an adapted desktop version, and the monetization model combines a freemium plan with in-app advertising.",
+      dsIntro: "I built the Design System with an <b>Atomic Design</b> philosophy, structuring components so they'd be directly applicable to React code — making Javi's job as developer easier was a conscious design decision, not an afterthought.",
+      brandChip: "#FBAD37 — Yellow 500, main color",
+      typography: "The system's only typeface — Bold for headings, Regular for body text. Scale from LargeDisplayTitle to Body.",
+      componentsP: "Main components (Atomic Design): buttons (primary, secondary, ghost, disabled), inputs with error states, selectable lifestyle tags, swipe cards, swipe action buttons (like, dislike, superlike, favorite), chat list and bubbles, mobile navigation bar, profile cards (tenant and host), plan cards (Free vs. Premium), modals, alerts and form elements. No dark mode: the product is 100% light.",
+      componentsCaption: 'A selection of the components — not all of them fit here. To see the full library, the <a class="link" href="https://www.figma.com/design/LXzunRluXxB3RugOLD9Q4V/" target="_blank" rel="noopener">Figma file</a> has the whole thing in detail.',
+      featuresTitle: "Key features",
+      features: {
+        f1: "<h3>1. Split onboarding</h3><p>Do you have a flat? → host flow (flat profile + room). No flat? → tenant flow (preferences and lifestyle). Questions tailored to each role.</p>",
+        f2: "<h3>2. Swipe experience</h3><p>A card with photo, name, age and personality tags. Clicking opens the full profile with a description and flat photos. Like / Dislike / Superlike / Favorite. Match → access to chat.</p>",
+        f3: "<h3>3. Chat system</h3><p>Match list and conversation. You can only chat with your matches. Clean design, readable on both mobile and desktop.</p>",
+        f4: "<h3>4. Freemium model</h3><p>Free: basic functionality. Premium: more likes, seeing who liked you, and advanced filters. Additional monetization through in-app advertising.</p>",
+        f5: "<h3>5. Dual profiles</h3><p>A personal profile (who you are) and, if you're a host, a flat profile (photos, house rules, room), with an edit/preview toggle.</p>",
+        f6: "<h3>6. Anti-speculation system</h3><p>Sign-up limited to individuals, with questions that filter out real-estate agencies, plus a community reporting system.</p>"
+      },
+      finalScreensTitle: "Final design: screens",
+      finalScreens: {
+        p1: "A grid of the finished product's mobile screens:",
+        p2: "Adapted desktop version:",
+        p3: "Detail of the swipe interaction, the product's core gesture:"
+      },
+      decisions: {
+        d1: { title: "Two separate onboarding flows", decision: "Fully separate the tenant and host onboarding from the first step, with different questions for each role.", why: "Tenants and hosts are looking for different things — mixing the flows would have caused confusion at the product's most critical moment: first contact with the app.", alt: "A single generic flow: simpler to build, but dropped because it diluted the value proposition for both sides." },
+        d2: { title: "Adapting swipe to desktop", decision: "Redesign the swipe mechanic specifically for large screens, instead of directly scaling up the mobile layout.", why: "The app is mobile-first, but needed to work on desktop too. There are barely any swipe references outside mobile, so the interaction itself had to be rethought, not just the size.", alt: "Scaling the same mobile layout to a bigger screen: dropped after testing, since it didn't feel natural with a mouse and keyboard." },
+        d3: { title: "A Design System built for React from the start", decision: "Build the Figma components with Atomic Design, structured so they'd translate directly into code components.", why: "It reduces friction in the handoff with Javi and speeds up development, since the design structure doesn't need to be reinterpreted in code.", alt: "Designing without thinking about implementation and leaving the translation to code entirely up to the developer: would have caused a lot more back-and-forth." }
+      },
+      stackTitle: "Tech stack",
+      stack: {
+        designLabel: "Design:",
+        devLabel: "Development:",
+        p: "The React prototype covers the main user flow and demonstrates the product's technical feasibility. It didn't reach production given the limited time of the final project (4 months, team of 3), but the Design System built with Atomic Design left the groundwork ready to scale it."
+      },
+      skillsTitle: "Skills demonstrated",
+      skills: {
+        g1: "UX Research · User Personas · Information architecture · User Flows · Functional & ethical requirement prioritization",
+        g2title: "UI & Design System",
+        g2: "Atomic Design · Design tokens · Wireframing (low and high fidelity) · Mobile-first responsive design",
+        g3title: "Collaboration",
+        g3: "Design → code handoff · Product team collaboration · Figma as the source of truth for development"
+      },
+      learnings: {
+        title1: "What I learned",
+        list1: "<li>Designing for two user types from day one multiplies complexity — but doing it well is what sets the product apart.</li><li>Adapting a mobile-first mechanic to desktop requires rethinking the interaction, not just scaling the layout.</li><li>A Design System built as a bridge between design and code speeds up development and reduces misunderstandings with the team.</li>",
+        title2: "What was left unfinished",
+        list2: "<li>Real compatibility testing between users.</li><li>More advanced premium features.</li><li>A native mobile version.</li>"
       }
     }
   }
