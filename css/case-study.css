@@ -91,6 +91,8 @@ figure.cs-figure figcaption {
 .cs-gallery { display: grid; grid-template-columns: 1fr; gap: 16px; }
 @media (min-width: 640px) { .cs-gallery { grid-template-columns: repeat(2, minmax(0,1fr)); } }
 
+.cs-gallery-match .cs-shot { aspect-ratio: 16 / 9; object-fit: cover; object-position: center; }
+
 .cs-row-2 { display: grid; grid-template-columns: 1fr; gap: 20px; align-items: start; margin: 4px 0 14px; }
 @media (min-width: 640px) { .cs-row-2 { grid-template-columns: 1fr 240px; } }
 .cs-row-2 p { margin: 0 0 12px; }
