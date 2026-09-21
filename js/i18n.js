@@ -105,7 +105,7 @@ window.I18N = {
         result: "Lanzado en Product Hunt: 1.000 usuarios activos y 11.000 eventos en las primeras 4 semanas, con un 24,2% de conversión de visitante a jugador."
       },
       context: {
-        p1: "Antes de diseñar nada, investigué más de 50 juegos de geografía existentes (GeoGuessr, Sporcle y varios clones de Wordle). El patrón era claro: el 95% se basa en mapas y reconocimiento de formas — un formato mecánico, poco educativo y ya saturado. Ahí vi el hueco: no había ningún juego diario construido sobre datos curiosos de geografía en vez de sobre geografía visual.",
+        p1: "Antes de diseñar nada, investigué varios juegos de geografía existentes (GeoGuessr, Sporcle y varios clones de Wordle). El patrón era claro: la mayoría se basa en mapas y reconocimiento de formas — un formato mecánico, poco educativo y ya saturado. Ahí vi el hueco: no había ningún juego diario construido sobre datos curiosos de geografía en vez de sobre geografía visual.",
         p2: "La propuesta: el mismo país para todo el mundo cada día (crea comunidad, como Wordle), con pistas progresivas de Experto a Fácil que premian saber cosas poco conocidas y enseñan algo nuevo aunque falles. Target: viajeros, amantes de la geografía y fans de este tipo de retos diarios."
       },
       process: {
@@ -482,7 +482,7 @@ window.I18N = {
         result: "Launched on Product Hunt: 1,000 active users and 11,000 events in the first 4 weeks, with a 24.2% visitor-to-player conversion rate."
       },
       context: {
-        p1: "Before designing anything, I researched over 50 existing geography games (GeoGuessr, Sporcle and several Wordle clones). The pattern was clear: 95% are based on maps and shape recognition — a mechanical, not very educational, already-saturated format. That's where I saw the gap: there was no daily game built around fun geography facts instead of visual geography.",
+        p1: "Before designing anything, I researched several existing geography games (GeoGuessr, Sporcle and several Wordle clones). The pattern was clear: most are based on maps and shape recognition — a mechanical, not very educational, already-saturated format. That's where I saw the gap: there was no daily game built around fun geography facts instead of visual geography.",
         p2: "The proposal: the same country for everyone every day (builds community, like Wordle), with progressive clues from Expert to Easy that reward knowing obscure facts and teach you something new even when you fail. Target: travelers, geography lovers and fans of this kind of daily challenge."
       },
       process: {
