@@ -38,6 +38,7 @@
 .cs-plain-img { display: block; width: 100%; }
 .cs-shot:hover { opacity: 0.88; }
 .cs-gallery-3 .cs-shot { aspect-ratio: 4 / 3; object-position: top center; height: 100%; }
+.cs-tall-shot { max-width: 380px; margin: 0 auto; }
 figure.cs-figure { margin: 0; }
 figure.cs-figure figcaption {
   margin-top: 10px; font-size: 13px; color: var(--text-muted); text-align: center;

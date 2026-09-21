@@ -54,10 +54,11 @@ window.I18N = {
           link1: "Ver caso completo →"
         },
         belen: {
-          eyebrow: "Proyecto para cliente real",
-          desc: "Tienda online en Shopify para una marca de ropa independiente, actualmente en construcción. Diseño de producto, catálogo y checkout.",
+          eyebrow: "Proyecto para cliente real · 2025",
+          desc: "Tienda online en Shopify para Racoon's Wife, marca de ropa artesanal hecha a mano. Diseño en Figma e implementación completa de la tienda, actualmente en construcción.",
           tags: "Shopify · E-commerce · UI",
-          link1: "Ver caso completo →"
+          link1: "Ver caso completo →",
+          link2: "Ver tienda en construcción →"
         }
       },
       about: {
@@ -87,15 +88,6 @@ window.I18N = {
       contact: {
         title: "¿Buscas a tu próxima Product Designer?",
         footer: "Cristina Arias Parrilla — Valencia, España"
-      }
-    },
-    belen: {
-      lead: "Tienda online en Shopify para una marca de ropa independiente: diseño de producto, catálogo y checkout. Actualmente en construcción.",
-      meta: { role: "Diseñadora de producto & UI", client: "Marca de ropa independiente", tools: "Shopify" },
-      context: "Diseño de una tienda online para una marca de ropa independiente que necesitaba presencia digital propia para vender directamente a sus clientes.",
-      process: {
-        step1: "1. Diseño de catálogo y navegación",
-        step2: "2. Checkout"
       }
     }
   },
@@ -155,10 +147,11 @@ window.I18N = {
           link1: "See full case study →"
         },
         belen: {
-          eyebrow: "Real client project",
-          desc: "Online Shopify store for an independent clothing brand, currently under construction. Product design, catalog and checkout.",
+          eyebrow: "Real client project · 2025",
+          desc: "Shopify store for Racoon's Wife, a handmade artisan clothing brand. Figma design and full store build, currently under construction.",
           tags: "Shopify · E-commerce · UI",
-          link1: "See full case study →"
+          link1: "See full case study →",
+          link2: "See store in progress →"
         }
       },
       about: {
@@ -188,15 +181,6 @@ window.I18N = {
       contact: {
         title: "Looking for your next Product Designer?",
         footer: "Cristina Arias Parrilla — Valencia, Spain"
-      }
-    },
-    belen: {
-      lead: "Online Shopify store for an independent clothing brand: product design, catalog and checkout. Currently under construction.",
-      meta: { role: "Product & UI Designer", client: "Independent clothing brand", tools: "Shopify" },
-      context: "Design of an online store for an independent clothing brand that needed its own digital presence to sell directly to its customers.",
-      process: {
-        step1: "1. Catalog and navigation design",
-        step2: "2. Checkout"
       }
     }
   }
