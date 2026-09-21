@@ -323,6 +323,56 @@ window.I18N = {
         title2: "Qué me llevo",
         list2: "<li>Entendí que la moda no es solo seguir tendencias, sino una herramienta para transmitir valores e identidad.</li><li>Aprendí a llevar un proyecto de branding de forma profesional, de la investigación al manual de identidad final.</li><li>Fue mi primer proyecto end-to-end de creación de marca desde cero, sin cliente real de por medio.</li>"
       }
+    },
+    belen: {
+      eyebrow: "Proyecto para cliente real · Racoon's Wife",
+      lead: "Diseño y construcción de la tienda online de Racoon's Wife, marca de ropa artesanal hecha a mano: desde el brief con la clienta hasta la implementación real en Shopify.",
+      ctaStore: "Ver tienda en construcción →",
+      meta: { role: "Diseño en Figma e implementación en Shopify (100%)", duration: "Agosto 2026 – actualidad" },
+      summary: {
+        problem: "Racoon's Wife, marca de ropa artesanal hecha a mano, ya tenía una identidad de marca y una estética muy definidas, pero no contaba con una tienda online propia para vender sus prendas.",
+        solution: "Diseñar y construir esa tienda desde cero en Shopify, partiendo de un proceso de descubrimiento estructurado con la clienta antes de diseñar nada, y traduciendo después ese diseño a una plataforma real con sus propias limitaciones.",
+        role: "Diseño en Figma e implementación completa de la tienda en Shopify, de principio a fin. Belén (la clienta) aportó la dirección de marca, las fotos, el contenido y un moodboard de referencias muy trabajado.",
+        result: "Una tienda real, en construcción activa."
+      },
+      context: {
+        p1: "Belén, la persona detrás de Racoon's Wife, hace a mano piezas de ropa con una estética muy propia: blusas y prendas artesanales, tonos crema y blanco roto, encajes y detalles vintage, y algunas piezas únicas de punto que también ofrece en alquiler. Tenía clarísima la identidad de su marca, pero no tenía ningún sitio propio donde vender: dependía de redes sociales y de la venta directa.",
+        p2: "Me contrató para diseñar y construir esa tienda en Shopify. No partíamos de cero en cuanto a dirección de marca —eso ya lo tenía ella— pero sí había que traducirlo a una tienda online completa: navegación, catálogo, fichas de producto, checkout y contenido de marca."
+      },
+      process: {
+        phase1: "1. Descubrimiento y briefing",
+        p1: "Antes de diseñar nada, le pasé a Belén un cuestionario estructurado: qué webs le inspiraban y por qué, qué quería que viera una persona en los primeros segundos, qué incluir en la home, cómo organizar el catálogo, qué páginas necesitaba y qué contenido y fotos tenía ya disponibles.",
+        p2: "Ella respondió con un documento muy completo: un moodboard de cuatro tiendas de referencia (Mirror Palais, Damson Madder, Meshki y Doen) con anotaciones muy concretas sobre qué le gustaba de cada una —tipografía, forma de mostrar el producto, sensación de cada paleta de color— y su propio boceto de la estructura de navegación y del contenido de cada página.",
+        phase2: "2. Diseño en Figma",
+        p3: 'Con esas referencias diseñé la propuesta de tienda en Figma: tipografía EB Garamond para dar ese aire vintage que pedía Belén, paleta en tonos crema en vez de blanco puro, un grid de producto uniforme, y una sección diferenciada para las piezas artesanales únicas ("Artesanal pieces"), pensada para transmitir que no son prendas de producción en serie.',
+        phase3: "3. Implementación en Shopify",
+        p4: "Aquí es donde el proyecto se volvió más interesante: ni Belén ni yo habíamos usado Shopify antes de este proyecto, así que aprendimos la plataforma sobre la marcha. Elegimos un tema base y lo personalizamos tanto como el propio tema permitía, pero no todo lo diseñado en Figma se pudo trasladar tal cual —Shopify da mucha menos libertad de personalización que un diseño libre en Figma— así que varias decisiones se rehicieron ya directamente sobre la plataforma real, a medida que llegaban las fotos y el contenido definitivo de Belén.",
+        p5: 'Dicho esto, para las partes que sí eran clave para la marca, opté por programar la sección directamente en código en vez de ceder ante las limitaciones del editor visual. El banner de "Artesanal pieces" es el mejor ejemplo: Shopify no permitía superponer una imagen (un png de una pieza de encaje) sobre una foto de fondo, y colocar encima de todo eso un título, un subtítulo y un botón. Escribí esa sección entera a código para poder apilar las tres capas —foto de fondo, png de la pieza y texto con botón— y conseguir el diseño exacto que tenía en Figma.'
+      },
+      decisions: {
+        d1: { title: "Un tema de Shopify personalizable, no una tienda 100% a medida", decision: "Partir de un tema de Shopify y personalizarlo, en vez de construir una tienda completamente a medida.", why: "Le permite a Belén gestionar su propio catálogo, precios y contenido sin depender de mí para cada cambio, algo clave para una marca pequeña que sigue creciendo.", alt: "Diseñar una tienda 100% a medida: más fiel al Figma original, pero mucho más cara de mantener y con Belén dependiendo de un desarrollador para cualquier cambio futuro." },
+        d2: { title: "Partir de las referencias de la clienta, no de un moodboard propio", decision: "Usar directamente el moodboard anotado que trajo Belén como punto de partida del diseño, en vez de proponer referencias propias desde cero.", why: "Belén ya tenía un ojo muy entrenado para su propia marca y unas referencias muy concretas; ignorarlas para partir de mi propia investigación habría sido más lento y con más riesgo de no encajar con su visión.", alt: "Hacer mi propio moodboard de marcas de referencia antes de mirar el suyo, como haría en un proyecto sin dirección de marca previa." },
+        d3: { title: "Aceptar que el Figma no se traduce literalmente a Shopify", decision: "Rehacer directamente en Shopify varias decisiones de layout y contenido que en Figma se habían diseñado sin las limitaciones reales del tema.", why: "Insistir en replicar el Figma al pixel habría significado pelear contra el tema constantemente, en vez de aprovechar lo que Shopify ya resolvía bien de forma nativa.", alt: "Forzar una réplica exacta del diseño en Figma con desarrollo a medida sobre el tema, lo que habría alargado mucho el plazo de un proyecto pensado para durar ~1 mes." },
+        d4: { title: "Código a medida para el banner de piezas artesanales", decision: 'Programar directamente en código la sección del banner de "Artesanal pieces", en vez de usar el editor visual del tema.', why: "El editor nativo no permitía apilar una foto de fondo, un png de una pieza de encaje encima y, encima de todo eso, un título, un subtítulo y un botón. Era la única forma de conseguir el diseño exacto del Figma para una sección tan importante para la marca.", alt: "Usar la sección de imagen con texto del propio tema: más rápido, pero habría obligado a aplanar las tres capas en una sola imagen y perder esa composición." }
+      },
+      resultIntro: "La tienda sigue en construcción activa. Estas dos capturas muestran la evolución desde la primera propuesta en Figma hasta la tienda real.",
+      figmaCaption: "Propuesta inicial de home, diseñada en Figma.",
+      liveCaption: 'La tienda real hoy, en <a href="https://racoon-s-wife.myshopify.com/" target="_blank" rel="noopener">racoon-s-wife.myshopify.com</a>.',
+      shotsHint: "Clic sobre cualquiera de las dos capturas para verla a tamaño completo.",
+      skillsTitle: "Skills demostrados",
+      skills: {
+        g1title: "Diseño de producto",
+        g1: "Figma · Diseño de UI para e-commerce · Adaptación de diseño a una plataforma real",
+        g2: "Personalización de temas · Secciones de código a medida (HTML/CSS) · Organización de catálogo · Fichas de producto · Checkout",
+        g3title: "Gestión de cliente",
+        g3: "Briefing y descubrimiento · Traducción de referencias visuales a dirección de diseño",
+        g4title: "Aprendizaje autónomo",
+        g4: "Aprendizaje de una plataforma nueva sobre la marcha · Adaptabilidad ante limitaciones técnicas"
+      },
+      learnings: {
+        workedList: "<li>Pasar un cuestionario estructurado antes de diseñar nada ahorró muchas rondas de revisión: Belén llegó con referencias e ideas muy concretas desde el primer día.</li><li>Partir del moodboard anotado por la propia clienta, en vez de uno genérico mío, aceleró mucho la fase de diseño.</li><li>Elegir un tema de Shopify personalizable en vez de una tienda 100% a medida le da a Belén autonomía real para gestionar su catálogo.</li><li>Aprendí a usar Shopify de principio a fin con este proyecto, algo que ahora puedo aplicar directamente a futuros clientes de e-commerce.</li>",
+        changeList: "<li>Probaría el tema de Shopify en un entorno de pruebas antes de comprometerme con él, para no tener que rehacer secciones que ya estaban maquetadas en Figma.</li><li>Dejaría más margen de tiempo para las páginas de contenido en vez de dejarlas para el final del proyecto.</li>"
+      }
     }
   },
 
@@ -649,6 +699,56 @@ window.I18N = {
         workedList: "<li>Basing the color palette on a theory (Heller) instead of personal taste gave the brand a solid, defensible justification.</li><li>Analyzing real brands for their sustainability, not just their aesthetics, sharpened Liminal's positioning a lot.</li><li>A simple text-based logo turned out to be more versatile than expected across different applications.</li>",
         title2: "What I'm taking away",
         list2: "<li>I understood that fashion isn't just about following trends, but a tool for conveying values and identity.</li><li>I learned to run a branding project professionally, from research to the final brand manual.</li><li>It was my first end-to-end brand-creation project from scratch, with no real client involved.</li>"
+      }
+    },
+    belen: {
+      eyebrow: "Real client project · Racoon's Wife",
+      lead: "Design and build of the Racoon's Wife online store, a handmade artisan clothing brand: from the client brief to the real implementation in Shopify.",
+      ctaStore: "View store in progress →",
+      meta: { role: "Figma design and Shopify implementation (100%)", duration: "August 2026 – present" },
+      summary: {
+        problem: "Racoon's Wife, a handmade artisan clothing brand, already had a very defined brand identity and aesthetic, but had no online store of its own to sell its garments.",
+        solution: "Design and build that store from scratch in Shopify, starting from a structured discovery process with the client before designing anything, and then translating that design onto a real platform with its own limitations.",
+        role: "Figma design and full store implementation on Shopify, from start to finish. Belén (the client) provided brand direction, photos, content and a well-developed moodboard of references.",
+        result: "A real store, in active development."
+      },
+      context: {
+        p1: "Belén, the person behind Racoon's Wife, makes clothing pieces by hand with a very distinctive aesthetic: artisan blouses and garments, cream and off-white tones, lace and vintage details, and a few one-of-a-kind knit pieces she also offers for rent. She had a very clear idea of her brand identity, but no site of her own to sell on: she relied on social media and direct sales.",
+        p2: "She hired me to design and build that store on Shopify. We weren't starting from scratch on brand direction —she already had that— but it did need to be translated into a complete online store: navigation, catalog, product pages, checkout and brand content."
+      },
+      process: {
+        phase1: "1. Discovery and briefing",
+        p1: "Before designing anything, I gave Belén a structured questionnaire: what websites inspired her and why, what she wanted a visitor to see in the first few seconds, what to include on the homepage, how to organize the catalog, what pages she needed, and what content and photos she already had available.",
+        p2: "She replied with a very thorough document: a moodboard of four reference stores (Mirror Palais, Damson Madder, Meshki and Doen) with very specific notes on what she liked about each one —typography, how products were shown, the feeling of each color palette— plus her own sketch of the navigation structure and content for each page.",
+        phase2: "2. Figma design",
+        p3: 'Using those references, I designed the store proposal in Figma: EB Garamond typography for the vintage feel Belén wanted, a cream palette instead of pure white, a uniform product grid, and a dedicated section for the one-of-a-kind artisan pieces ("Artesanal pieces"), designed to convey that these aren\'t mass-produced garments.',
+        phase3: "3. Shopify implementation",
+        p4: "This is where the project got more interesting: neither Belén nor I had used Shopify before this project, so we learned the platform as we went. We picked a base theme and customized it as much as the theme itself allowed, but not everything designed in Figma could be carried over as-is —Shopify gives you a lot less customization freedom than a free-form Figma design— so several decisions were reworked directly on the real platform, as Belén's final photos and content came in.",
+        p5: 'That said, for the parts that really mattered for the brand, I chose to code the section directly instead of giving in to the visual editor\'s limitations. The "Artesanal pieces" banner is the best example: Shopify wouldn\'t let me layer an image (a PNG of a lace piece) over a background photo, with a title, subtitle and button on top of all that. I wrote that entire section in code so I could stack the three layers —background photo, piece PNG, and text with a button— and get the exact design I had in Figma.'
+      },
+      decisions: {
+        d1: { title: "A customizable Shopify theme, not a fully custom store", decision: "Start from a Shopify theme and customize it, instead of building a fully custom store.", why: "It lets Belén manage her own catalog, prices and content without depending on me for every change — key for a small brand that keeps growing.", alt: "Designing a 100% custom store: more faithful to the original Figma, but far more expensive to maintain, and with Belén depending on a developer for any future change." },
+        d2: { title: "Starting from the client's references, not my own moodboard", decision: "Use the annotated moodboard Belén brought directly as the design's starting point, instead of proposing my own references from scratch.", why: "Belén already had a very trained eye for her own brand and very specific references; ignoring them to start from my own research would have been slower and riskier in terms of matching her vision.", alt: "Building my own moodboard of reference brands before looking at hers, as I would on a project with no prior brand direction." },
+        d3: { title: "Accepting that Figma doesn't translate literally to Shopify", decision: "Rework several layout and content decisions directly in Shopify that had been designed in Figma without the theme's real constraints in mind.", why: "Insisting on replicating the Figma pixel-for-pixel would have meant constantly fighting the theme, instead of leveraging what Shopify already handled well natively.", alt: "Forcing an exact replica of the Figma design with custom development on top of the theme, which would have significantly extended the timeline of a project meant to last ~1 month." },
+        d4: { title: "Custom code for the artisan-pieces banner", decision: 'Code the "Artesanal pieces" banner section directly, instead of using the theme\'s visual editor.', why: "The native editor couldn't stack a background photo, a lace-piece PNG on top of it, and a title, subtitle and button on top of all that. It was the only way to get the exact Figma design for a section that mattered so much to the brand.", alt: "Using the theme's own image-with-text section: faster, but it would have forced flattening the three layers into a single image and losing that composition." }
+      },
+      resultIntro: "The store is still under active construction. These two screenshots show the evolution from the first Figma proposal to the real store.",
+      figmaCaption: "Initial homepage proposal, designed in Figma.",
+      liveCaption: 'The real store today, at <a href="https://racoon-s-wife.myshopify.com/" target="_blank" rel="noopener">racoon-s-wife.myshopify.com</a>.',
+      shotsHint: "Click on either screenshot to view it at full size.",
+      skillsTitle: "Skills demonstrated",
+      skills: {
+        g1title: "Product design",
+        g1: "Figma · E-commerce UI design · Adapting design to a real platform",
+        g2: "Theme customization · Custom code sections (HTML/CSS) · Catalog organization · Product pages · Checkout",
+        g3title: "Client management",
+        g3: "Briefing and discovery · Translating visual references into design direction",
+        g4title: "Self-directed learning",
+        g4: "Learning a new platform on the job · Adaptability under technical constraints"
+      },
+      learnings: {
+        workedList: "<li>Sending a structured questionnaire before designing anything saved a lot of review rounds: Belén came in with very specific references and ideas from day one.</li><li>Starting from the client's own annotated moodboard, instead of a generic one of my own, sped up the design phase a lot.</li><li>Choosing a customizable Shopify theme instead of a fully custom store gives Belén real autonomy to manage her catalog.</li><li>I learned Shopify from start to finish on this project, something I can now apply directly to future e-commerce clients.</li>",
+        changeList: "<li>I'd test the Shopify theme in a sandbox before committing to it, to avoid having to redo sections that were already laid out in Figma.</li><li>I'd leave more time for the content pages instead of leaving them for the end of the project.</li>"
       }
     }
   }
