@@ -47,6 +47,11 @@
       if (val != null) el.textContent = val;
     });
 
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var val = t(el.getAttribute('data-i18n-html'), lang);
+      if (val != null) el.innerHTML = val;
+    });
+
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
