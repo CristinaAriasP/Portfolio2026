@@ -242,6 +242,87 @@ window.I18N = {
         title2: "Qué quedó pendiente",
         list2: "<li>Test real de compatibilidad entre usuarios.</li><li>Funcionalidades premium más avanzadas.</li><li>Versión nativa móvil.</li>"
       }
+    },
+    liminal: {
+      eyebrow: "Trabajo Fin de Grado · Bellas Artes, UPV · Curso 2022/2023",
+      lead: "Diseño de identidad visual para Liminal, una marca ficticia de ropa streetwear sostenible: naming, logotipo, tipografía, paleta de color, primera colección y prototipo de web, pensados como alternativa consciente al fast fashion.",
+      ctaTfg: "Ver TFG completo",
+      ctaBehance: "Ver en Behance",
+      meta: { role: "Diseño de identidad de marca (100%, TFG individual)", duration: "Curso 2022/2023 · Trabajo Fin de Grado", status: "Proyecto académico" },
+      summary: {
+        problem: "El streetwear nació como una subcultura DIY, pero ha sido absorbido por la lógica del fast fashion: producción masiva, materiales baratos y condiciones laborales precarias. No encontré marcas urbanas que pusieran la sostenibilidad real en el centro de su identidad, más allá del greenwashing puntual.",
+        solution: "Liminal, una marca ficticia de streetwear que construye toda su identidad —naming, logotipo, tipografía, color y primera colección— alrededor de la sostenibilidad: materiales reciclados y de proximidad, tiradas limitadas y producción artesanal.",
+        role: "Proyecto individual de principio a fin: investigación de contexto y referentes, briefing, análisis DAFO, naming, logotipo, identidad visual completa, manual de identidad, diseño de prendas y prototipo de web.",
+        result: "Un sistema de marca completo y coherente, evaluado como Trabajo Fin de Grado, que cumple además con varios Objetivos de Desarrollo Sostenible de la Agenda 2030."
+      },
+      context: {
+        p1: 'El streetwear, nacido como una actitud "hazlo tú mismo" en el Nueva York de los 80 (skate, punk, grafiti), ha sido absorbido en buena parte por el fast fashion: producción masiva, materiales de baja calidad y condiciones laborales precarias. Liminal nace como respuesta: una marca urbana sostenible que plantea la moda como herramienta de cambio y conciencia, y no solo como expresión estética.'
+      },
+      process: {
+        phase1: "1. Investigación previa",
+        p1: "Investigué los orígenes del streetwear, el modelo de fast fashion y su impacto ambiental y laboral, y analicé cuatro marcas de referencia: OBEY, Human Made, HUF y Off-White (ver más abajo). Esta investigación fue la que reveló el hueco que ocuparía Liminal.",
+        phase2: "2. Briefing y análisis DAFO",
+        briefingList: "<li>Objetivo: crear una identidad de marca sólida para una firma de streetwear coherente con sus valores y productos.</li><li>Qué ofrece: prendas con materiales reciclados/ecológicos y de proximidad, trato cercano, calidad y diseño propio, colecciones de stock limitado.</li><li>Target: jóvenes menores de 25 años interesados en moda urbana y medioambiente.</li><li>DAFO: la mayor debilidad era competir en precio con el fast fashion siendo una marca nueva; la mayor fortaleza, el enfoque sostenible y el diseño propio y exclusivo.</li>",
+        phase3: "3. Creación de conceptos y naming",
+        p3: "Ver la sección de Naming más abajo.",
+        phase4: "4. Diseño de logotipo e identidad visual",
+        p4: "Ver la sección de Identidad visual más abajo.",
+        phase5: "5. Diseño de las prendas",
+        phase6: "6. Diseño de la página web"
+      },
+      referentsTitle: "Referentes analizados",
+      referentsIntro: "Antes de definir la identidad de Liminal, analicé cuatro marcas de streetwear de referencia, fijándome especialmente en su logotipo y en su relación real (no solo declarada) con la sostenibilidad.",
+      referents: {
+        obey: '<h3>OBEY</h3><p>Fundada por el grafitero Shepard Fairey desde el "hazlo tú mismo" y el punk. Logotipo icónico (la cara de André the Giant) en Futura Extra Bold Condensed Italic. Usa algo de algodón orgánico, pero sin medidas significativas de sostenibilidad más allá de eso.</p>',
+        humanMade: '<h3>Human Made</h3><p>Marca japonesa de Nigo, inspirada en "el futuro está en el pasado". Logotipo de corazón rojo sólido con tipografía simple. Apuesta por artesanía local y materiales orgánicos/reciclados: el referente más alineado con la sostenibilidad.</p>',
+        huf: '<h3>HUF</h3><p>Fundada por el skater Keith Hufnagel en San Francisco. Logotipo simple ("HUF" sobre fondo negro, o dentro de un triángulo). No se promociona como marca sostenible ni hay información pública sobre políticas al respecto.</p>',
+        offWhite: "<h3>Off-White</h3><p>Virgil Abloh fusionando alta moda con estética urbana. Logotipo en mayúsculas, tipografía industrial. Ha introducido alguna iniciativa ambiental, pero sin certificarse como marca sostenible ni dar evidencias claras de reducción de impacto.</p>"
+      },
+      naming: {
+        p1: "Hice una lluvia de ideas explorando distintas opciones, descartando aquellas que resultaban poco originales o no encajaban conceptualmente con la marca: <i>Made by one, Muuttaa, One of One, Urban made, Top 1</i>, entre otras.",
+        p2: 'Finalmente elegí <b>"Liminal"</b> por dos razones: se pronuncia y se recuerda fácilmente tanto en español como en inglés (clave en un sector donde el inglés es el idioma dominante), y su significado —estar en un umbral, en un espacio de transición entre lo que se ha ido y lo que está por llegar— capturaba exactamente la visión del proyecto: la transición de un modelo de fast fashion hacia una moda más consciente y sostenible.'
+      },
+      identityTitle: "Identidad visual",
+      logoTitle: "Logotipo",
+      logo: {
+        p1: "Empecé con dibujos y lluvia de ideas en Illustrator y Photoshop, explorando composiciones más icónicas antes de descartarlas por no transmitir la sencillez y transparencia que buscaba para la marca.",
+        p2: 'El logotipo final es una composición basada en texto: el nombre "Liminal" junto al lema <i>"Think about the future"</i>, acompañado de un pequeño icono verde que evoca una hoja de forma simplificada — un guiño directo a los valores de sostenibilidad y ecología de la marca. También diseñé una versión reducida del logotipo para tamaños pequeños o espacios limitados, y elementos gráficos que evocan al agua, en línea con el simbolismo de fluidez, cambio y adaptabilidad de la marca.'
+      },
+      typographyTitle: "Tipografía",
+      typography: {
+        p1: "Busqué una combinación de dos tipografías de palo seco, por su aspecto limpio y contemporáneo. Como tipografía principal elegí <b>Mori</b> (Caio Kondo, variable semibold en el logotipo), una sans serif gótica inspirada en el diseño japonés contemporáneo, coherente con las referencias de moda japonesa que inspiraron la marca. Se usa en el logotipo y en titulares que necesitan máximo impacto visual.",
+        p2: "Como tipografía secundaria, para cuerpos de texto y la web, elegí <b>Archivo</b> (Héctor Gatti), por su legibilidad y su amplia variedad de pesos:",
+        specimen: 'Regular · <span style="font-weight:600;">Semibold</span> · <i>Italic</i> — usada en cuerpos de texto y en la web de Liminal.'
+      },
+      paletteTitle: "Paleta de color",
+      palette: {
+        p1: "Para elegir la paleta me apoyé en <i>Psicología del color</i> de Eva Heller (2004), buscando que cada tono respondiera a un significado concreto y no solo a la intuición. El resultado son tres tonos Pantone: negro, verde y blanco.",
+        black: "Elegancia, sofisticación, simplicidad atemporal",
+        green: "Naturaleza, sostenibilidad, compromiso ambiental",
+        white: "Pureza, claridad, estética minimalista",
+        p2: "Para preservar la coherencia de la marca en cualquier aplicación, documenté todo esto —construcción del logotipo, área de seguridad, variantes cromáticas y usos incorrectos— en un manual de identidad."
+      },
+      decisions: {
+        d1: { title: 'El nombre "Liminal"', decision: 'Nombrar la marca "Liminal", en referencia a estar en un umbral o espacio de transición.', why: "Funciona igual de bien en español e inglés (clave en moda urbana) y su significado encaja exactamente con la transición del fast fashion hacia una moda más consciente que plantea el proyecto.", alt: 'Nombres como "Urban made" o "One of One": más descriptivos pero genéricos, sin un concepto propio detrás.' },
+        d2: { title: "Logotipo basado en texto, no en icono", decision: 'Construir el logotipo alrededor del nombre y el lema "Think about the future", con un único icono pequeño de apoyo.', why: "Con pocos elementos se logra la transparencia y sencillez que buscaba para la marca, evitando la saturación visual de los logotipos más icónicos que exploré al principio.", alt: "Varias composiciones más icónicas (ver logotipos descartados): aportaban personalidad pero no la coherencia y legibilidad que sí da un logotipo tipográfico." },
+        d3: { title: "Paleta fundamentada en psicología del color", decision: "Elegir negro, verde y blanco apoyándome en la teoría de Eva Heller sobre el significado psicológico de cada color.", why: "Cada color tiene una razón de ser: negro (elegancia/atemporalidad), verde (sostenibilidad) y blanco (pureza/minimalismo), en vez de una elección basada solo en gusto estético.", alt: "Elegir la paleta de forma puramente intuitiva: más rápido, pero sin el respaldo teórico que da coherencia y justificación a la decisión." }
+      },
+      resultLink: "Ver el manual de identidad completo en Behance",
+      skillsTitle: "Skills demostrados",
+      skills: {
+        g1: "Naming · Briefing · Análisis DAFO · Análisis de referentes y competencia",
+        g2title: "Identidad visual",
+        g2: "Diseño de logotipo · Sistemas tipográficos · Paletas de color fundamentadas · Manual de identidad",
+        g3title: "Dirección de arte",
+        g3extra: "Diseño de prenda",
+        g4title: "Investigación",
+        g4: "Metodología del diseño · Sostenibilidad en moda · Objetivos de Desarrollo Sostenible (ODS)"
+      },
+      learnings: {
+        workedList: "<li>Basar la paleta de color en una teoría (Heller) en vez de en el gusto personal le dio a la marca una justificación sólida y defendible.</li><li>Analizar referentes reales por su sostenibilidad, no solo por su estética, afinó mucho el posicionamiento de Liminal.</li><li>Un logotipo sencillo basado en texto resultó más versátil de lo esperado para aplicarlo a distintos soportes.</li>",
+        title2: "Qué me llevo",
+        list2: "<li>Entendí que la moda no es solo seguir tendencias, sino una herramienta para transmitir valores e identidad.</li><li>Aprendí a llevar un proyecto de branding de forma profesional, de la investigación al manual de identidad final.</li><li>Fue mi primer proyecto end-to-end de creación de marca desde cero, sin cliente real de por medio.</li>"
+      }
     }
   },
 
@@ -487,6 +568,87 @@ window.I18N = {
         list1: "<li>Designing for two user types from day one multiplies complexity — but doing it well is what sets the product apart.</li><li>Adapting a mobile-first mechanic to desktop requires rethinking the interaction, not just scaling the layout.</li><li>A Design System built as a bridge between design and code speeds up development and reduces misunderstandings with the team.</li>",
         title2: "What was left unfinished",
         list2: "<li>Real compatibility testing between users.</li><li>More advanced premium features.</li><li>A native mobile version.</li>"
+      }
+    },
+    liminal: {
+      eyebrow: "Final Degree Project · Fine Arts, UPV · 2022/2023",
+      lead: "Visual identity design for Liminal, a fictional sustainable streetwear brand: naming, logo, typography, color palette, first collection and web prototype, conceived as a conscious alternative to fast fashion.",
+      ctaTfg: "View full thesis",
+      ctaBehance: "View on Behance",
+      meta: { role: "Brand identity design (100%, solo final degree project)", duration: "2022/2023 · Final Degree Project", status: "Academic project" },
+      summary: {
+        problem: "Streetwear started out as a DIY subculture, but has been absorbed by fast fashion logic: mass production, cheap materials and precarious labor conditions. I couldn't find urban brands putting real sustainability at the center of their identity, beyond occasional greenwashing.",
+        solution: "Liminal, a fictional streetwear brand that builds its entire identity —naming, logo, typography, color and first collection— around sustainability: recycled and locally-sourced materials, limited runs and artisanal production.",
+        role: "A solo project from start to finish: context and reference research, briefing, SWOT analysis, naming, logo, complete visual identity, brand manual, garment design and web prototype.",
+        result: "A complete, coherent brand system, graded as a Final Degree Project, that also meets several Sustainable Development Goals from the 2030 Agenda."
+      },
+      context: {
+        p1: 'Streetwear, born as a "do it yourself" attitude in 1980s New York (skate, punk, graffiti), has largely been absorbed by fast fashion: mass production, low-quality materials and precarious labor conditions. Liminal is born as a response: a sustainable urban brand that frames fashion as a tool for change and awareness, not just aesthetic expression.'
+      },
+      process: {
+        phase1: "1. Preliminary research",
+        p1: "I researched the origins of streetwear, the fast fashion model and its environmental and labor impact, and analyzed four reference brands: OBEY, Human Made, HUF and Off-White (see below). This research is what revealed the gap Liminal would fill.",
+        phase2: "2. Briefing and SWOT analysis",
+        briefingList: "<li>Goal: create a solid brand identity for a streetwear label consistent with its values and products.</li><li>What it offers: garments made with recycled/eco-friendly, locally-sourced materials, a personal touch, quality and original design, limited-stock collections.</li><li>Target: people under 25 interested in urban fashion and the environment.</li><li>SWOT: the biggest weakness was competing on price against fast fashion as a new brand; the biggest strength, the sustainable focus and exclusive, original design.</li>",
+        phase3: "3. Concept creation and naming",
+        p3: "See the Naming section below.",
+        phase4: "4. Logo and visual identity design",
+        p4: "See the Visual identity section below.",
+        phase5: "5. Garment design",
+        phase6: "6. Website design"
+      },
+      referentsTitle: "Brands analyzed",
+      referentsIntro: "Before defining Liminal's identity, I analyzed four reference streetwear brands, paying special attention to their logo and their real (not just stated) relationship with sustainability.",
+      referents: {
+        obey: '<h3>OBEY</h3><p>Founded by graffiti artist Shepard Fairey out of "do it yourself" and punk culture. Iconic logo (André the Giant\'s face) in Futura Extra Bold Condensed Italic. Uses some organic cotton, but with no significant sustainability measures beyond that.</p>',
+        humanMade: '<h3>Human Made</h3><p>Nigo\'s Japanese brand, inspired by "the future is in the past." Solid red heart logo with simple typography. Committed to local craftsmanship and organic/recycled materials: the reference most aligned with sustainability.</p>',
+        huf: '<h3>HUF</h3><p>Founded by skater Keith Hufnagel in San Francisco. Simple logo ("HUF" on a black background, or inside a triangle). Not promoted as a sustainable brand, and no public information on related policies.</p>',
+        offWhite: "<h3>Off-White</h3><p>Virgil Abloh fusing high fashion with urban aesthetics. All-caps logo, industrial typography. Has introduced some environmental initiatives, but without certifying as a sustainable brand or giving clear evidence of reduced impact.</p>"
+      },
+      naming: {
+        p1: "I brainstormed several options, dropping the ones that felt unoriginal or didn't fit the brand conceptually: <i>Made by one, Muuttaa, One of One, Urban made, Top 1</i>, among others.",
+        p2: 'I finally chose <b>"Liminal"</b> for two reasons: it\'s easy to pronounce and remember in both Spanish and English (key in an industry where English is the dominant language), and its meaning —being on a threshold, in a space of transition between what\'s gone and what\'s coming— captured exactly the project\'s vision: the shift from a fast fashion model toward more conscious, sustainable fashion.'
+      },
+      identityTitle: "Visual identity",
+      logoTitle: "Logo",
+      logo: {
+        p1: "I started with sketches and brainstorming in Illustrator and Photoshop, exploring more iconic compositions before dropping them for not conveying the simplicity and transparency I wanted for the brand.",
+        p2: 'The final logo is a text-based composition: the name "Liminal" alongside the tagline <i>"Think about the future"</i>, paired with a small green icon evoking a simplified leaf shape — a direct nod to the brand\'s sustainability and ecology values. I also designed a reduced version of the logo for small sizes or limited spaces, and graphic elements evoking water, in line with the brand\'s symbolism of fluidity, change and adaptability.'
+      },
+      typographyTitle: "Typography",
+      typography: {
+        p1: "I looked for a combination of two sans-serif typefaces, for their clean, contemporary look. As the primary typeface I chose <b>Mori</b> (Caio Kondo, variable semibold in the logo), a gothic sans serif inspired by contemporary Japanese design, consistent with the Japanese fashion references that inspired the brand. It's used in the logo and in headlines that need maximum visual impact.",
+        p2: "As the secondary typeface, for body text and the website, I chose <b>Archivo</b> (Héctor Gatti), for its readability and wide range of weights:",
+        specimen: 'Regular · <span style="font-weight:600;">Semibold</span> · <i>Italic</i> — used in body text and on the Liminal website.'
+      },
+      paletteTitle: "Color palette",
+      palette: {
+        p1: "To choose the palette I drew on Eva Heller's <i>Psychology of Color</i> (2004), aiming for every tone to respond to a specific meaning rather than just intuition. The result is three Pantone tones: black, green and white.",
+        black: "Elegance, sophistication, timeless simplicity",
+        green: "Nature, sustainability, environmental commitment",
+        white: "Purity, clarity, minimalist aesthetic",
+        p2: "To keep the brand consistent across any application, I documented all of this —logo construction, clear space, color variants and incorrect uses— in a brand manual."
+      },
+      decisions: {
+        d1: { title: 'The name "Liminal"', decision: 'Naming the brand "Liminal", referencing being on a threshold or in a space of transition.', why: "It works equally well in Spanish and English (key in urban fashion) and its meaning fits exactly with the shift from fast fashion toward more conscious fashion the project is proposing.", alt: 'Names like "Urban made" or "One of One": more descriptive but generic, with no concept of their own behind them.' },
+        d2: { title: "A text-based logo, not an icon-based one", decision: 'Build the logo around the name and the tagline "Think about the future," with a single small supporting icon.', why: "Using few elements achieves the transparency and simplicity I wanted for the brand, avoiding the visual clutter of the more iconic logos I explored early on.", alt: "Several more iconic compositions (see discarded logos): they had personality but not the coherence and legibility a typographic logo provides." },
+        d3: { title: "A palette grounded in color psychology", decision: "Choosing black, green and white based on Eva Heller's theory of each color's psychological meaning.", why: "Every color has a reason to exist: black (elegance/timelessness), green (sustainability) and white (purity/minimalism), rather than a choice based purely on aesthetic taste.", alt: "Choosing the palette purely intuitively: faster, but without the theoretical backing that gives the decision coherence and justification." }
+      },
+      resultLink: "View the full brand manual on Behance",
+      skillsTitle: "Skills demonstrated",
+      skills: {
+        g1: "Naming · Briefing · SWOT analysis · Reference and competitor analysis",
+        g2title: "Visual identity",
+        g2: "Logo design · Typographic systems · Grounded color palettes · Brand manual",
+        g3title: "Art direction",
+        g3extra: "Garment design",
+        g4title: "Research",
+        g4: "Design methodology · Sustainability in fashion · Sustainable Development Goals (SDGs)"
+      },
+      learnings: {
+        workedList: "<li>Basing the color palette on a theory (Heller) instead of personal taste gave the brand a solid, defensible justification.</li><li>Analyzing real brands for their sustainability, not just their aesthetics, sharpened Liminal's positioning a lot.</li><li>A simple text-based logo turned out to be more versatile than expected across different applications.</li>",
+        title2: "What I'm taking away",
+        list2: "<li>I understood that fashion isn't just about following trends, but a tool for conveying values and identity.</li><li>I learned to run a branding project professionally, from research to the final brand manual.</li><li>It was my first end-to-end brand-creation project from scratch, with no real client involved.</li>"
       }
     }
   }
