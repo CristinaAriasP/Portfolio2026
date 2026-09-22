@@ -106,12 +106,12 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
 
 @property --mx { syntax: '<length>'; inherits: true; initial-value: -9999px; }
 @property --my { syntax: '<length>'; inherits: true; initial-value: -9999px; }
-.hero-title { position: relative; transition: --mx 150ms ease, --my 150ms ease; }
+.hero-title { position: relative; transition: --mx 60ms linear, --my 60ms linear; }
 .hero-title .title-base { display: block; }
 .hero-title .title-glow {
   position: absolute; inset: 0; display: block; color: var(--accent); pointer-events: none;
-  -webkit-mask-image: radial-gradient(circle 2.4em at var(--mx) var(--my), black 40%, transparent 100%);
-  mask-image: radial-gradient(circle 2.4em at var(--mx) var(--my), black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle 3em at var(--mx) var(--my), black 45%, transparent 100%);
+  mask-image: radial-gradient(circle 3em at var(--mx) var(--my), black 45%, transparent 100%);
 }
 @media (prefers-reduced-motion: reduce) {
   .avatar { transition: none; }
