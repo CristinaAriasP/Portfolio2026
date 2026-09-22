@@ -104,19 +104,6 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
 .eyebrow { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 18px; }
 .hero h1 { font-weight: 700; letter-spacing: -0.04em; line-height: 1.04; font-size: clamp(38px, 7vw, 64px); margin-bottom: 22px; }
 
-@property --mx { syntax: '<length>'; inherits: true; initial-value: -9999px; }
-@property --my { syntax: '<length>'; inherits: true; initial-value: -9999px; }
-.hero-title { position: relative; transition: --mx 60ms linear, --my 60ms linear; }
-.hero-title .title-text { display: block; color: var(--text); }
-@supports ((background-clip: text) or (-webkit-background-clip: text)) {
-  .hero-title .title-text {
-    background-image: radial-gradient(circle 3em at var(--mx) var(--my), var(--accent) 45%, var(--text) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-  }
-}
 .hero p.lead { font-size: 17px; line-height: 1.6; color: var(--text-muted); max-width: 520px; margin: 0 0 32px; }
 .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
@@ -131,8 +118,6 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
 }
 .avatar-wrap { animation: hero-fade-up 0.6s ease-out both; }
 .hero .eyebrow { animation: hero-fade-up 0.6s ease-out both 0.1s; }
-/* Opacity-only: animating transform here alongside the gradient-clipped
-   title text causes it to get stuck partially painted in Chromium. */
 .hero-title { animation: hero-fade-in 0.6s ease-out both 0.2s; }
 .hero p.lead { animation: hero-fade-up 0.6s ease-out both 0.3s; }
 .hero-ctas { animation: hero-fade-up 0.6s ease-out both 0.4s; }
@@ -148,7 +133,6 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   .avatar { transition: none; }
-  .hero-title { transition: none; }
   .avatar-wrap, .hero .eyebrow, .hero-title, .hero p.lead, .hero-ctas, .hero .tools, .hero-ctas .btn-primary {
     animation: none;
   }

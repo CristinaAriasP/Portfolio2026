@@ -179,17 +179,4 @@
       avatarImg.style.transform = 'perspective(700px) rotateX(0deg) rotateY(0deg) scale(1)';
     });
   }
-
-  var heroTitle = document.getElementById('heroTitle');
-  if (heroTitle && !prefersReducedMotion) {
-    heroTitle.addEventListener('mousemove', function (e) {
-      var rect = heroTitle.getBoundingClientRect();
-      heroTitle.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
-      heroTitle.style.setProperty('--my', (e.clientY - rect.top) + 'px');
-    });
-    heroTitle.addEventListener('mouseleave', function () {
-      heroTitle.style.setProperty('--mx', '-9999px');
-      heroTitle.style.setProperty('--my', '-9999px');
-    });
-  }
 })();
