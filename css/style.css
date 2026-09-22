@@ -112,13 +112,13 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }
 }
-@keyframes hero-fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes word-stagger-in {
+  from { opacity: 0; transform: translateY(0.3em); }
+  to { opacity: 1; transform: translateY(0); }
 }
 .avatar-wrap { animation: hero-fade-up 0.6s ease-out both; }
 .hero .eyebrow { animation: hero-fade-up 0.6s ease-out both 0.1s; }
-.hero-title { animation: hero-fade-in 0.6s ease-out both 0.2s; }
+.hero-title .stagger-word { display: inline-block; opacity: 0; animation: word-stagger-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
 .hero p.lead { animation: hero-fade-up 0.6s ease-out both 0.3s; }
 .hero-ctas { animation: hero-fade-up 0.6s ease-out both 0.4s; }
 .hero .tools { animation: hero-fade-up 0.6s ease-out both 0.5s; }
@@ -133,9 +133,10 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   .avatar { transition: none; }
-  .avatar-wrap, .hero .eyebrow, .hero-title, .hero p.lead, .hero-ctas, .hero .tools, .hero-ctas .btn-primary {
+  .avatar-wrap, .hero .eyebrow, .hero p.lead, .hero-ctas, .hero .tools, .hero-ctas .btn-primary {
     animation: none;
   }
+  .hero-title .stagger-word { animation: none; opacity: 1; }
 }
 .btn { display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 999px; font-size: 14px; font-weight: 600; }
 .btn-primary { background: var(--text); color: var(--bg); }

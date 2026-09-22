@@ -12,6 +12,19 @@
     return saved === 'en' ? 'en' : 'es';
   }
 
+  function escapeHtml(str) {
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function renderStaggerWords(el, text) {
+    var baseDelay = 0.2;
+    var step = 0.09;
+    el.innerHTML = text.split(' ').map(function (word, i) {
+      var delay = (baseDelay + i * step).toFixed(2);
+      return '<span class="stagger-word" style="animation-delay:' + delay + 's">' + escapeHtml(word) + '</span>';
+    }).join(' ');
+  }
+
   function t(key, lang) {
     var dict = window.I18N && window.I18N[lang];
     if (!dict) return null;
@@ -50,6 +63,11 @@
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
       var val = t(el.getAttribute('data-i18n-html'), lang);
       if (val != null) el.innerHTML = val;
+    });
+
+    document.querySelectorAll('[data-i18n-stagger]').forEach(function (el) {
+      var val = t(el.getAttribute('data-i18n-stagger'), lang);
+      if (val != null) renderStaggerWords(el, val);
     });
 
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
