@@ -110,8 +110,8 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
 .hero-title .title-base { display: block; }
 .hero-title .title-glow {
   position: absolute; inset: 0; display: block; color: var(--accent); pointer-events: none;
-  -webkit-mask-image: radial-gradient(circle 90px at var(--mx) var(--my), black 0%, transparent 100%);
-  mask-image: radial-gradient(circle 90px at var(--mx) var(--my), black 0%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle 2.4em at var(--mx) var(--my), black 40%, transparent 100%);
+  mask-image: radial-gradient(circle 2.4em at var(--mx) var(--my), black 40%, transparent 100%);
 }
 @media (prefers-reduced-motion: reduce) {
   .avatar { transition: none; }
