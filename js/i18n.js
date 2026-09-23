@@ -51,7 +51,8 @@ window.I18N = {
           eyebrow: "Proyecto fin de grado · Bellas Artes",
           desc: "Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y prototipo básico de web.",
           tags: "Branding · Naming · Dirección de arte",
-          link1: "Ver caso completo →"
+          link1: "Ver caso completo →",
+          link2: "Ver en Behance →"
         },
         belen: {
           eyebrow: "Proyecto para cliente real · 2025",
@@ -430,7 +431,8 @@ window.I18N = {
           eyebrow: "Final degree project · Fine Arts",
           desc: "Sustainable clothing brand: naming, visual identity, logo, garment collection and a basic web prototype.",
           tags: "Branding · Naming · Art direction",
-          link1: "See full case study →"
+          link1: "See full case study →",
+          link2: "See on Behance →"
         },
         belen: {
           eyebrow: "Real client project · 2025",
