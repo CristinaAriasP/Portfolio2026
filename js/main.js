@@ -197,4 +197,37 @@
       avatarImg.style.transform = 'perspective(700px) rotateX(0deg) rotateY(0deg) scale(1)';
     });
   }
+
+  var copyEmailBtn = document.querySelector('.copy-email-btn');
+  if (copyEmailBtn) {
+    var copyResetTimer = null;
+    copyEmailBtn.addEventListener('click', function () {
+      var email = copyEmailBtn.getAttribute('data-email');
+
+      function showCopied() {
+        var lang = getLang();
+        copyEmailBtn.textContent = t('home.contact.copied', lang) || 'Copiado';
+        copyEmailBtn.classList.add('is-copied');
+        clearTimeout(copyResetTimer);
+        copyResetTimer = setTimeout(function () {
+          copyEmailBtn.textContent = t('home.contact.copy', lang) || 'Copiar';
+          copyEmailBtn.classList.remove('is-copied');
+        }, 1600);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(showCopied, showCopied);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = email;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        showCopied();
+      }
+    });
+  }
 })();

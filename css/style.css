@@ -206,8 +206,10 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; margin: 0; }
 /* CONTACT */
 .contact-box { background: var(--text); color: var(--bg); border-radius: 24px; padding: 44px 28px; display: flex; flex-direction: column; gap: 20px; }
 .contact-box h2 { font-size: 30px; max-width: 480px; line-height: 1.2; }
-.contact-links { display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
-.contact-links a:nth-child(2) { opacity: 0.75; }
+.contact-links { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 15px; }
+.copy-email-btn { font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; background: transparent; color: inherit; border: 1px solid rgba(255,255,255,0.25); border-radius: 999px; padding: 6px 12px; transition: background 150ms ease, border-color 150ms ease, color 150ms ease; }
+.copy-email-btn:hover { background: rgba(255,255,255,0.08); }
+.copy-email-btn.is-copied { border-color: var(--accent); color: var(--accent); }
 .social-links { display: flex; gap: 10px; flex-wrap: wrap; padding-top: 8px; }
 .social-links a { font-size: 13px; font-weight: 500; padding: 9px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.25); }
 .footer-note { text-align: center; margin-top: 28px; font-size: 12.5px; color: var(--text-muted); padding-bottom: 90px; }

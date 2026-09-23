@@ -87,7 +87,9 @@ window.I18N = {
       },
       contact: {
         title: "¿Buscas a tu próxima Product Designer?",
-        footer: "Cristina Arias Parrilla — Valencia, España"
+        footer: "Cristina Arias Parrilla — Valencia, España",
+        copy: "Copiar",
+        copied: "¡Copiado!"
       }
     },
     geochallenge: {
@@ -464,7 +466,9 @@ window.I18N = {
       },
       contact: {
         title: "Looking for your next Product Designer?",
-        footer: "Cristina Arias Parrilla — Valencia, Spain"
+        footer: "Cristina Arias Parrilla — Valencia, Spain",
+        copy: "Copy",
+        copied: "Copied!"
       }
     },
     geochallenge: {
