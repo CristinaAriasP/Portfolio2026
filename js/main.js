@@ -71,7 +71,9 @@
     });
 
     document.querySelectorAll('.lang-btn').forEach(function (btn) {
-      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+      var isActive = btn.getAttribute('data-lang') === lang;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-pressed', String(isActive));
     });
 
     updateThemeLabel(lang);
@@ -109,6 +111,13 @@
         navToggle.setAttribute('aria-expanded', 'false');
       });
     });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navPill.classList.contains('open')) {
+        navPill.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.focus();
+      }
+    });
   }
 
   var shots = document.querySelectorAll('.cs-shot');
@@ -126,6 +135,7 @@
     var lightboxImg = overlay.querySelector('.lightbox-img');
     var lightboxCaption = overlay.querySelector('.lightbox-caption');
 
+    var lightboxTrigger = null;
     function openLightbox(img) {
       var figure = img.closest('figure');
       var caption = figure ? figure.querySelector('figcaption') : null;
@@ -135,10 +145,13 @@
       overlay.classList.remove('zoomed');
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden';
+      lightboxTrigger = img;
+      overlay.querySelector('.lightbox-close').focus();
     }
     function closeLightbox() {
       overlay.classList.remove('open');
       overlay.classList.remove('zoomed');
+      if (lightboxTrigger) { lightboxTrigger.focus(); lightboxTrigger = null; }
       document.body.style.overflow = '';
     }
 
@@ -148,7 +161,15 @@
     });
 
     shots.forEach(function (img) {
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
       img.addEventListener('click', function () { openLightbox(img); });
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(img);
+        }
+      });
     });
     overlay.addEventListener('click', function (e) {
       if (e.target === overlay) closeLightbox();
@@ -165,8 +186,12 @@
   if (filterButtons.length && cards.length) {
     filterButtons.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        filterButtons.forEach(function (b) { b.classList.remove('active'); });
+        filterButtons.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
         var filter = btn.getAttribute('data-filter');
         cards.forEach(function (card) {
           var cats = card.getAttribute('data-cat').split(' ');

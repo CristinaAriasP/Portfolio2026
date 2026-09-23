@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<a class="skip-link" href="#top" data-i18n="common.skipLink">Saltar al contenido principal</a>
 <nav class="nav">
   <a href="#top" class="logo">Cristina<span>.</span></a>
   <div class="nav-pill" id="navPill">
@@ -33,7 +34,7 @@
   </div>
 </nav>
 
-<header id="top" class="hero">
+<header id="top" class="hero" tabindex="-1">
   <div class="avatar-wrap" id="avatarWrap">
     <img class="avatar" src="assets/avatar.jpg" alt="Foto de Cristina Arias">
   </div>
@@ -58,10 +59,10 @@
   <h2 class="section-title" data-i18n="home.workTitle">Trabajo seleccionado</h2>
 
   <div class="filters">
-    <button class="filter-btn active" data-filter="all" data-i18n="home.filters.all">Todo</button>
-    <button class="filter-btn" data-filter="product" data-i18n="home.filters.product">Product</button>
-    <button class="filter-btn" data-filter="code" data-i18n="home.filters.code">Código &amp; IA</button>
-    <button class="filter-btn" data-filter="branding" data-i18n="home.filters.branding">Branding</button>
+    <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="home.filters.all">Todo</button>
+    <button class="filter-btn" data-filter="product" aria-pressed="false" data-i18n="home.filters.product">Product</button>
+    <button class="filter-btn" data-filter="code" aria-pressed="false" data-i18n="home.filters.code">Código &amp; IA</button>
+    <button class="filter-btn" data-filter="branding" aria-pressed="false" data-i18n="home.filters.branding">Branding</button>
   </div>
 
   <div class="cards" id="cardsGrid">

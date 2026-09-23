@@ -1,6 +1,7 @@
 window.I18N = {
   es: {
     common: {
+      skipLink: "Saltar al contenido principal",
       nav: { work: "Trabajo", about: "Sobre mí", contact: "Contacto" },
       theme: { toDark: "Oscuro", toLight: "Claro" },
       backToPortfolio: "← Volver al portfolio",
@@ -381,6 +382,7 @@ window.I18N = {
 
   en: {
     common: {
+      skipLink: "Skip to main content",
       nav: { work: "Work", about: "About", contact: "Contact" },
       theme: { toDark: "Dark", toLight: "Light" },
       backToPortfolio: "← Back to portfolio",
