@@ -75,7 +75,7 @@ window.I18N = {
           { period: "Ene – May 2022", heading: "Erasmus · Diseño Gráfico", desc: "XAMK, Finlandia — especialización en diseño gráfico." },
           { period: "Oct 2022 – Jul 2023", heading: "Prácticas — Diseñadora Web & Contenido", desc: "Instituto Universitario de Restauración del Patrimonio (UPV), Valencia." },
           { period: "Nov 2024 – Jun 2025", heading: "Máster en UX/UI y Desarrollo Front-end", desc: "ESAT, Valencia." },
-          { period: "Oct 2025 – actualidad", heading: "Prácticas — Diseñadora Web & Branding", desc: "Momma Agency, remoto." },
+          { period: "Oct 2025 – Ene 2026", heading: "Prácticas — Diseñadora Web & Branding", desc: "Momma Agency, remoto." },
           { period: "Ahora", heading: "Buscando mi próxima oportunidad", desc: "Como Junior Product Designer, abierta también a roles de Frontend o Diseño Gráfico dentro de un equipo de producto." }
         ]
       },
@@ -456,7 +456,7 @@ window.I18N = {
           { period: "Jan – May 2022", heading: "Erasmus · Graphic Design", desc: "XAMK, Finland — graphic design specialization." },
           { period: "Oct 2022 – Jul 2023", heading: "Internship — Web & Content Designer", desc: "University Institute for Heritage Restoration (UPV), Valencia." },
           { period: "Nov 2024 – Jun 2025", heading: "Master's in UX/UI & Front-end Development", desc: "ESAT, Valencia." },
-          { period: "Oct 2025 – present", heading: "Internship — Web & Branding Designer", desc: "Momma Agency, remote." },
+          { period: "Oct 2025 – Jan 2026", heading: "Internship — Web & Branding Designer", desc: "Momma Agency, remote." },
           { period: "Now", heading: "Looking for my next opportunity", desc: "As a Junior Product Designer, also open to Frontend or Graphic Design roles within a product team." }
         ]
       },
