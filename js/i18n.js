@@ -49,14 +49,14 @@ window.I18N = {
           link2: "Ver también en Behance →"
         },
         liminal: {
-          eyebrow: "Proyecto fin de grado · Bellas Artes",
+          eyebrow: "Proyecto fin de grado · Bellas Artes · 2023",
           desc: "Marca de ropa sostenible: naming, identidad visual, logo, colección de prendas y prototipo básico de web.",
           tags: "Branding · Naming · Dirección de arte",
           link1: "Ver caso completo →",
           link2: "Ver en Behance →"
         },
         belen: {
-          eyebrow: "Proyecto para cliente real · 2026 – actualidad",
+          eyebrow: "Proyecto para cliente real · 2026",
           desc: "Tienda online en Shopify para Racoon's Wife, marca de ropa artesanal hecha a mano. Diseño en Figma e implementación completa de la tienda, actualmente en construcción.",
           tags: "Shopify · E-commerce · UI",
           link1: "Ver caso completo →",
@@ -430,14 +430,14 @@ window.I18N = {
           link2: "Also on Behance →"
         },
         liminal: {
-          eyebrow: "Final degree project · Fine Arts",
+          eyebrow: "Final degree project · Fine Arts · 2023",
           desc: "Sustainable clothing brand: naming, visual identity, logo, garment collection and a basic web prototype.",
           tags: "Branding · Naming · Art direction",
           link1: "See full case study →",
           link2: "See on Behance →"
         },
         belen: {
-          eyebrow: "Real client project · 2026 – present",
+          eyebrow: "Real client project · 2026",
           desc: "Shopify store for Racoon's Wife, a handmade artisan clothing brand. Figma design and full store build, currently under construction.",
           tags: "Shopify · E-commerce · UI",
           link1: "See full case study →",
