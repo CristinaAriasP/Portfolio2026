@@ -56,7 +56,7 @@ window.I18N = {
           link2: "Ver en Behance →"
         },
         belen: {
-          eyebrow: "Proyecto para cliente real · 2025",
+          eyebrow: "Proyecto para cliente real · 2026 – actualidad",
           desc: "Tienda online en Shopify para Racoon's Wife, marca de ropa artesanal hecha a mano. Diseño en Figma e implementación completa de la tienda, actualmente en construcción.",
           tags: "Shopify · E-commerce · UI",
           link1: "Ver caso completo →",
@@ -437,7 +437,7 @@ window.I18N = {
           link2: "See on Behance →"
         },
         belen: {
-          eyebrow: "Real client project · 2025",
+          eyebrow: "Real client project · 2026 – present",
           desc: "Shopify store for Racoon's Wife, a handmade artisan clothing brand. Figma design and full store build, currently under construction.",
           tags: "Shopify · E-commerce · UI",
           link1: "See full case study →",
