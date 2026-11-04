@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Prevensa · Home</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: full-bleed photo hero, then white/Hueso bands on a 1200px / 12-col grid; Petróleo blocks close the page.
+   Single, brand-fixed light look (the client palette is the spec), so no dark variant. */
+:root{
+  --petroleo:#0F5C6C; --oceano:#147A8F; --turquesa:#359FA5; --lima:#E8D789;
+  --hueso:#F1F0EF; --blanco:#FFFFFF; --texto:#1B2B30;
+  --petroleo-press:#0B4652; --lima-hover:#F0E3A6; --lima-press:#DCC867;
+  --azul-claro:#E6F1F3; --azul-claro-2:#CFE5E9; --texto-suave:#4A5D62;
+  --linea:#D5DDDF;
+  --serif:"Arpona", "Literata", Georgia, "Times New Roman", serif;
+  --sans:"ArponaSans", "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r-lg:28px; --r-md:20px; --r-btn:8px;
+  --wrap:1200px; --gut:24px;
+  --ease:cubic-bezier(.22,.8,.24,1);
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--blanco);color:var(--texto);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:500;letter-spacing:-.015em;text-wrap:balance;margin:0;line-height:1.08}
+p{margin:0}
+.wrap{max-width:calc(var(--wrap) + 2*max(16px, env(safe-area-inset-left,0px)));margin:0 auto;padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--oceano)}
+.section{padding-block:clamp(72px,10vw,128px)}
+.h2{font-size:clamp(34px,4.6vw,56px)}
+.lead{font-size:clamp(17px,1.4vw,19px);color:var(--texto-suave);max-width:58ch}
+:focus-visible{outline:2px solid var(--turquesa);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tbd{text-decoration:underline dotted 1.5px;text-underline-offset:4px;cursor:help}
+
+/* ---------- Buttons ---------- */
+.btn{--h:44px;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:var(--h);padding:0 20px;border-radius:var(--r-btn);border:1.5px solid transparent;font:700 15px/1 var(--sans);text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color .2s, border-color .2s, color .2s, transform .2s var(--ease)}
+.btn--lg{--h:52px;padding:0 26px;font-size:16px}
+.btn .arr{transition:transform .25s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.btn--primary{background:var(--oceano);color:#fff}
+.btn--primary:hover{background:var(--petroleo)}
+.btn--primary:active{background:var(--petroleo-press)}
+.btn--secondary{background:#fff;color:var(--petroleo);border-color:var(--petroleo)}
+.btn--secondary:hover{background:var(--azul-claro)}
+.btn--secondary:active{background:var(--azul-claro-2)}
+.btn--lima{background:var(--lima);color:var(--petroleo)}
+.btn--lima:hover{background:var(--lima-hover)}
+.btn--lima:active{background:var(--lima-press)}
+.btn--glass{background:rgba(255,255,255,.14);color:#fff;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:rgba(255,255,255,.22)}
+.btn--glass:hover{background:rgba(255,255,255,.24)}
+.btn--glass:active{background:rgba(255,255,255,.32)}
+.btn:disabled,.btn[aria-disabled="true"]{opacity:.45;cursor:not-allowed}
+.link{color:var(--petroleo);font-weight:700;text-decoration:none;background:linear-gradient(var(--oceano),var(--oceano)) 0 100%/0 2px no-repeat;transition:background-size .3s var(--ease)}
+.link:hover{background-size:100% 2px}
+
+/* ---------- Photo placeholders (swap for <img> after the shoot) ---------- */
+.ph{position:relative;overflow:hidden;isolation:isolate;
+  background:
+    radial-gradient(60% 70% at var(--sx,75%) var(--sy,25%), rgba(255,236,190,.85), rgba(255,236,190,0) 70%),
+    radial-gradient(45% 60% at var(--bx,68%) var(--by,70%), var(--c3,#8FB7A4), transparent 70%),
+    radial-gradient(70% 80% at 20% 90%, var(--c2,#3E8C8E), transparent 70%),
+    linear-gradient(160deg, var(--c1,#CFD9C8), var(--c2,#3E8C8E));}
+.ph::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.18;mix-blend-mode:soft-light;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.ph-tag{position:absolute;right:12px;bottom:12px;z-index:2;display:flex;align-items:center;gap:6px;max-width:calc(100% - 24px);padding:6px 10px;border-radius:999px;background:rgba(27,43,48,.55);color:#fff;font-size:12px;line-height:1.3;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.ph-tag svg{flex:none}
+.tone-a{--c1:#E9E2C8;--c2:#2F7F86;--c3:#9CC3B0}
+.tone-b{--c1:#F2E7C4;--c2:#5E9A8A;--c3:#D9CB86;--sx:30%;--sy:20%}
+.tone-c{--c1:#D7E6E4;--c2:#1F6E7E;--c3:#7FB8B3;--sx:80%;--sy:15%}
+.tone-d{--c1:#F1DFC0;--c2:#3D7C78;--c3:#E1C98A;--sx:85%;--sy:35%}
+.tone-e{--c1:#F4D9A8;--c2:#2B6D72;--c3:#E8B985;--sx:70%;--sy:55%}
+
+/* ---------- 01 Header ---------- */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--petroleo)}
+.hdr{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background-color .35s, box-shadow .35s, padding .35s}
+.hdr .wrap{max-width:calc(1360px + 2*max(16px, env(safe-area-inset-left,0px)));display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;transition:padding .35s}
+.hdr.is-solid{background:rgba(15,92,108,.92);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 8px 30px rgba(11,70,82,.18)}
+.hdr.is-solid .wrap{padding-block:10px}
+.logo{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font:600 24px/1 var(--serif);letter-spacing:-.02em}
+.logo svg{width:30px;height:30px}
+.nav-pill{display:flex;gap:2px;padding:5px;border-radius:999px;background:rgba(255,255,255,.14);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.2)}
+.nav-pill > a,.nav-pill > .dd > button{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 16px;border-radius:999px;color:#fff;text-decoration:none;font:600 15px/1 var(--sans);background:none;border:0;cursor:pointer;transition:background-color .2s}
+.nav-pill > a:hover,.nav-pill > .dd > button:hover,.nav-pill .dd.open > button{background:rgba(255,255,255,.18)}
+.hdr-actions{display:flex;align-items:center;gap:10px}
+.dd{position:relative}
+.dd .chev{transition:transform .25s}
+.dd.open .chev{transform:rotate(180deg)}
+.dd-panel{position:absolute;top:calc(100% + 10px);left:50%;min-width:290px;padding:8px;border-radius:16px;background:#fff;color:var(--texto);box-shadow:0 20px 50px rgba(11,70,82,.25);opacity:0;visibility:hidden;transform:translate(-50%,-6px);transition:opacity .2s, transform .25s var(--ease), visibility .2s}
+.dd-panel.right{left:auto;right:0;transform:translateY(-6px)}
+.dd.open .dd-panel{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.dd.open .dd-panel.right{transform:translateY(0)}
+.dd-panel a{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-radius:10px;text-decoration:none;transition:background-color .2s}
+.dd-panel a:hover{background:var(--hueso)}
+.dd-panel strong{display:block;font-size:15px;color:var(--petroleo)}
+.dd-panel small{display:block;font-size:13px;color:var(--texto-suave);line-height:1.4}
+.dd-dot{flex:none;width:10px;height:10px;margin-top:6px;border-radius:50%;background:var(--turquesa)}
+.mob-only{display:none}
+.icon-btn{width:44px;padding:0}
+
+/* mobile menu */
+.mnav{position:fixed;inset:0;z-index:70;background:var(--petroleo);color:#fff;display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 18px) max(16px, env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 24px) max(16px, env(safe-area-inset-left,0px));clip-path:circle(0 at calc(100% - 40px) 40px);transition:clip-path .6s var(--ease);visibility:hidden}
+.mnav.open{clip-path:circle(150% at calc(100% - 40px) 40px);visibility:visible}
+.mnav-top{display:flex;justify-content:space-between;align-items:center}
+.mnav ul{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:4px}
+.mnav ul a{display:block;padding:8px 0;color:#fff;text-decoration:none;font:500 32px/1.15 var(--serif)}
+.mnav .sub{font:500 16px/1.5 var(--sans);color:rgba(255,255,255,.75);padding:4px 0 4px 16px}
+.mnav-foot{margin-top:auto;display:grid;gap:10px}
+
+/* ---------- 02 Hero ---------- */
+.hero{position:relative;min-height:max(620px, min(100svh, 920px));color:#fff;overflow:hidden;background:var(--petroleo)}
+.slide{position:absolute;inset:0;clip-path:circle(0% at var(--ox,78%) var(--oy,62%))}
+.slide.is-active{clip-path:circle(150% at var(--ox,78%) var(--oy,62%));z-index:1}
+.slide.is-entering{z-index:2;animation:reveal 1.3s var(--ease) forwards}
+@keyframes reveal{from{clip-path:circle(0% at var(--ox,78%) var(--oy,62%))}to{clip-path:circle(150% at var(--ox,78%) var(--oy,62%))}}
+.slide .ph{position:absolute;inset:0;transform:scale(1.08);transition:transform 7s linear}
+.slide.is-active .ph,.slide.is-entering .ph{transform:scale(1)}
+.slide .ph-tag{bottom:auto;top:calc(env(safe-area-inset-top,0px) + 96px);right:max(16px, env(safe-area-inset-right,0px))}
+/* stand-in "subject" on the right of each hero placeholder */
+.subj{position:absolute;right:8%;bottom:0;width:min(46vw,620px);aspect-ratio:1/1.05;border-radius:50% 50% 0 0/60% 60% 0 0;background:radial-gradient(70% 60% at 50% 30%, rgba(255,240,205,.55), rgba(255,240,205,0) 70%), linear-gradient(180deg, rgba(20,122,143,.25), rgba(15,92,108,.45));filter:blur(2px)}
+.subj::before{content:"";position:absolute;left:50%;top:-22%;width:34%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 40% 35%, rgba(255,236,200,.75), rgba(214,188,140,.45) 60%, rgba(214,188,140,0) 72%)}
+.subj.two{right:26%;width:min(30vw,420px);opacity:.8}
+.veil{position:absolute;inset:0;z-index:3;pointer-events:none;background:linear-gradient(90deg, rgba(15,92,108,.70) 0%, rgba(15,92,108,.62) 32%, rgba(15,92,108,0) 66%), linear-gradient(0deg, rgba(15,92,108,.45), rgba(15,92,108,0) 40%)}
+.hero-inner{position:relative;z-index:4;min-height:inherit;display:flex;flex-direction:column;justify-content:flex-end}
+.hero-inner .wrap{width:100%;padding-block:150px clamp(48px,7vw,88px)}
+.hero h1{font-size:clamp(44px,6.6vw,92px);max-width:13ch;line-height:1.02}
+.hero h1 em{font-style:italic;color:var(--lima)}
+.hero-sub{margin-top:22px;font-size:clamp(17px,1.5vw,20px);max-width:44ch;color:rgba(255,255,255,.9)}
+.hero-ctas{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.hero-phone{margin-top:18px;font-size:15px;color:rgba(255,255,255,.85)}
+.hero-phone a{color:#fff;font-weight:700;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+.hero-ctrl{position:absolute;z-index:5;left:0;right:0;bottom:24px;pointer-events:none}
+.hero-ctrl .wrap{display:flex;justify-content:flex-end;align-items:center;gap:10px}
+.dots{display:flex;gap:8px;pointer-events:auto}
+.dots button{position:relative;width:44px;height:28px;border:0;background:none;cursor:pointer;padding:0}
+.dots button::before{content:"";position:absolute;left:0;right:0;top:50%;height:3px;border-radius:3px;background:rgba(255,255,255,.35)}
+.dots button span{position:absolute;left:0;top:50%;height:3px;width:0;border-radius:3px;background:#fff;transform:translateY(-50%)}
+.dots button.on span{animation:fill var(--dur,6.5s) linear forwards}
+.hero.paused .dots button.on span{animation-play-state:paused}
+@keyframes fill{to{width:100%}}
+.pause{pointer-events:auto;width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.12);color:#fff;display:grid;place-items:center;cursor:pointer}
+.seal{position:absolute;z-index:5;right:max(24px, calc((100vw - 1200px)/2));bottom:clamp(90px,14vh,150px);width:150px;height:150px;border-radius:50%;background:var(--lima);color:var(--petroleo);display:grid;place-items:center;box-shadow:0 18px 40px rgba(11,70,82,.3)}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
+.seal svg text{font:700 11.5px var(--sans);letter-spacing:.2em;fill:var(--petroleo);text-transform:uppercase}
+.seal b{font:500 54px/1 var(--serif);letter-spacing:-.04em}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- 03 Trust strip ---------- */
+.trust{border-bottom:1px solid var(--linea)}
+.trust ul{list-style:none;margin:0;padding:28px 0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:24px}
+.trust li{display:flex;gap:12px;align-items:center;min-width:0}
+.trust .ic{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--azul-claro);color:var(--oceano)}
+.trust strong{display:block;font-size:15px;line-height:1.25;color:var(--petroleo)}
+.trust small{display:block;font-size:13px;line-height:1.3;color:var(--texto-suave)}
+
+/* ---------- 04 Services ---------- */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:48px}
+.sec-head > div{display:grid;gap:14px;min-width:0}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gut)}
+.card{display:flex;flex-direction:column;border-radius:var(--r-lg);overflow:hidden;background:var(--petroleo);color:#fff;transition:transform .45s var(--ease), box-shadow .45s var(--ease)}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(11,70,82,.22)}
+.card-img{aspect-ratio:4/3.4;overflow:hidden}
+.card-img .ph{width:100%;height:100%;transition:transform .8s var(--ease)}
+.card:hover .card-img .ph{transform:scale(1.06)}
+.card-body{flex:1;display:flex;flex-direction:column;gap:12px;padding:24px 24px 26px}
+.card-body .num{font:500 14px/1 var(--serif);color:var(--lima);letter-spacing:.04em}
+.card h3{font-size:26px;line-height:1.12}
+.card p{font-size:15.5px;color:rgba(255,255,255,.82);line-height:1.55}
+.card .btn{margin-top:auto;align-self:flex-start}
+.card-body > p{margin-bottom:12px}
+
+/* ---------- 05 Why ---------- */
+.why{background:var(--hueso)}
+.why-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px);align-items:start}
+.quote{position:sticky;top:110px;display:grid;gap:24px}
+.quote blockquote{margin:0;font:500 clamp(32px,3.6vw,48px)/1.15 var(--serif);letter-spacing:-.02em;color:var(--petroleo);text-wrap:balance}
+.quote blockquote::before{content:"«";display:block;font-size:1.8em;line-height:.6;color:var(--turquesa);margin-bottom:12px}
+.quote cite{font-style:normal;font-size:15px;color:var(--texto-suave)}
+.diffs{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:d}
+.diffs li{display:grid;grid-template-columns:72px 1fr;gap:16px;padding:28px 0;border-top:1px solid var(--linea);counter-increment:d}
+.diffs li:last-child{border-bottom:1px solid var(--linea)}
+.diffs li::before{content:counter(d,decimal-leading-zero);font:500 36px/1 var(--serif);color:var(--oceano)}
+.diffs h3{font-size:26px;margin-bottom:8px;color:var(--petroleo)}
+.diffs p{color:var(--texto-suave);max-width:52ch}
+
+/* ---------- 06 Trajectory ---------- */
+.traj-grid{display:grid;grid-template-columns:6fr 5fr;gap:clamp(40px,6vw,96px);align-items:center}
+.traj-media{position:relative;padding:0 0 60px 0}
+.traj-media .main{aspect-ratio:5/4;border-radius:var(--r-lg)}
+.traj-media .old{position:absolute;right:-12px;bottom:0;width:44%;aspect-ratio:1;border-radius:var(--r-md);border:8px solid #fff;box-shadow:0 20px 40px rgba(11,70,82,.2);transform:rotate(-4deg);filter:sepia(.55) saturate(.7);transition:transform .6s var(--ease)}
+.traj-media:hover .old{transform:rotate(0deg) translateY(-8px)}
+.traj-media .old .ph-tag{font-size:11px}
+.year-chip{position:absolute;left:20px;top:20px;padding:6px 12px;border-radius:999px;background:#fff;color:var(--petroleo);font:600 14px/1 var(--serif)}
+.traj-copy{display:grid;gap:20px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:12px 0 8px;padding:24px 0;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.stats div{min-width:0}
+.stats b{display:block;font:500 clamp(40px,4.4vw,56px)/1 var(--serif);color:var(--petroleo);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stats span{display:block;margin-top:8px;font-size:14px;line-height:1.35;color:var(--texto-suave)}
+
+/* ---------- 07 CTA ---------- */
+.cta{padding-block:0 clamp(72px,10vw,128px)}
+.cta-box{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--r-lg);overflow:hidden;background:var(--petroleo);color:#fff}
+.cta-copy{padding:clamp(32px,5vw,72px);display:flex;flex-direction:column;gap:22px}
+.cta-copy .eyebrow{color:var(--lima)}
+.cta-copy h2{font-size:clamp(34px,4.2vw,54px)}
+.cta-copy p{color:rgba(255,255,255,.85);max-width:42ch}
+.contact-list{list-style:none;margin:8px 0 0;padding:20px 0 0;border-top:1px solid rgba(255,255,255,.18);display:grid;gap:12px;font-size:15.5px}
+.contact-list li{display:flex;gap:12px;align-items:center}
+.contact-list svg{flex:none;color:var(--lima)}
+.contact-list a{color:#fff;text-decoration:none;font-weight:600}
+.cta-photo{min-height:420px}
+.cta-photo .ph{height:100%;min-height:420px}
+
+/* ---------- 08 Entities ---------- */
+.ent{background:var(--hueso)}
+.ent h2{font-size:clamp(26px,2.6vw,34px);text-align:center;margin:10px 0 36px}
+.ent .eyebrow{text-align:center;display:block}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-bottom:40px}
+.logo-slot{display:grid;place-items:center;gap:4px;width:200px;height:96px;padding:12px;border-radius:14px;background:#fff;border:1.5px dashed var(--linea);text-align:center;font-size:13px;font-weight:700;color:var(--petroleo);line-height:1.3}
+.logo-slot small{font-weight:500;color:var(--texto-suave);font-size:11px}
+.aids{display:grid;grid-template-columns:1fr 1fr;gap:var(--gut);max-width:1000px;margin:0 auto}
+.aid{padding:24px;border-radius:var(--r-md);background:#fff;display:grid;gap:10px;align-content:start}
+.aid h3{font:700 14px/1.3 var(--sans);letter-spacing:0;color:var(--petroleo)}
+.aid p{font-size:13.5px;line-height:1.6;color:var(--texto-suave)}
+
+/* ---------- 09 Footer ---------- */
+.ftr{background:var(--petroleo);color:rgba(255,255,255,.82);overflow:hidden}
+.ftr .wrap{padding-block:72px 28px}
+.ftr-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.ftr h4{margin:0 0 14px;font:700 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--lima)}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:15px}
+.ftr a{color:#fff;text-decoration:none}
+.ftr a:hover{text-decoration:underline;text-underline-offset:3px}
+.ftr address{font-style:normal;display:grid;gap:8px;font-size:15px}
+.social{display:flex;gap:8px;margin-top:4px}
+.social a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.3)}
+.social a:hover{background:rgba(255,255,255,.12);text-decoration:none}
+.watermark{font:500 clamp(80px,19vw,280px)/.8 var(--serif);letter-spacing:-.05em;color:rgba(255,255,255,.07);margin:56px 0 0;user-select:none;white-space:nowrap}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:-12px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);font-size:13.5px}
+.legal nav{display:flex;flex-wrap:wrap;gap:20px}
+
+/* prototype note */
+.proto{transition:opacity .3s, transform .3s var(--ease);position:fixed;z-index:40;left:max(16px, env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:min(340px, calc(100vw - 32px));display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:14px;background:#fff;color:var(--texto);font-size:13px;line-height:1.45;box-shadow:0 12px 34px rgba(11,70,82,.22)}
+.proto.off{opacity:0;transform:translateY(12px);pointer-events:none}
+.proto button{flex:none;border:0;background:none;color:var(--texto-suave);cursor:pointer;font-size:18px;line-height:1;padding:0 2px}
+
+/* reveal on scroll (content is visible at rest; motion only enhances) */
+.rv{transition:transform .9s var(--ease), opacity .9s var(--ease)}
+.js .rv.pre{transform:translateY(28px);opacity:.001}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1180px){
+  .trust ul{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nav-pill > a,.nav-pill > .dd > button{padding:0 12px}
+}
+@media (max-width:980px){
+  .desk-only{display:none !important}
+  .mob-only{display:inline-flex}
+  .why-grid,.traj-grid,.cta-box{grid-template-columns:1fr}
+  .quote{position:static}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+  .seal{width:112px;height:112px;top:calc(env(safe-area-inset-top,0px) + 92px);bottom:auto}
+  .seal b{font-size:40px}
+  .seal svg text{font-size:10.5px}
+  .slide .ph-tag{top:auto;bottom:70px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .trust ul{grid-template-columns:1fr 1fr;gap:18px 14px}
+  .cards{grid-template-columns:1fr}
+  .aids{grid-template-columns:1fr}
+  .logos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .logo-slot{width:auto}
+  .ftr-grid{grid-template-columns:1fr}
+  .veil{background:linear-gradient(0deg, rgba(15,92,108,.78) 0%, rgba(15,92,108,.62) 45%, rgba(15,92,108,0) 80%)}
+  .subj{right:-10%;width:90vw;bottom:30%}
+  .subj.two{display:none}
+  .hero-ctas .btn{flex:1 1 100%}
+  .stats b{font-size:36px}
+  .diffs li{grid-template-columns:52px 1fr}
+  .diffs li::before{font-size:28px}
+  .traj-media .old{right:0}
+  .cta-photo,.cta-photo .ph{min-height:300px}
+  .logo{font-size:21px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .js .rv.pre{transform:none;opacity:1}
+}
+</style>
+</head>
+<body>
+
+<!-- Inline icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></g></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19 13 11"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 20s-8-4.6-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-net" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="19" cy="18" r="2.2"/><path d="m11 7-5 9m7-9 5 9M7.2 18h9.6"/></g></symbol>
+  <symbol id="i-build" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></g></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></g></symbol>
+  <symbol id="i-logo" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="16" cy="16" r="6.5" fill="#E8D789"/></symbol>
+</svg>
+
+<!-- 01 · Cabecera -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Prevensa, inicio"><svg aria-hidden="true"><use href="#i-logo"/></svg>prevensa</a>
+
+    <nav class="nav-pill desk-only" aria-label="Principal">
+      <div class="dd" data-dd>
+        <button type="button" aria-expanded="false" aria-controls="dd-serv">Servicios <svg width="16" height="16" class="chev" aria-hidden="true"><use href="#i-chev"/></svg></button>
+        <div class="dd-panel" id="dd-serv">
+          <a href="#servicios"><span class="dd-dot"></span><span><strong>Prevención de riesgos laborales</strong><small>Evaluación, planificación y normativa al día</small></span></a>
+          <a href="#servicios"><span class="dd-dot"></span><span><strong>Formación</strong><small>Presencial, online y con realidad virtual</small></span></a>
+          <a href="#servicios"><span class="dd-dot"></span><span><strong>Salud laboral</strong><small>Reconocimientos y vigilancia de la salud</small></span></a>
+          <a href="#servicios"><span class="dd-dot"></span><span><strong>Soluciones</strong><small>Proyectos a medida para tu empresa</small></span></a>
+        </div>
+      </div>
+      <a href="#trayectoria">Sobre nosotros</a>
+      <a href="#blog">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="hdr-actions">
+      <div class="dd desk-only" data-dd>
+        <button type="button" class="btn btn--glass" aria-expanded="false" aria-controls="dd-plat"><svg width="18" height="18" aria-hidden="true"><use href="#i-user"/></svg>Acceso plataformas</button>
+        <div class="dd-panel right" id="dd-plat">
+          <a href="#plataformas"><span class="dd-dot"></span><span><strong>Área de clientes</strong><small>Documentación y gestión de tu empresa</small></span></a>
+          <a href="#plataformas"><span class="dd-dot"></span><span><strong>Portal del trabajador</strong><small>Resultados de reconocimientos médicos</small></span></a>
+          <a href="#plataformas"><span class="dd-dot"></span><span><strong>Campus de formación</strong><small>Tus cursos online y certificados</small></span></a>
+        </div>
+      </div>
+      <a class="btn btn--lima desk-only" href="#contacto">Solicitar presupuesto</a>
+      <a class="btn btn--glass icon-btn mob-only" href="tel:902155175" aria-label="Llamar al 902 155 175"><svg width="20" height="20" aria-hidden="true"><use href="#i-phone"/></svg></a>
+      <button class="btn btn--glass mob-only" type="button" id="menuBtn" aria-expanded="false" aria-controls="mnav">Menú</button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menú">
+  <div class="mnav-top">
+    <span class="logo"><svg aria-hidden="true"><use href="#i-logo"/></svg>prevensa</span>
+    <button class="btn btn--glass" type="button" id="menuClose">Cerrar</button>
+  </div>
+  <ul>
+    <li><a href="#servicios">Servicios</a>
+      <div class="sub">Prevención · Formación · Salud laboral · Soluciones</div></li>
+    <li><a href="#trayectoria">Sobre nosotros</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <div class="mnav-foot">
+    <a class="btn btn--lima btn--lg" href="#contacto">Solicitar presupuesto <span class="arr">→</span></a>
+    <a class="btn btn--glass btn--lg" href="#plataformas"><svg width="18" height="18" aria-hidden="true"><use href="#i-user"/></svg>Acceso plataformas</a>
+  </div>
+</div>
+
+<main id="top">
+<!-- 02 · Hero -->
+<section class="hero" id="hero" aria-roledescription="carrusel" aria-label="Prevensa">
+  <div class="slide is-active" style="--ox:74%;--oy:58%">
+    <div class="ph tone-a"><div class="subj"></div><div class="subj two"></div></div>
+    <span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>Foto 1/3 · Técnica de Prevensa conversando con una trabajadora</span>
+  </div>
+  <div class="slide" style="--ox:70%;--oy:52%">
+    <div class="ph tone-d"><div class="subj"></div></div>
+    <span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>Foto 2/3 · Trabajadora en una pausa relajada, luz de tarde</span>
+  </div>
+  <div class="slide" style="--ox:78%;--oy:62%">
+    <div class="ph tone-c"><div class="subj"></div><div class="subj two"></div></div>
+    <span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>Foto 3/3 · Charla cercana en el puesto de trabajo</span>
+  </div>
+  <div class="veil"></div>
+
+  <div class="hero-inner">
+    <div class="wrap">
+      <h1>Cuidamos de tu equipo para que <em>vuelva sano a casa</em></h1>
+      <p class="hero-sub">Prevención, formación y salud laboral para tu empresa, con un solo equipo que lo resuelve todo. En la provincia de Valencia desde 2001.</p>
+      <div class="hero-ctas">
+        <a class="btn btn--lima btn--lg" href="#contacto">Solicitar presupuesto <span class="arr">→</span></a>
+        <a class="btn btn--secondary btn--lg" href="#servicios">Ver servicios</a>
+      </div>
+      <p class="hero-phone">¿Prefieres hablar? Llámanos al <a href="tel:902155175">902 155 175</a></p>
+    </div>
+  </div>
+
+  <div class="seal" aria-label="25 años, 2001–2026">
+    <svg viewBox="0 0 150 150" aria-hidden="true"><defs><path id="ring" d="M75 75m-58 0a58 58 0 1 1 116 0a58 58 0 1 1-116 0"/></defs><text><textPath href="#ring">25 años · 2001–2026 · 25 años · 2001–2026 ·</textPath></text></svg>
+    <b aria-hidden="true">25</b>
+  </div>
+
+  <div class="hero-ctrl">
+    <div class="wrap">
+      <div class="dots" role="tablist" aria-label="Elegir foto">
+        <button type="button" role="tab" aria-label="Foto 1" class="on"><span></span></button>
+        <button type="button" role="tab" aria-label="Foto 2"><span></span></button>
+        <button type="button" role="tab" aria-label="Foto 3"><span></span></button>
+      </div>
+      <button class="pause" type="button" id="pauseBtn" aria-label="Pausar carrusel"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path id="pauseIco" fill="currentColor" d="M2 1h3v10H2zM7 1h3v10H7z"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · Franja de confianza -->
+<section class="trust" aria-label="Por qué confiar en Prevensa">
+  <div class="wrap">
+    <ul>
+      <li><span class="ic"><svg width="20" height="20" aria-hidden="true"><use href="#i-pin"/></svg></span><span><strong>4 sedes</strong><small>Gandia, Valencia, Sagunto y Ontinyent</small></span></li>
+      <li><span class="ic"><svg width="20" height="20" aria-hidden="true"><use href="#i-build"/></svg></span><span><strong><span class="tbd" title="Dato pendiente de confirmar">+0.000</span> empresas</strong><small>confían en nosotros</small></span></li>
+      <li><span class="ic"><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg></span><span><strong>ISO 9001</strong><small>Calidad auditada por SGS</small></span></li>
+      <li><span class="ic"><svg width="20" height="20" aria-hidden="true"><use href="#i-leaf"/></svg></span><span><strong>ISO 14001</strong><small>Medio ambiente, auditada por SGS</small></span></li>
+      <li><span class="ic"><svg width="20" height="20" aria-hidden="true"><use href="#i-heart"/></svg></span><span><strong>Empresa generadora de salud</strong><small>Generalitat Valenciana</small></span></li>
+      <li><span class="ic"><svg width="20" height="20" aria-hidden="true"><use href="#i-net"/></svg></span><span><strong>Red ENWHP</strong><small>Red europea de salud en el trabajo</small></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 04 · Servicios -->
+<section class="section" id="servicios">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <span class="eyebrow">Servicios</span>
+        <h2 class="h2">Todo lo que tu empresa necesita, en un solo sitio</h2>
+      </div>
+      <p class="lead">Nos ocupamos de la normativa para que tú puedas centrarte en tu equipo. Cuatro áreas, un mismo equipo y una sola persona de contacto.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <div class="card-img"><div class="ph tone-a"><span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>Dos personas revisando un espacio de trabajo cuidado</span></div></div>
+        <div class="card-body">
+          <span class="num">01</span>
+          <h3>Prevención de riesgos laborales</h3>
+          <p>Evaluamos tus puestos, planificamos la prevención y te mantenemos al día con la normativa sin que tengas que pensar en ella.</p>
+          <a class="btn btn--lima" href="#servicios">Ver prevención <span class="arr">→</span></a>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="card-img"><div class="ph tone-b"><span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>Alguien riendo con gafas de realidad virtual</span></div></div>
+        <div class="card-body">
+          <span class="num">02</span>
+          <h3>Formación</h3>
+          <p>Cursos presenciales, online y con realidad virtual. Tu equipo aprende haciendo y lo recuerda mejor.</p>
+          <a class="btn btn--lima" href="#servicios">Ver formación <span class="arr">→</span></a>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="card-img"><div class="ph tone-c"><span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>Consulta amable de vigilancia de la salud</span></div></div>
+        <div class="card-body">
+          <span class="num">03</span>
+          <h3>Salud laboral</h3>
+          <p>Reconocimientos médicos y vigilancia de la salud cerca de tu equipo, con un trato cercano y sin esperas.</p>
+          <a class="btn btn--lima" href="#servicios">Ver salud laboral <span class="arr">→</span></a>
+        </div>
+      </article>
+      <article class="card rv">
+        <div class="card-img"><div class="ph tone-d"><span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>Reunión tranquila con café, de tú a tú</span></div></div>
+        <div class="card-body">
+          <span class="num">04</span>
+          <h3>Soluciones</h3>
+          <p>Proyectos a medida, bienestar y responsabilidad social para que tu empresa sea un lugar más sano.</p>
+          <a class="btn btn--lima" href="#servicios">Ver soluciones <span class="arr">→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · Por qué Prevensa -->
+<section class="section why" aria-labelledby="why-h">
+  <div class="wrap why-grid">
+    <div class="quote rv">
+      <span class="eyebrow" id="why-h">Por qué Prevensa</span>
+      <blockquote>La calidad de servicio es nuestro compromiso prioritario.</blockquote>
+      <cite>Nuestra misión: un mundo más saludable.</cite>
+    </div>
+    <ol class="diffs">
+      <li class="rv"><div><h3>Un solo proveedor para todo</h3><p>Prevención, formación, salud laboral y soluciones con el mismo equipo. Menos llamadas, menos papeles y una persona que conoce tu empresa.</p></div></li>
+      <li class="rv"><div><h3>Calidad que se audita</h3><p>Certificados en ISO 9001 e ISO 14001, auditados cada año por SGS. Trabajamos con procesos claros y medibles.</p></div></li>
+      <li class="rv"><div><h3>Expertos en salud, no solo en normas</h3><p>La Generalitat Valenciana nos reconoce como empresa generadora de salud y formamos parte de la red europea ENWHP.</p></div></li>
+      <li class="rv"><div><h3>Comprometidos con tu entorno</h3><p>Gestionamos nuestra responsabilidad social con la vista puesta en los Objetivos de Desarrollo Sostenible.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 06 · Trayectoria -->
+<section class="section" id="trayectoria">
+  <div class="wrap traj-grid">
+    <div class="traj-media rv">
+      <div class="ph tone-e main"><span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>Equipo de Prevensa riendo, en exterior</span></div>
+      <div class="ph tone-b old"><span class="year-chip">2001</span><span class="ph-tag"><svg width="12" height="12" aria-hidden="true"><use href="#i-cam"/></svg>Foto de los inicios</span></div>
+    </div>
+    <div class="traj-copy rv">
+      <span class="eyebrow">Nuestra trayectoria</span>
+      <h2 class="h2">25 años cuidando de las personas que hacen tu empresa</h2>
+      <p class="lead">Empezamos en Gandia en 2001 con una idea sencilla: que cada persona vuelva a casa igual de bien que salió. Hoy seguimos igual de cerca, ahora desde cuatro sedes en la provincia de Valencia.</p>
+      <div class="stats">
+        <div><b data-count="25">25</b><span>años a tu lado</span></div>
+        <div><b class="tbd" title="Dato pendiente de confirmar">0.000</b><span>empresas cliente</span></div>
+        <div><b class="tbd" title="Dato pendiente de confirmar">00.000</b><span>trabajadores formados al año</span></div>
+      </div>
+      <div><a class="btn btn--secondary btn--lg" href="#trayectoria">Conoce al equipo <span class="arr">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · Llamada a la acción -->
+<section class="cta" id="contacto">
+  <div class="wrap">
+    <div class="cta-box rv">
+      <div class="cta-copy">
+        <span class="eyebrow">Hablemos</span>
+        <h2>Cuéntanos cómo es tu empresa y te preparamos un presupuesto</h2>
+        <p>Sin compromiso y adaptado a tu sector y a tu plantilla. Te ayudamos a ordenarlo todo desde el primer día.</p>
+        <div><a class="btn btn--lima btn--lg" href="#contacto">Solicitar presupuesto <span class="arr">→</span></a></div>
+        <ul class="contact-list">
+          <li><svg width="20" height="20" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:902155175">902 155 175</a></li>
+          <li><svg width="20" height="20" aria-hidden="true"><use href="#i-mail"/></svg><span class="tbd" title="Correo pendiente de confirmar">hola@prevensa.es</span></li>
+          <li><svg width="20" height="20" aria-hidden="true"><use href="#i-clock"/></svg><span class="tbd" title="Horario pendiente de confirmar">Lunes a viernes, 8:00 a 15:00</span></li>
+        </ul>
+      </div>
+      <div class="cta-photo"><div class="ph tone-e" style="--sx:85%;--sy:30%"><span class="ph-tag"><svg width="14" height="14" aria-hidden="true"><use href="#i-cam"/></svg>«Volver a casa»: llegada al atardecer, abrazo en familia</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · Entidades colaboradoras -->
+<section class="section ent" aria-labelledby="ent-h">
+  <div class="wrap">
+    <span class="eyebrow">Entidades colaboradoras</span>
+    <h2 id="ent-h">Proyectos con apoyo público</h2>
+    <div class="logos">
+      <div class="logo-slot">IVACE<small>Logo a color</small></div>
+      <div class="logo-slot">Unión Europea<small>Emblema UE · tamaño mínimo por confirmar</small></div>
+      <div class="logo-slot">FEDER<small>Fondo Europeo de Desarrollo Regional</small></div>
+      <div class="logo-slot">Cámara de Comercio de Valencia<small>Logo a color</small></div>
+    </div>
+    <div class="aids">
+      <div class="aid">
+        <h3>IVACE y FEDER</h3>
+        <p>Proyecto «Aplicación para la integración de la prevención en otras áreas de la empresa y en los trabajadores clientes» (expediente IMDIGA/2021/497), cofinanciado por el IVACE y el Fondo Europeo de Desarrollo Regional (FEDER) y seleccionado en el marco del Programa Operativo FEDER de la Comunitat Valenciana 2021-2027.</p>
+      </div>
+      <div class="aid">
+        <h3>Nuestra prioridad, tu tranquilidad</h3>
+        <p>GOMIS, MAÑEZ I MARTÍ, S.L. y PREVENSA FORMACIÓ PROFESIONAL I EMPRESARIAL, S.L. han sido beneficiarias del Fondo Europeo de Desarrollo Regional (FEDER), cuyo objetivo es potenciar la investigación, el desarrollo tecnológico y la innovación. Gracias a esta ayuda, en 2022 implantaron un sistema de gestión de la responsabilidad social empresarial (RSE) orientado a la sostenibilidad y a los Objetivos de Desarrollo Sostenible (ODS), que pone en valor sus repercusiones económicas, sociales y medioambientales. La acción contó con el apoyo del programa de Sostenibilidad de la Cámara de Comercio de Valencia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 09 · Pie -->
+<footer class="ftr" id="blog">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a class="logo" href="#top"><svg aria-hidden="true"><use href="#i-logo"/></svg>prevensa</a>
+        <address style="margin-top:20px">
+          <span class="tbd" title="Dirección pendiente de confirmar">Sede central · Gandia (Valencia)</span>
+          <a href="tel:902155175">902 155 175</a>
+          <span class="tbd" title="Correo pendiente de confirmar">hola@prevensa.es</span>
+          <span class="tbd" title="Horario pendiente de confirmar">Lunes a viernes, 8:00 a 15:00</span>
+        </address>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul><li><a href="#servicios">Prevención de riesgos</a></li><li><a href="#servicios">Formación</a></li><li><a href="#servicios">Salud laboral</a></li><li><a href="#servicios">Soluciones</a></li></ul>
+      </div>
+      <div id="plataformas">
+        <h4>Plataformas</h4>
+        <ul><li><a href="#plataformas">Área de clientes</a></li><li><a href="#plataformas">Portal del trabajador</a></li><li><a href="#plataformas">Campus de formación</a></li></ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <ul><li><a href="#blog">Blog</a></li><li><a href="#trayectoria">Sobre nosotros</a></li></ul>
+        <div class="social" style="margin-top:14px">
+          <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 9h4v12H3zm7 0h3.8v1.7c.6-1 1.9-2 3.9-2 4 0 4.3 2.6 4.3 6V21h-4v-5.6c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H10z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <p class="watermark" aria-hidden="true">Prevensa</p>
+    <div class="legal">
+      <span>© 2026 Prevensa · 25 años cuidando de las personas</span>
+      <nav aria-label="Legal"><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a></nav>
+    </div>
+  </div>
+</footer>
+
+<aside class="proto off" id="proto" aria-label="Nota del prototipo">
+  <span><strong>Prototipo de la home.</strong> Las fotos son huecos con la indicación de la sesión, la tipografía es provisional (sustituye a Arpona) y los datos con <span class="tbd">subrayado punteado</span> están pendientes de confirmar.</span>
+  <button type="button" aria-label="Cerrar nota" id="protoClose">×</button>
+</aside>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Header turns solid after the hero
+  var hdr = document.getElementById('hdr'), hero = document.getElementById('hero');
+  var proto = document.getElementById('proto');
+  function onScroll(){ var past = window.scrollY > hero.offsetHeight - 90; hdr.classList.toggle('is-solid', past); proto.classList.toggle('off', !past); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  // Dropdowns (click + keyboard, close on outside / Esc)
+  var dds = [].slice.call(document.querySelectorAll('[data-dd]'));
+  function closeAll(except){ dds.forEach(function(d){ if(d!==except){ d.classList.remove('open'); d.querySelector('button').setAttribute('aria-expanded','false'); } }); }
+  dds.forEach(function(d){
+    var b = d.querySelector('button');
+    b.addEventListener('click', function(e){ e.stopPropagation(); var o = !d.classList.contains('open'); closeAll(d); d.classList.toggle('open', o); b.setAttribute('aria-expanded', o); });
+    d.querySelectorAll('.dd-panel a').forEach(function(a){ a.addEventListener('click', function(){ closeAll(); }); });
+  });
+  document.addEventListener('click', function(){ closeAll(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ closeAll(); closeMenu(); } });
+
+  // Mobile menu
+  var mnav = document.getElementById('mnav'), menuBtn = document.getElementById('menuBtn');
+  function openMenu(){ mnav.classList.add('open'); menuBtn.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; setTimeout(function(){ document.getElementById('menuClose').focus(); }, 50); }
+  function closeMenu(){ if(!mnav.classList.contains('open')) return; mnav.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); document.body.style.overflow=''; menuBtn.focus(); }
+  menuBtn.addEventListener('click', openMenu);
+  document.getElementById('menuClose').addEventListener('click', closeMenu);
+  mnav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+  // Hero carousel: expanding-circle transition, text stays put
+  var slides = [].slice.call(hero.querySelectorAll('.slide'));
+  var dots = [].slice.call(hero.querySelectorAll('.dots button'));
+  var pauseBtn = document.getElementById('pauseBtn'), pauseIco = document.getElementById('pauseIco');
+  var cur = 0, DUR = 6500, timer = null, paused = reduce, busy = false;
+  hero.style.setProperty('--dur', DUR+'ms');
+  function setDot(i){ dots.forEach(function(d,k){ d.classList.remove('on'); d.setAttribute('aria-selected', k===i); }); void dots[i].offsetWidth; dots[i].classList.add('on'); }
+  function go(i){
+    if(i===cur || busy) return;
+    var prev = slides[cur], next = slides[i];
+    if(reduce){ prev.classList.remove('is-active'); next.classList.add('is-active'); cur=i; setDot(i); return; }
+    busy = true;
+    next.classList.add('is-entering');
+    setDot(i);
+    setTimeout(function(){ prev.classList.remove('is-active'); next.classList.add('is-active'); next.classList.remove('is-entering'); busy=false; }, 1300);
+    cur = i;
+  }
+  function schedule(){ clearTimeout(timer); if(!paused) timer = setTimeout(function(){ go((cur+1)%slides.length); schedule(); }, DUR); }
+  dots.forEach(function(d,i){ d.addEventListener('click', function(){ go(i); schedule(); }); });
+  function setPaused(p){ paused=p; hero.classList.toggle('paused', p); pauseBtn.setAttribute('aria-label', p?'Reanudar carrusel':'Pausar carrusel'); pauseIco.setAttribute('d', p?'M3 1l8 5-8 5z':'M2 1h3v10H2zM7 1h3v10H7z'); schedule(); }
+  pauseBtn.addEventListener('click', function(){ setPaused(!paused); });
+  setDot(0); setPaused(paused);
+  document.addEventListener('visibilitychange', function(){ if(document.hidden) clearTimeout(timer); else schedule(); });
+
+  // Scroll reveal: elements are visible by default; only those below the fold get the pre-state
+  if(!reduce && 'IntersectionObserver' in window){
+    var els = [].slice.call(document.querySelectorAll('.rv'));
+    var io = new IntersectionObserver(function(ents){
+      ents.forEach(function(en){ if(en.isIntersecting){ var el=en.target, sib=[].slice.call(el.parentNode.children).filter(function(c){return c.classList.contains('rv');}); el.style.transitionDelay = (Math.max(0, sib.indexOf(el))*90)+'ms'; el.classList.remove('pre'); io.unobserve(el); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){ if(el.getBoundingClientRect().top > window.innerHeight){ el.classList.add('pre'); io.observe(el); } });
+  }
+
+  // Count-up for the anniversary figure
+  var c = document.querySelector('[data-count]');
+  if(c && !reduce && 'IntersectionObserver' in window){
+    var target = +c.dataset.count;
+    var cio = new IntersectionObserver(function(ents){
+      if(!ents[0].isIntersecting) return; cio.disconnect();
+      var t0 = performance.now();
+      (function step(t){ var p = Math.min(1,(t-t0)/1400), e = 1-Math.pow(1-p,3); c.textContent = Math.round(target*e); if(p<1) requestAnimationFrame(step); })(t0);
+    });
+    if(c.getBoundingClientRect().top > window.innerHeight){ c.textContent='0'; cio.observe(c); }
+  }
+
+  document.getElementById('protoClose').addEventListener('click', function(){ document.getElementById('proto').hidden = true; });
+})();
+</script>
+</body>
+</html>
