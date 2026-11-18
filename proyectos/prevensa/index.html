@@ -192,7 +192,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .plan-grid{position:relative;display:grid;grid-template-columns:7fr 5fr;gap:clamp(32px,5vw,72px);align-items:center;margin-top:48px}
 .q{border:0;margin:0;padding:0 0 28px;display:grid;gap:14px}
 .q + .q{padding-top:28px;border-top:1px solid var(--linea)}
-.q legend{padding:0;margin-bottom:14px;font-size:18px;font-weight:600;color:var(--petroleo)}
+.q legend{float:left;width:100%;padding:0;margin-bottom:14px;font-size:18px;font-weight:600;color:var(--petroleo)}
 .q legend span{display:inline-grid;place-items:center;width:26px;height:26px;margin-right:10px;border-radius:50%;background:var(--petroleo);color:#fff;font-size:13px}
 .pills{display:flex;flex-wrap:wrap;gap:10px}
 .pill input{position:absolute;opacity:0;pointer-events:none}
@@ -210,6 +210,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .result li::before{content:"";flex:none;width:18px;height:18px;border-radius:50%;background:rgba(232,215,137,.18) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='m5 9.5 2.5 2.5L13 6.5' fill='none' stroke='%23E8D789' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
 .result .btn{position:relative;justify-self:start}
 .result.swap > *{animation:swap .5s var(--ease) both}
+.q .pills,.q .q-note{clear:both}
+.q:disabled .pills{opacity:.45}
+.q:disabled .pill span{cursor:not-allowed}
+.q-note{font-size:14px;color:var(--tx-2)}
+.result .extra{position:relative;margin-top:6px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18);font-size:14px;color:rgba(255,255,255,.8)}
+.result .extra a{color:var(--lima);font-weight:700;text-decoration:none}
 @keyframes swap{from{opacity:0;transform:translateY(10px)}}
 
 /* ---------- Quote lit by scroll ---------- */
@@ -482,28 +488,30 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
     <div class="plan-grid">
       <form id="planForm" class="rv" onsubmit="return false">
         <fieldset class="q">
-          <legend><span>1</span>¿Cuántas personas trabajan en tu empresa?</legend>
+          <legend><span>1</span>¿Cómo es tu empresa?</legend>
           <div class="pills">
-            <label class="pill"><input type="radio" name="size" id="s1" value="1"><span>1 a 5</span></label>
-            <label class="pill"><input type="radio" name="size" id="s2" value="2" checked><span>6 a 25</span></label>
-            <label class="pill"><input type="radio" name="size" id="s3" value="3"><span>26 a 50</span></label>
-            <label class="pill"><input type="radio" name="size" id="s4" value="4"><span>Más de 50</span></label>
+            <label class="pill"><input type="radio" name="tipo" id="t-auto" value="autonomo"><span>Soy autónomo/a</span></label>
+            <label class="pill"><input type="radio" name="tipo" id="t-pyme" value="pyme" checked><span>Pyme · hasta 249 personas</span></label>
+            <label class="pill"><input type="radio" name="tipo" id="t-gran" value="gran"><span>Gran empresa · 250 o más</span></label>
+            <label class="pill"><input type="radio" name="tipo" id="t-propio" value="propio"><span>Ya tengo servicio de prevención propio o mancomunado</span></label>
           </div>
         </fieldset>
-        <fieldset class="q">
+        <fieldset class="q" id="q2">
           <legend><span>2</span>¿Cómo prefieres pagar?</legend>
           <div class="pills">
-            <label class="pill"><input type="radio" name="pay" id="p1" value="m" checked><span>Cuota mensual</span></label>
-            <label class="pill"><input type="radio" name="pay" id="p2" value="y"><span>Pago anual</span></label>
+            <label class="pill"><input type="radio" name="pago" id="p-mes" value="mensual" checked><span>Cuota mensual fija</span></label>
+            <label class="pill"><input type="radio" name="pago" id="p-anual" value="anual"><span>Pago anual</span></label>
           </div>
+          <p class="q-note" id="q2note" hidden>Para este caso preparamos un presupuesto a medida, así que no hace falta elegir forma de pago.</p>
         </fieldset>
       </form>
       <div class="result rv" id="result" aria-live="polite">
         <small>Te recomendamos</small>
         <h3 id="rTitle">All In · Tarifa plana mensual</h3>
-        <p id="rText">Todo incluido y sin sorpresas: el servicio integral de prevención con una cuota mensual fija.</p>
-        <ul id="rList"><li>Prevención, vigilancia de la salud y formación</li><li>Una persona de contacto para todo</li><li>Sin pagos imprevistos durante el año</li></ul>
-        <a class="btn btn--lima" href="#contacto">Solicitar más información <span class="arr">→</span></a>
+        <p id="rText">Un servicio integral para tu empresa, sin sorpresas. Y págalo como quieras.</p>
+        <ul id="rList"><li>Todo incluido en un único servicio</li><li>Una cuota fija al mes, sin imprevistos</li><li>Tú eliges cómo pagar</li></ul>
+        <a class="btn btn--lima" id="rCta" href="#contacto" data-plan="all-in">Solicitar más información <span class="arr">→</span></a>
+        <p class="extra">¿Quieres implicar en la prevención a toda tu plantilla? <a href="#servicios">Conoce Integra Prevención →</a></p>
       </div>
     </div>
   </div>
@@ -723,26 +731,39 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
     t.addEventListener('pointermove', function(e){ var r = t.getBoundingClientRect(); t.style.setProperty('--mx', (e.clientX-r.left)+'px'); t.style.setProperty('--my', (e.clientY-r.top)+'px'); });
   });
 
-  /* ---------- Plan finder (example plans, to confirm with Prevensa) ---------- */
-  var plans = {
-    m: {t:'All In · Tarifa plana mensual', p:'Todo incluido y sin sorpresas: el servicio integral de prevención con una cuota mensual fija.'},
-    y: {t:'All In · Pago anual', p:'El mismo servicio integral en un único pago al año, para olvidarte de la prevención hasta la renovación.'},
-    big: {t:'Plan a medida', p:'Para plantillas grandes o varios centros: un técnico de referencia y un plan diseñado para tu organización.'}
+  /* ---------- Plan finder: rules in proyectos/prevensa/encuentra-tu-plan.md ---------- */
+  var PLANS = {
+    'all-in':      {t:'All In · Tarifa plana mensual', p:'Un servicio integral para tu empresa, sin sorpresas. Y págalo como quieras.',
+                    l:['Todo incluido en un único servicio','Una cuota fija al mes, sin imprevistos','Tú eliges cómo pagar']},
+    'autonomos':   {t:'Plan Autónomos', p:'Prevención ágil y ajustada en costes, con garantía de cumplimiento de tus obligaciones legales y una cobertura integral anual.',
+                    l:['Prevención ágil y ajustada en costes','Cumplimiento de tus obligaciones legales garantizado','Cobertura integral durante todo el año']},
+    'pymes':       {t:'Plan Pymes', p:'Un servicio adaptado a las necesidades de tu empresa, especializado y con experiencia.',
+                    l:['Adaptado a las necesidades de tu empresa','Equipo técnico especializado','25 años de experiencia en prevención']},
+    'gran-empresa':{t:'Plan Gran empresa', p:'Un servicio especializado y con dedicación exclusiva, un valor añadido en la gestión de seguridad y salud.',
+                    l:['Dedicación exclusiva a tu organización','Equipo especializado','Valor añadido en la gestión de seguridad y salud']},
+    'especialidades':{t:'Especialidades', p:'Contrata solo las actividades que necesites para complementar el trabajo de tu servicio de prevención propio o mancomunado.',
+                    l:['Actividades preventivas sueltas, a la carta','Complementa tu servicio propio o mancomunado','Sin cambiar tu organización actual']}
   };
-  var lists = {
-    1:['Evaluación de riesgos de tus puestos','Reconocimientos médicos del equipo','Formación obligatoria online'],
-    2:['Prevención, vigilancia de la salud y formación','Una persona de contacto para todo','Sin pagos imprevistos durante el año'],
-    3:['Visitas periódicas de tu técnico','Coordinación de actividades empresariales (CAE)','Formación presencial en tus instalaciones'],
-    4:['Técnico de referencia asignado','Planes de bienestar y salud en la empresa','Informes y seguimiento para dirección']
-  };
-  var form = document.getElementById('planForm'), res = document.getElementById('result');
-  form.addEventListener('change', function(){
-    var s = form.size.value, pay = form.pay.value, k = s === '4' ? 'big' : pay;
-    document.getElementById('rTitle').textContent = plans[k].t;
-    document.getElementById('rText').textContent = plans[k].p;
-    document.getElementById('rList').innerHTML = lists[s].map(function(x){ return '<li>'+x+'</li>'; }).join('');
+  function pickPlan(tipo, pago){
+    if(tipo === 'gran') return 'gran-empresa';
+    if(tipo === 'propio') return 'especialidades';
+    if(pago === 'mensual') return 'all-in';
+    return tipo === 'autonomo' ? 'autonomos' : 'pymes';
+  }
+  var form = document.getElementById('planForm'), res = document.getElementById('result'), q2 = document.getElementById('q2'), shown = 'all-in';
+  function updatePlan(){
+    var tipo = form.tipo.value, noPago = (tipo === 'gran' || tipo === 'propio');
+    q2.disabled = noPago; document.getElementById('q2note').hidden = !noPago;
+    var k = pickPlan(tipo, form.pago.value);
+    if(k === shown) return; shown = k;
+    var d = PLANS[k];
+    document.getElementById('rTitle').textContent = d.t;
+    document.getElementById('rText').textContent = d.p;
+    document.getElementById('rList').innerHTML = d.l.map(function(x){ return '<li>'+x+'</li>'; }).join('');
+    document.getElementById('rCta').setAttribute('data-plan', k);
     res.classList.remove('swap'); void res.offsetWidth; res.classList.add('swap');
-  });
+  }
+  form.addEventListener('change', updatePlan);
 
   /* ---------- Quote words light up as you scroll ---------- */
   var q = document.getElementById('quote');
