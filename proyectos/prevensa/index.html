@@ -214,8 +214,19 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .q:disabled .pills{opacity:.45}
 .q:disabled .pill span{cursor:not-allowed}
 .q-note{font-size:14px;color:var(--tx-2)}
-.result .extra{position:relative;margin-top:6px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18);font-size:14px;color:rgba(255,255,255,.8)}
-.result .extra a{color:var(--lima);font-weight:700;text-decoration:none}
+.result .acts{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}
+.result .more-link{color:#fff;font-weight:700;font-size:14.5px;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+.result .more-link:hover{border-color:var(--lima)}
+.comp{position:relative;margin-top:72px;display:grid;gap:20px}
+.comp > h3{font-size:22px;color:var(--petroleo);letter-spacing:-.01em}
+.comp-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ccard{display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:var(--r-md);background:#fff;border:1.5px solid var(--oceano)}
+.ccard h4{margin:0;font-size:20px;font-weight:600;color:var(--petroleo)}
+.ccard p{font-size:15px;color:var(--tx-2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{padding:6px 12px;border-radius:999px;background:var(--azul-claro,#E6F1F3);color:var(--petroleo);font-size:13.5px;font-weight:600}
+.ccard .btn{margin-top:auto;align-self:flex-start}
+@media (max-width:900px){.comp-grid{grid-template-columns:1fr}}
 @keyframes swap{from{opacity:0;transform:translateY(10px)}}
 
 /* ---------- Quote lit by scroll ---------- */
@@ -491,27 +502,45 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
           <legend><span>1</span>¿Cómo es tu empresa?</legend>
           <div class="pills">
             <label class="pill"><input type="radio" name="tipo" id="t-auto" value="autonomo"><span>Soy autónomo/a</span></label>
-            <label class="pill"><input type="radio" name="tipo" id="t-pyme" value="pyme" checked><span>Pyme · hasta 249 personas</span></label>
-            <label class="pill"><input type="radio" name="tipo" id="t-gran" value="gran"><span>Gran empresa · 250 o más</span></label>
-            <label class="pill"><input type="radio" name="tipo" id="t-propio" value="propio"><span>Ya tengo servicio de prevención propio o mancomunado</span></label>
+            <label class="pill"><input type="radio" name="tipo" id="t-pyme" value="pyme" checked><span>Pequeña o mediana empresa</span></label>
+            <label class="pill"><input type="radio" name="tipo" id="t-gran" value="gran"><span>Gran empresa</span></label>
           </div>
         </fieldset>
         <fieldset class="q" id="q2">
-          <legend><span>2</span>¿Cómo prefieres pagar?</legend>
+          <legend><span>2</span>¿Qué prefieres?</legend>
           <div class="pills">
-            <label class="pill"><input type="radio" name="pago" id="p-mes" value="mensual" checked><span>Cuota mensual fija</span></label>
-            <label class="pill"><input type="radio" name="pago" id="p-anual" value="anual"><span>Pago anual</span></label>
+            <label class="pill"><input type="radio" name="pref" id="p-int" value="integral" checked><span>Todo incluido con una cuota mensual fija</span></label>
+            <label class="pill"><input type="radio" name="pref" id="p-ad" value="adaptado"><span>Un servicio adaptado a mi empresa</span></label>
           </div>
-          <p class="q-note" id="q2note" hidden>Para este caso preparamos un presupuesto a medida, así que no hace falta elegir forma de pago.</p>
+          <p class="q-note" id="q2note" hidden>Para autónomos tenemos un plan pensado para ti, con cobertura integral anual.</p>
         </fieldset>
       </form>
       <div class="result rv" id="result" aria-live="polite">
         <small>Te recomendamos</small>
         <h3 id="rTitle">All In · Tarifa plana mensual</h3>
         <p id="rText">Un servicio integral para tu empresa, sin sorpresas. Y págalo como quieras.</p>
-        <ul id="rList"><li>Todo incluido en un único servicio</li><li>Una cuota fija al mes, sin imprevistos</li><li>Tú eliges cómo pagar</li></ul>
-        <a class="btn btn--lima" id="rCta" href="#contacto" data-plan="all-in">Solicitar más información <span class="arr">→</span></a>
-        <p class="extra">¿Quieres implicar en la prevención a toda tu plantilla? <a href="#servicios">Conoce Integra Prevención →</a></p>
+        <ul id="rList"><li>Todas las disciplinas preventivas en un solo servicio</li><li>Cuota mensual fija, sin sorpresas</li><li>Acompañamiento en el día a día</li></ul>
+        <div class="acts">
+          <a class="btn btn--lima" id="rCta" href="#contacto" data-plan="all-in">Solicitar información <span class="arr">→</span></a>
+          <a class="more-link" id="rMore" href="#servicios">Ver todo lo que incluye →</a>
+        </div>
+      </div>
+    </div>
+    <div class="comp rv">
+      <h3>¿Buscas algo más concreto?</h3>
+      <div class="comp-grid">
+        <div class="ccard">
+          <h4>Especialidades</h4>
+          <p>Contrata actividades sueltas para complementar el trabajo de tu servicio de prevención propio o mancomunado.</p>
+          <ul class="chips"><li>Seguridad laboral</li><li>Higiene industrial</li><li>Ergonomía y psicología aplicada</li><li>Salud laboral</li></ul>
+          <a class="btn btn--secondary" href="#contacto">Solicitar información <span class="arr">→</span></a>
+        </div>
+        <div class="ccard">
+          <h4>Soluciones de Gestión</h4>
+          <p>Toda la documentación de prevención de tu empresa en un área privada online, también para quienes participan en la prevención sin formar parte del servicio.</p>
+          <ul class="chips"><li>Evaluaciones de riesgo</li><li>Formación de tu equipo</li><li>Incidencias y accidentes</li><li>Aptitudes médicas</li></ul>
+          <a class="btn btn--secondary" href="#contacto">Solicitar información <span class="arr">→</span></a>
+        </div>
       </div>
     </div>
   </div>
@@ -731,30 +760,27 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
     t.addEventListener('pointermove', function(e){ var r = t.getBoundingClientRect(); t.style.setProperty('--mx', (e.clientX-r.left)+'px'); t.style.setProperty('--my', (e.clientY-r.top)+'px'); });
   });
 
-  /* ---------- Plan finder: rules in proyectos/prevensa/encuentra-tu-plan.md ---------- */
+  /* ---------- Plan finder: rules in proyectos/prevensa/planes-desarrollo.md ---------- */
   var PLANS = {
     'all-in':      {t:'All In · Tarifa plana mensual', p:'Un servicio integral para tu empresa, sin sorpresas. Y págalo como quieras.',
-                    l:['Todo incluido en un único servicio','Una cuota fija al mes, sin imprevistos','Tú eliges cómo pagar']},
+                    l:['Todas las disciplinas preventivas en un solo servicio','Cuota mensual fija, sin sorpresas','Acompañamiento en el día a día']},
     'autonomos':   {t:'Plan Autónomos', p:'Prevención ágil y ajustada en costes, con garantía de cumplimiento de tus obligaciones legales y una cobertura integral anual.',
-                    l:['Prevención ágil y ajustada en costes','Cumplimiento de tus obligaciones legales garantizado','Cobertura integral durante todo el año']},
+                    l:['Evaluación de riesgos de tu puesto','Formación y reconocimiento médico','Asesoramiento en CAE y jurídico-técnico']},
     'pymes':       {t:'Plan Pymes', p:'Un servicio adaptado a las necesidades de tu empresa, especializado y con experiencia.',
-                    l:['Adaptado a las necesidades de tu empresa','Equipo técnico especializado','25 años de experiencia en prevención']},
-    'gran-empresa':{t:'Plan Gran empresa', p:'Un servicio especializado y con dedicación exclusiva, un valor añadido en la gestión de seguridad y salud.',
-                    l:['Dedicación exclusiva a tu organización','Equipo especializado','Valor añadido en la gestión de seguridad y salud']},
-    'especialidades':{t:'Especialidades', p:'Contrata solo las actividades que necesites para complementar el trabajo de tu servicio de prevención propio o mancomunado.',
-                    l:['Actividades preventivas sueltas, a la carta','Complementa tu servicio propio o mancomunado','Sin cambiar tu organización actual']}
+                    l:['Análisis inicial de riesgos','Plan anual de actividades preventivas','Formación para tu equipo']},
+    'gran-empresa':{t:'Plan Gran Empresa', p:'Un servicio especializado y con dedicación exclusiva, un valor añadido en la gestión de seguridad y salud.',
+                    l:['Coordinador único para tu empresa','Coordinación multicentro, técnica y médica','Promoción de la salud personalizada']}
   };
-  function pickPlan(tipo, pago){
-    if(tipo === 'gran') return 'gran-empresa';
-    if(tipo === 'propio') return 'especialidades';
-    if(pago === 'mensual') return 'all-in';
-    return tipo === 'autonomo' ? 'autonomos' : 'pymes';
+  function pickPlan(empresa, prefiere){
+    if(empresa === 'autonomo') return 'autonomos';
+    if(prefiere === 'integral') return 'all-in';
+    return empresa === 'gran' ? 'gran-empresa' : 'pymes';
   }
   var form = document.getElementById('planForm'), res = document.getElementById('result'), q2 = document.getElementById('q2'), shown = 'all-in';
   function updatePlan(){
-    var tipo = form.tipo.value, noPago = (tipo === 'gran' || tipo === 'propio');
-    q2.disabled = noPago; document.getElementById('q2note').hidden = !noPago;
-    var k = pickPlan(tipo, form.pago.value);
+    var tipo = form.tipo.value, auto = tipo === 'autonomo';
+    q2.disabled = auto; document.getElementById('q2note').hidden = !auto;
+    var k = pickPlan(tipo, form.pref.value);
     if(k === shown) return; shown = k;
     var d = PLANS[k];
     document.getElementById('rTitle').textContent = d.t;
